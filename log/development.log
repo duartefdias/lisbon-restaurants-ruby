@@ -1,0 +1,308 @@
+Started GET "/" for ::1 at 2020-12-17 19:51:39 +0000
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/duartefdias/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/duartefdias/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.9ms | Allocations: 480)
+Completed 200 OK in 22ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 2807)
+
+
+Started GET "/" for ::1 at 2020-12-17 19:53:02 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/duartefdias/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/duartefdias/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.1ms | Allocations: 185)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 821)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (26.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (45.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddRestaurants (20201217195655)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "restaurants" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "imageURL" varchar, "category" varchar)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201217195655"]]
+  [1m[35m (30.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-12-17 20:01:36.779960"], ["updated_at", "2020-12-17 20:01:36.779960"]]
+  [1m[35m (16.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddRestaurants (20201217195655)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE "restaurants"[0m
+  [1m[36mprimary::SchemaMigration Destroy (0.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20201217195655"]]
+  [1m[35m (16.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddRestaurants (20201217195655)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "restaurants" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "image_url" varchar, "category" varchar, "price_range" integer)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201217195655"]]
+  [1m[35m (16.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES (?, ?, ?, ?)[0m  [["name", "McDonalds"], ["image_url", "https://pbs.twimg.com/profile_images/1334527633992761344/kwlzzLs6_400x400.png"], ["category", "fast food"], ["price_range", 1]]
+  [1m[35m (15.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES (?, ?, ?, ?)[0m  [["name", "McDonalds 2"], ["image_url", "https://pbs.twimg.com/profile_images/1334527633992761344/kwlzzLs6_400x400.png"], ["category", "fast food"], ["price_range", 1]]
+  [1m[35m (22.5ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for ::1 at 2020-12-17 20:13:46 +0000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RestaurantsController#show as HTML
+  Rendering restaurants/show.html.erb within layouts/application
+  Rendered restaurants/show.html.erb within layouts/application (Duration: 387.7ms | Allocations: 144670)
+Completed 500 Internal Server Error in 392ms (ActiveRecord: 0.0ms | Allocations: 145809)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `restaurants' for #<#<Class:0x0000556cd01ad050>:0x0000556cd02371d8>
+Did you mean?  return):
+    1: <h3><%= restaurants.name %></h3>
+  
+app/views/restaurants/show.html.erb:1
+Started GET "/" for ::1 at 2020-12-17 20:14:56 +0000
+Processing by RestaurantsController#show as HTML
+  Rendering restaurants/show.html.erb within layouts/application
+  Rendered restaurants/show.html.erb within layouts/application (Duration: 387.9ms | Allocations: 143983)
+Completed 500 Internal Server Error in 403ms (ActiveRecord: 0.0ms | Allocations: 145083)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `restaurants' for #<#<Class:0x0000556ccf3749e8>:0x0000556ccf384d48>
+Did you mean?  return):
+    1: <% restaurants.each do |restaurant| %>
+    2:   <h3><%= restaurant.name %></h3>
+    3:   <h4><%= restaurant.category %></h4>
+    4: <% end %>
+  
+app/views/restaurants/show.html.erb:1
+Started GET "/" for ::1 at 2020-12-17 20:16:20 +0000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RestaurantsController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1735)
+
+
+  
+ActionView::MissingTemplate (Missing template restaurants/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/home/duartefdias/ruby/personal-projects/lisbon-restaurants-ruby/app/views"
+  * "/home/duartefdias/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actiontext-6.0.3.4/app/views"
+  * "/home/duartefdias/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/actionmailbox-6.0.3.4/app/views"
+):
+  
+app/controllers/restaurants_controller.rb:4:in `index'
+Started GET "/" for ::1 at 2020-12-17 20:16:31 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:1
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 32.0ms | Allocations: 4587)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/duartefdias/ruby/personal-projects/lisbon-restaurants-ruby/public/packs
+[Webpacker] Hash: 76145d9ce4575ebaa29b
+Version: webpack 4.44.2
+Time: 1795ms
+Built at: 12/17/2020 8:16:34 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c229f7c7014cf8c8d494.js    124 KiB  application  [emitted] [immutable]  application
+js/application-c229f7c7014cf8c8d494.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c229f7c7014cf8c8d494.js js/application-c229f7c7014cf8c8d494.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 3307ms (Views: 3300.0ms | ActiveRecord: 4.2ms | Allocations: 19348)
+
+
+Started GET "/" for ::1 at 2020-12-17 20:27:59 +0000
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:8:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for ::1 at 2020-12-17 20:28:56 +0000
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:8:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for ::1 at 2020-12-17 20:29:20 +0000
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:8:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for ::1 at 2020-12-17 20:29:54 +0000
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:8:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for ::1 at 2020-12-17 20:30:11 +0000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:1
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 15.4ms | Allocations: 4004)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 22.8ms | ActiveRecord: 0.2ms | Allocations: 8489)
+
+
+Started GET "/" for ::1 at 2020-12-17 20:30:21 +0000
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:8:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/fast%20food" for ::1 at 2020-12-17 20:30:29 +0000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/fast%20food"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/fast%20food" for ::1 at 2020-12-17 20:31:30 +0000
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:8:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/fast%20food" for ::1 at 2020-12-17 20:31:53 +0000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category_path"=>"fast food"}
+  Rendering restaurants/category.html.erb within layouts/application
+  Rendered restaurants/category.html.erb within layouts/application (Duration: 416.8ms | Allocations: 146849)
+Completed 500 Internal Server Error in 421ms (ActiveRecord: 0.0ms | Allocations: 147971)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `restaurants_by_category' for #<#<Class:0x00007f0674794b00>:0x00007f067479b1a8>):
+    1: <% restaurants_by_category.each do |restaurant| %>
+    2:   <h3><%= restaurant.name %></h3>
+    3:   <h4><%= restaurant.category %></h4>
+    4: <% end %>
+  
+app/views/restaurants/category.html.erb:1
+Started GET "/fast%20food" for ::1 at 2020-12-17 20:32:38 +0000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"fast food"}
+  Rendering restaurants/category.html.erb within layouts/application
+  Rendered restaurants/category.html.erb within layouts/application (Duration: 325.4ms | Allocations: 146898)
+Completed 500 Internal Server Error in 329ms (ActiveRecord: 0.0ms | Allocations: 147868)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `restaurants_by_category' for #<#<Class:0x00007f0674335e60>:0x00007f067433ff00>):
+    1: <% restaurants_by_category.each do |restaurant| %>
+    2:   <h3><%= restaurant.name %></h3>
+    3:   <h4><%= restaurant.category %></h4>
+    4: <% end %>
+  
+app/views/restaurants/category.html.erb:1
+Started GET "/fast%20food" for ::1 at 2020-12-17 20:33:00 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"fast food"}
+  Rendering restaurants/category.html.erb within layouts/application
+  Rendered restaurants/category.html.erb within layouts/application (Duration: 364.3ms | Allocations: 146894)
+Completed 500 Internal Server Error in 378ms (ActiveRecord: 0.0ms | Allocations: 148115)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `restaurants_by_category' for #<#<Class:0x0000556ccdd183e8>:0x0000556ccdd3a628>):
+    1: <% restaurants_by_category.each do |restaurant| %>
+    2:   <h3><%= restaurant.name %></h3>
+    3:   <h4><%= restaurant.category %></h4>
+    4: <% end %>
+  
+app/views/restaurants/category.html.erb:1
+Started GET "/fast%20food" for ::1 at 2020-12-17 20:33:34 +0000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"fast food"}
+Completed 500 Internal Server Error in 213ms (ActiveRecord: 0.0ms | Allocations: 98323)
+
+
+  
+NameError (undefined local variable or method `restaurants' for #<RestaurantsController:0x0000556ccfc22248>
+Did you mean?  return):
+  
+app/controllers/restaurants_controller.rb:9:in `category'
+Started GET "/fast%20food" for ::1 at 2020-12-17 20:33:49 +0000
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"fast food"}
+  Rendering restaurants/category.html.erb within layouts/application
+  Rendered restaurants/category.html.erb within layouts/application (Duration: 337.5ms | Allocations: 146867)
+Completed 500 Internal Server Error in 347ms (ActiveRecord: 0.0ms | Allocations: 147920)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `restaurants_by_category' for #<#<Class:0x0000556ccfbf1990>:0x0000556ccfc0b4f8>):
+    1: <% restaurants_by_category.each do |restaurant| %>
+    2:   <h3><%= restaurant.name %></h3>
+    3:   <h4><%= restaurant.category %></h4>
+    4: <% end %>
+  
+app/views/restaurants/category.html.erb:1
+app/controllers/restaurants_controller.rb:9:in `category'
+Started GET "/fast%20food" for ::1 at 2020-12-17 20:33:57 +0000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"fast food"}
+  Rendering restaurants/category.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'fast food')[0m
+  ↳ app/views/restaurants/category.html.erb:1
+  Rendered restaurants/category.html.erb within layouts/application (Duration: 9.0ms | Allocations: 4346)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 14.1ms | ActiveRecord: 0.9ms | Allocations: 8365)
+
+
