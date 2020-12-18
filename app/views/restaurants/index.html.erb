@@ -1,4 +1,21 @@
-<% restaurants.each do |restaurant| %>
-  <h3><%= restaurant.name %></h3>
-  <h4><%= restaurant.category %></h4>
-<% end %>
+<!-- 15 Categories-->
+<!-- Template source: https://codepen.io/steveeeie/pen/NVWMEM#_=_ -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+<div class="lisbon-restaurants-logo">
+  <img src="/lisbon_restaurants_logo.png"/>
+</div>
+
+<section class="hero-section">
+  <div class="card-grid">
+    <% categories.each do |category| %>
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(<%= category['image_url'] %>)"></div>
+      <div class="card__content">
+        <!-- <p class="card__category">Sub-heading</p> -->
+        <h3 class="card__heading"><%= category['name'] %></h3>
+      </div>
+    </a>
+    <% end %>
+  <div>
+</section>
