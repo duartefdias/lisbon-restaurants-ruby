@@ -1,24 +1,7 @@
-# README
+# Lisbon Restaurants
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A list of some of the most known restaurants in Lisbon organized by type of food.
 
-Things you may want to cover:
+Live app: https://lisbon-restaurants.azurewebsites.net/
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<img src="/github_screenshots/cover.png" width="100%" />
