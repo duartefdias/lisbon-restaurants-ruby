@@ -153,3 +153,29 @@
       margin-left: auto;
       margin-right: auto;
   }
+
+  .lisbon-restaurants-category-header {
+    background-color: #205c6e;
+    padding-top: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .lisbon-restaurants-category-header .back-arrow {
+    width: 50px;
+    margin: auto 0 auto 20px;
+    justify-self: start;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+  .lisbon-restaurants-category-header .category-header {
+    text-align: center;
+    justify-self: center;
+    margin-left: 41%;
+    color: #f5bb40;
+    font-size: 27px;
+    font-family: 'Roboto', sans-serif;
+  }

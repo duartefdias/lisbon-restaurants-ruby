@@ -28,6 +28,9 @@ class RestaurantsController < ApplicationController
 
     def category
         restaurants_by_category = Restaurant.where("category = ?", params[:category])
-        render locals: {restaurants_by_category: restaurants_by_category}
+        render locals: {
+            restaurants_by_category: restaurants_by_category,
+            current_category: params[:category]
+        }
     end
 end

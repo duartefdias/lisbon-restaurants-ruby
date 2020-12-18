@@ -9,7 +9,7 @@
 <section class="hero-section">
   <div class="card-grid">
     <% categories.each do |category| %>
-    <a class="card" href="#">
+    <a class="card" href="<%= "/" + category['name'] %>">
       <div class="card__background" style="background-image: url(<%= category['image_url'] %>)"></div>
       <div class="card__content">
         <!-- <p class="card__category">Sub-heading</p> -->
