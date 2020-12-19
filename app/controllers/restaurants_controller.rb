@@ -14,7 +14,7 @@ class RestaurantsController < ApplicationController
             {"name" => "Mexican", "image_url" => "https://media.istockphoto.com/photos/overhead-photo-of-assortment-of-mexican-tapas-picture-id955992944?k=6&m=955992944&s=612x612&w=0&h=hB72dcSo6xdMKBi9PD_16r1O9buCJbzH1Vn6w3mxqb8="},
             {"name" => "Peruvian/Nepalese", "image_url" => "https://media.istockphoto.com/photos/lomo-saltado-traditional-peruvian-plate-beef-and-potatoes-picture-id964163636?k=6&m=964163636&s=612x612&w=0&h=115ZorruhkHJ53ZawwE-mQQq4Hs1jqyVpWiHg3sGVMk="},
             {"name" => "Brunch", "image_url" => "https://media.istockphoto.com/photos/breakfast-food-table-picture-id1097487962?k=6&m=1097487962&s=612x612&w=0&h=XPrSB6e84S1i9ZDRMsd5_NjWbqrY-wF0Z9e3_nHqRBM="},
-            {"name" => "Icecreams and sweets", "image_url" => "https://d332juqdd9b8hn.cloudfront.net/wp-content/uploads/2019/04/IceCream-lead.jpg"},
+            {"name" => "Icecream and sweets", "image_url" => "https://d332juqdd9b8hn.cloudfront.net/wp-content/uploads/2019/04/IceCream-lead.jpg"},
             {"name" => "Healthy", "image_url" => "https://www.wellandgood.com/wp-content/uploads/2020/10/GettyImages-avocado-for-heart-health-Arx0nt.jpeg"},
             {"name" => "Other", "image_url" => "https://media.istockphoto.com/photos/food-backgrounds-table-filled-with-large-variety-of-food-picture-id1155240408?k=6&m=1155240408&s=612x612&w=0&h=SEhOUzsexrBBtRrdaLWNB6Zub65Dnyjk7vVrTk1KQSU="},
             
