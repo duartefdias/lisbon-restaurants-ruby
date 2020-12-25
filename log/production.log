@@ -1,0 +1,20 @@
+D, [2020-12-25T04:39:22.931626 #26993] DEBUG -- :   [1m[35m (1509.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+D, [2020-12-25T04:39:23.255542 #26993] DEBUG -- :   [1m[35m (277.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+D, [2020-12-25T04:39:23.408654 #26993] DEBUG -- :   [1m[35m (79.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6817166200105519755)[0m
+D, [2020-12-25T04:39:23.991441 #26993] DEBUG -- :   [1m[35m (94.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+I, [2020-12-25T04:39:23.992559 #26993]  INFO -- : Migrating to CreateTasks (20171221102803)
+D, [2020-12-25T04:39:24.065450 #26993] DEBUG -- :   [1m[35m (71.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T04:39:24.403914 #26993] DEBUG -- :   [1m[35m (337.8ms)[0m  [1m[35mCREATE TABLE "tasks" ("id" bigserial primary key, "Description" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+D, [2020-12-25T04:39:24.566254 #26993] DEBUG -- :   [1m[35mSQL (110.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20171221102803"]]
+D, [2020-12-25T04:39:24.645219 #26993] DEBUG -- :   [1m[35m (78.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T04:39:24.916364 #26993] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (92.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2020-12-25T04:39:25.010238 #26993] DEBUG -- :   [1m[35m (44.8ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T04:39:25.098157 #26993] DEBUG -- :   [1m[35mSQL (86.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "production"], ["created_at", "2020-12-25 04:39:25.010533"], ["updated_at", "2020-12-25 04:39:25.010533"]]
+D, [2020-12-25T04:39:25.147663 #26993] DEBUG -- :   [1m[35m (49.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T04:39:25.222066 #26993] DEBUG -- :   [1m[35m (74.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(6817166200105519755)[0m
+I, [2020-12-25T04:44:08.358253 #27679]  INFO -- : [e76f7902-523c-47d0-8e4a-c1a8f7abf785] Started GET "/" for 127.0.0.1 at 2020-12-25 04:44:08 +0000
+I, [2020-12-25T04:44:08.364563 #27679]  INFO -- : [e76f7902-523c-47d0-8e4a-c1a8f7abf785] Processing by TasksController#index as HTML
+I, [2020-12-25T04:44:08.380561 #27679]  INFO -- : [e76f7902-523c-47d0-8e4a-c1a8f7abf785]   Rendering tasks/index.html.erb within layouts/application
+D, [2020-12-25T04:44:09.913337 #27679] DEBUG -- : [e76f7902-523c-47d0-8e4a-c1a8f7abf785]   [1m[36mTask Load (139.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+I, [2020-12-25T04:44:10.350032 #27679]  INFO -- : [e76f7902-523c-47d0-8e4a-c1a8f7abf785]   Rendered tasks/index.html.erb within layouts/application (1969.1ms)
+I, [2020-12-25T04:44:10.355073 #27679]  INFO -- : [e76f7902-523c-47d0-8e4a-c1a8f7abf785] Completed 200 OK in 1990ms (Views: 1975.8ms | ActiveRecord: 989.3ms)
