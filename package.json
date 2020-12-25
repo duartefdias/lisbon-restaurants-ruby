@@ -1,5 +1,5 @@
 {
-  "name": "tempppp",
+  "name": "example_app",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
