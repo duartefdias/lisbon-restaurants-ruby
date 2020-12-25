@@ -22,10 +22,4 @@ ActiveRecord::Schema.define(version: 20201225120517) do
     t.integer "price_range"
   end
 
-  create_table "tasks", force: :cascade do |t|
-    t.text "Description"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
 end
