@@ -22,3 +22,754 @@ Processing by TasksController#index as HTML
 Completed 200 OK in 668ms (Views: 657.8ms | ActiveRecord: 2.1ms)
 
 
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3046526807777167680)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddRestaurants (20201225120517)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (29.1ms)[0m  [1m[35mCREATE TABLE "restaurants" ("id" bigserial primary key, "name" character varying, "image_url" character varying, "category" character varying, "price_range" integer)[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201225120517"]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(3046526807777167680)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2020-12-25 12:07:11 +0000
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 329ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (require_self can only be called once per source file):
+    4:     <title>RubyRailsTasks</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.css:30
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__2301177952717011638_70026927838120'
+app/controllers/restaurants_controller.rb:23:in `index'
+Started GET "/" for 127.0.0.1 at 2020-12-25 12:09:13 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 153ms (Views: 150.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-25 12:10:03 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 46ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Italian" for 127.0.0.1 at 2020-12-25 12:10:07 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Italian"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant RestaurantsController::Restaurant):
+  
+app/controllers/restaurants_controller.rb:30:in `category'
+Started GET "/" for 127.0.0.1 at 2020-12-25 12:10:23 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 67ms (Views: 65.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Hamburgers" for 127.0.0.1 at 2020-12-25 12:12:13 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Hamburgers"}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant RestaurantsController::Restaurant):
+  
+app/controllers/restaurants_controller.rb:30:in `category'
+Started GET "/Hamburgers" for 127.0.0.1 at 2020-12-25 12:15:05 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Hamburgers"}
+  Rendering restaurants/category.html.erb within layouts/application
+  Rendered restaurants/category.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 32.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Hamburgers" for 127.0.0.1 at 2020-12-25 12:15:43 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Hamburgers"}
+  Rendering restaurants/category.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Hamburgers')[0m
+  Rendered restaurants/category.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 41ms (Views: 31.1ms | ActiveRecord: 4.7ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category") VALUES ($1, $2) RETURNING "id"[0m  [["name", "Pizzas lux"], ["category", "italian"]]
+  [1m[35m (10.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category") VALUES ($1, $2) RETURNING "id"[0m  [["name", "Luca"], ["category", "italian"]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category") VALUES ($1, $2) RETURNING "id"[0m  [["name", "Belalissa"], ["category", "italian"]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category") VALUES ($1, $2) RETURNING "id"[0m  [["name", "Popolo"], ["category", "italian"]]
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category") VALUES ($1, $2) RETURNING "id"[0m  [["name", "Este Oeste"], ["category", "italian"]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Guilty"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pizzaria do bairro"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "La campania"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "La finestra"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Capriciosa"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Bellezza D'Italia II"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Zero Zero"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.9ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "La trattoria"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Madpizza (Healthy pizzas)"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+  [1m[35m (21.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Osteria cucina di amici"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Mercantina"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Di casa"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Luzzo"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Máfia das pizzas (Cacilhas)"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pasta non basta"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Come prima"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Maritaca (Campo de Ourique; delivery)"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Otto"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Casa Al Parma"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "II Matriciano"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Polpetta - Almondegaria artesanal"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Este Oeste"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Cantina baldraca "], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Honorato"], ["image_url", "zzzzzzz"], ["category", "Hamburgers"], ["price_range", 1]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Ground burguer"], ["image_url", "zzzzzzz"], ["category", "Hamburgers"], ["price_range", 1]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Buns"], ["image_url", "zzzzzzz"], ["category", "Hamburgers"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "A-100"], ["image_url", "zzzzzzz"], ["category", "Hamburgers"], ["price_range", 1]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "To-b"], ["image_url", "zzzzzzz"], ["category", "Hamburgers"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Hamburgaria do Bairro "], ["image_url", "zzzzzzz"], ["category", "Hamburgers"], ["price_range", 1]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "McDonalds "], ["image_url", "zzzzzzz"], ["category", "Hamburgers"], ["price_range", 1]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Café do Rio (gourmet)"], ["image_url", "zzzzzzz"], ["category", "Hamburgers"], ["price_range", 1]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B Perfect "], ["image_url", "zzzzzzz"], ["category", "Hamburgers"], ["price_range", 1]]
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "The B Temple"], ["image_url", "zzzzzzz"], ["category", "Hamburgers"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Hã"], ["image_url", "zzzzzzz"], ["category", "Hamburgers"], ["price_range", 1]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Sushisan"], ["image_url", "zzzzzzz"], ["category", "Sushi"], ["price_range", 1]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Suntory"], ["image_url", "zzzzzzz"], ["category", "Sushi"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Aron sushi"], ["image_url", "zzzzzzz"], ["category", "Sushi"], ["price_range", 1]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Rabo de peixe"], ["image_url", "zzzzzzz"], ["category", "Sushi"], ["price_range", 1]]
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Sea me"], ["image_url", "zzzzzzz"], ["category", "Sushi"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Sushi factory"], ["image_url", "zzzzzzz"], ["category", "Sushi"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Confraria "], ["image_url", "zzzzzzz"], ["category", "Sushi"], ["price_range", 1]]
+  [1m[35m (11.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Miss jappa"], ["image_url", "zzzzzzz"], ["category", "Sushi"], ["price_range", 1]]
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Yakuza"], ["image_url", "zzzzzzz"], ["category", "Sushi"], ["price_range", 1]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Sushic "], ["image_url", "zzzzzzz"], ["category", "Sushi"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Noori "], ["image_url", "zzzzzzz"], ["category", "Sushi"], ["price_range", 1]]
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Kiuuby"], ["image_url", "zzzzzzz"], ["category", "Sushi"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Nómada "], ["image_url", "zzzzzzz"], ["category", "Sushi"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Chirashi Sushi (bowls;Telheiras)"], ["image_url", "zzzzzzz"], ["category", "Sushi"], ["price_range", 1]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Sushi Café "], ["image_url", "zzzzzzz"], ["category", "Sushi"], ["price_range", 1]]
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "SOI"], ["image_url", "zzzzzzz"], ["category", "Asian"], ["price_range", 1]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "O Asiático"], ["image_url", "zzzzzzz"], ["category", "Asian"], ["price_range", 1]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "BOA BAO"], ["image_url", "zzzzzzz"], ["category", "Asian"], ["price_range", 1]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Tasquinha dim sum"], ["image_url", "zzzzzzz"], ["category", "Asian"], ["price_range", 1]]
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Siam Square (tailandês)"], ["image_url", "zzzzzzz"], ["category", "Asian"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pho-Pu (Vietnamita)"], ["image_url", "zzzzzzz"], ["category", "Asian"], ["price_range", 1]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Este Oeste"], ["image_url", "zzzzzzz"], ["category", "Asian"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Chutnify Lisbon"], ["image_url", "zzzzzzz"], ["category", "Indian"], ["price_range", 1]]
+  [1m[35m (7.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Indiano de telheiras"], ["image_url", "zzzzzzz"], ["category", "Indian"], ["price_range", 1]]
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Indiano de alvalade"], ["image_url", "zzzzzzz"], ["category", "Indian"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Índia gate (Chiado)"], ["image_url", "zzzzzzz"], ["category", "Indian"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Rabo de peixe"], ["image_url", "zzzzzzz"], ["category", "Seafood"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Monte mar"], ["image_url", "zzzzzzz"], ["category", "Seafood"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Sea me"], ["image_url", "zzzzzzz"], ["category", "Seafood"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Tasca da esquina"], ["image_url", "zzzzzzz"], ["category", "Seafood"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pinóquio "], ["image_url", "zzzzzzz"], ["category", "Seafood"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "tico tico "], ["image_url", "zzzzzzz"], ["category", "Seafood"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Ramiro "], ["image_url", "zzzzzzz"], ["category", "Seafood"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Moules & beer"], ["image_url", "zzzzzzz"], ["category", "Seafood"], ["price_range", 1]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Peixaria da esquina"], ["image_url", "zzzzzzz"], ["category", "Seafood"], ["price_range", 1]]
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Doc Cod "], ["image_url", "zzzzzzz"], ["category", "Seafood"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pesqueiro 25 (marisco;grupos)"], ["image_url", "zzzzzzz"], ["category", "Seafood"], ["price_range", 1]]
+  [1m[35m (8.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pesca"], ["image_url", "zzzzzzz"], ["category", "Seafood"], ["price_range", 1]]
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Cachorraria"], ["image_url", "zzzzzzz"], ["category", "Hotdogs"], ["price_range", 1]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Frankie"], ["image_url", "zzzzzzz"], ["category", "Hotdogs"], ["price_range", 1]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "100 montaditos"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Topo"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Cervejaria da esquina"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Tapas bar "], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Rubro"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+  [1m[35m (10.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Boteco do largo"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Masstige"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Mesa do bairro"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "By the wine"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pharmacia "], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Matateu"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pateo do petisco (Cascais)"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Luzboa "], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Água pela Barba"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+  [1m[35m (9.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Tapisco"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Bairro do Avillez - Taberna"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Mini Bar"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Madame petisca"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Vinhos e petiscos (costa)"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Boteco do largo (jantares grupo)"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Largo ao Tacho (fado as quartas)"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Maria azeitona (Amadora)"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Travessia Bar (Cacilhas)"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "NANA petiscos (Charnecas)"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Atalho Real"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Cafe império"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Cafe de Sao bento"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+  [1m[35m (9.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Grelhados alcantara"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "XL"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Dote"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pito do bairro"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Brasserie"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "O fondue"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Terrazza"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Butchers"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Carnalentejana"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "O Talho"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+  [1m[35m (7.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Kob"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Volver de carne y alma"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Carvoeiro de palma"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Tasca Chiado naco"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Adega das gravatas (carnide)"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Nogueira’s"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "C.O.W - Beef & Cocktails"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "El pibe"], ["image_url", "zzzzzzz"], ["category", "Mexican"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "El clandestino"], ["image_url", "zzzzzzz"], ["category", "Mexican"], ["price_range", 1]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Las ficheras"], ["image_url", "zzzzzzz"], ["category", "Mexican"], ["price_range", 1]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pistola y corazon"], ["image_url", "zzzzzzz"], ["category", "Mexican"], ["price_range", 1]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Segundo muelle"], ["image_url", "zzzzzzz"], ["category", "Mexican"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Cheviceria"], ["image_url", "zzzzzzz"], ["category", "Mexican"], ["price_range", 1]]
+  [1m[35m (8.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Mez cais"], ["image_url", "zzzzzzz"], ["category", "Mexican"], ["price_range", 1]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Gazpaxo"], ["image_url", "zzzzzzz"], ["category", "Mexican"], ["price_range", 1]]
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Cevicheria"], ["image_url", "zzzzzzz"], ["category", "Peruvian Nepalese"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Casa Nepalesa"], ["image_url", "zzzzzzz"], ["category", "Peruvian Nepalese"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Cantina Peruana"], ["image_url", "zzzzzzz"], ["category", "Peruvian Nepalese"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Segundo Muelle"], ["image_url", "zzzzzzz"], ["category", "Peruvian Nepalese"], ["price_range", 1]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "nicolau"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "fabrica dos sabores"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "brick cafe"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "O austriaco"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Choupana"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Brunch Cafe"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "The mill"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Infame (almoço também)"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "O ninho - café brunch"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Leitaria"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Delidelux"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Heim cafe"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Dear Breakfast"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Brooklyn"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "La Boulangerie"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Santo Bagel"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pão Nosso de cada dia"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", " Petit Prince Culture Cafe Lisbon"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Mercearia da Mila"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Ela canela"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Maria Limão"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WISH slow coffee house"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "fauna e flora"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Conchanata"], ["image_url", "zzzzzzz"], ["category", "Icecream and sweets"], ["price_range", 1]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Baguettes & Cornets"], ["image_url", "zzzzzzz"], ["category", "Icecream and sweets"], ["price_range", 1]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Nosolo Italia"], ["image_url", "zzzzzzz"], ["category", "Icecream and sweets"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Santini"], ["image_url", "zzzzzzz"], ["category", "Icecream and sweets"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Daveroo"], ["image_url", "zzzzzzz"], ["category", "Icecream and sweets"], ["price_range", 1]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Amorino"], ["image_url", "zzzzzzz"], ["category", "Icecream and sweets"], ["price_range", 1]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Lambretta lanchonete"], ["image_url", "zzzzzzz"], ["category", "Icecream and sweets"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Casa do Gelado"], ["image_url", "zzzzzzz"], ["category", "Icecream and sweets"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Hora H"], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Cento e quatro"], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Gomo "], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Os gazeteiros"], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Piadinas "], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Nicolau"], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Dois três três"], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pachamama"], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Club life to go"], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "The cru (Oeiras)"], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Aloha Cafe"], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Bowl Lisboa "], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "A luz ideal"], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Organic Caffe Chiado"], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Montana Lisboa cafe"], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+  [1m[35m (6.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Naked"], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Duplex 💰"], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Alma 💰"], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Cantinho do avillez "], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pap' açorda"], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Bica do sapato 💰"], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Salsa e Coentros "], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Belcanto 💰"], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+  [1m[35m (9.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Mercado c ourique ✅"], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Mercado ribeira ✅"], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Prego da peixaria "], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Doca de santo"], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Rui dos Pregos"], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Valbom "], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+  [1m[35m (7.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Tico tico "], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Sem palavras "], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Sancho "], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "JNcQUOI"], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Frutaria "], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Taberna sta Marta (Marquês)"], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Dona Tilia (Praça de Espanha)"], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Taberna dos gordos"], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Taberna Sal grosso "], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Maria Catita"], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Stop do bairro"], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/Hamburgers" for 127.0.0.1 at 2020-12-25 12:16:45 +0000
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Hamburgers"}
+  Rendering restaurants/category.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Hamburgers')[0m
+  Rendered restaurants/category.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 412ms (Views: 402.5ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-25 12:16:50 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Italian" for 127.0.0.1 at 2020-12-25 12:16:51 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Italian"}
+  Rendering restaurants/category.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Italian')[0m
+  Rendered restaurants/category.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 55ms (Views: 35.2ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-25 12:16:56 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 99ms (Views: 97.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-25 12:23:08 +0000
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 298ms (Views: 293.4ms | ActiveRecord: 0.0ms)
+
+

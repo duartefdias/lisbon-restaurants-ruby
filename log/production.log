@@ -18,3 +18,760 @@ I, [2020-12-25T04:44:08.380561 #27679]  INFO -- : [e76f7902-523c-47d0-8e4a-c1a8f
 D, [2020-12-25T04:44:09.913337 #27679] DEBUG -- : [e76f7902-523c-47d0-8e4a-c1a8f7abf785]   [1m[36mTask Load (139.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
 I, [2020-12-25T04:44:10.350032 #27679]  INFO -- : [e76f7902-523c-47d0-8e4a-c1a8f7abf785]   Rendered tasks/index.html.erb within layouts/application (1969.1ms)
 I, [2020-12-25T04:44:10.355073 #27679]  INFO -- : [e76f7902-523c-47d0-8e4a-c1a8f7abf785] Completed 200 OK in 1990ms (Views: 1975.8ms | ActiveRecord: 989.3ms)
+I, [2020-12-25T04:55:41.962631 #29446]  INFO -- : [d08c1beb-3d14-4088-bcd8-10d230cf9a5b] Started GET "/" for 127.0.0.1 at 2020-12-25 04:55:41 +0000
+I, [2020-12-25T04:55:41.972216 #29446]  INFO -- : [d08c1beb-3d14-4088-bcd8-10d230cf9a5b] Processing by TasksController#index as HTML
+I, [2020-12-25T04:55:41.986184 #29446]  INFO -- : [d08c1beb-3d14-4088-bcd8-10d230cf9a5b]   Rendering tasks/index.html.erb within layouts/application
+D, [2020-12-25T04:55:43.877971 #29446] DEBUG -- : [d08c1beb-3d14-4088-bcd8-10d230cf9a5b]   [1m[36mTask Load (89.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+I, [2020-12-25T04:55:44.694107 #29446]  INFO -- : [d08c1beb-3d14-4088-bcd8-10d230cf9a5b]   Rendered tasks/index.html.erb within layouts/application (2707.5ms)
+I, [2020-12-25T04:55:44.700323 #29446]  INFO -- : [d08c1beb-3d14-4088-bcd8-10d230cf9a5b] Completed 200 OK in 2727ms (Views: 2716.5ms | ActiveRecord: 1369.7ms)
+I, [2020-12-25T12:18:09.430571 #4428]  INFO -- : [f2874453-66fd-446f-8e1c-6620f140a687] Started GET "/" for 127.0.0.1 at 2020-12-25 12:18:09 +0000
+I, [2020-12-25T12:18:09.436862 #4428]  INFO -- : [f2874453-66fd-446f-8e1c-6620f140a687] Processing by RestaurantsController#index as HTML
+I, [2020-12-25T12:18:09.449436 #4428]  INFO -- : [f2874453-66fd-446f-8e1c-6620f140a687]   Rendering restaurants/index.html.erb within layouts/application
+I, [2020-12-25T12:18:09.450420 #4428]  INFO -- : [f2874453-66fd-446f-8e1c-6620f140a687]   Rendered restaurants/index.html.erb within layouts/application (0.7ms)
+I, [2020-12-25T12:18:09.451800 #4428]  INFO -- : [f2874453-66fd-446f-8e1c-6620f140a687] Completed 200 OK in 14ms (Views: 4.3ms)
+I, [2020-12-25T12:18:15.827318 #4428]  INFO -- : [f46eaf7e-7bf2-43d3-bc6e-a35d6903853f] Started GET "/Sushi" for 127.0.0.1 at 2020-12-25 12:18:15 +0000
+I, [2020-12-25T12:18:15.828809 #4428]  INFO -- : [f46eaf7e-7bf2-43d3-bc6e-a35d6903853f] Processing by RestaurantsController#category as HTML
+I, [2020-12-25T12:18:15.828981 #4428]  INFO -- : [f46eaf7e-7bf2-43d3-bc6e-a35d6903853f]   Parameters: {"category"=>"Sushi"}
+I, [2020-12-25T12:18:17.424228 #4428]  INFO -- : [f46eaf7e-7bf2-43d3-bc6e-a35d6903853f]   Rendering restaurants/category.html.erb within layouts/application
+D, [2020-12-25T12:18:17.473543 #4428] DEBUG -- : [f46eaf7e-7bf2-43d3-bc6e-a35d6903853f]   [1m[36mRestaurant Load (47.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Sushi')[0m
+I, [2020-12-25T12:18:17.474741 #4428]  INFO -- : [f46eaf7e-7bf2-43d3-bc6e-a35d6903853f]   Rendered restaurants/category.html.erb within layouts/application (50.3ms)
+I, [2020-12-25T12:18:17.475105 #4428]  INFO -- : [f46eaf7e-7bf2-43d3-bc6e-a35d6903853f] Completed 500 Internal Server Error in 1646ms (ActiveRecord: 378.0ms)
+F, [2020-12-25T12:18:17.476216 #4428] FATAL -- : [f46eaf7e-7bf2-43d3-bc6e-a35d6903853f]   
+F, [2020-12-25T12:18:17.476300 #4428] FATAL -- : [f46eaf7e-7bf2-43d3-bc6e-a35d6903853f] ActionView::Template::Error (PG::UndefinedTable: ERROR:  relation "restaurants" does not exist
+LINE 1: SELECT "restaurants".* FROM "restaurants" WHERE (category = ...
+                                    ^
+: SELECT "restaurants".* FROM "restaurants" WHERE (category = 'Sushi')):
+F, [2020-12-25T12:18:17.476551 #4428] FATAL -- : [f46eaf7e-7bf2-43d3-bc6e-a35d6903853f]      7: 
+[f46eaf7e-7bf2-43d3-bc6e-a35d6903853f]      8: <section class="hero-section">
+[f46eaf7e-7bf2-43d3-bc6e-a35d6903853f]      9:   <div class="card-grid">
+[f46eaf7e-7bf2-43d3-bc6e-a35d6903853f]     10:     <% restaurants_by_category.each do |restaurant| %>
+[f46eaf7e-7bf2-43d3-bc6e-a35d6903853f]     11:     <a class="card" href="#">
+[f46eaf7e-7bf2-43d3-bc6e-a35d6903853f]     12:       <div class="card__background" style="background-image: url('https://image.freepik.com/free-photo/grunge-concrete-wall-dark-grey-color-texture-vintage-background_1484-2052.jpg')"></div>
+[f46eaf7e-7bf2-43d3-bc6e-a35d6903853f]     13:       <div class="card__content">
+F, [2020-12-25T12:18:17.476620 #4428] FATAL -- : [f46eaf7e-7bf2-43d3-bc6e-a35d6903853f]   
+F, [2020-12-25T12:18:17.476683 #4428] FATAL -- : [f46eaf7e-7bf2-43d3-bc6e-a35d6903853f] app/views/restaurants/category.html.erb:10:in `_app_views_restaurants_category_html_erb___2979060521733490871_46923747131740'
+[f46eaf7e-7bf2-43d3-bc6e-a35d6903853f] app/controllers/restaurants_controller.rb:31:in `category'
+I, [2020-12-25T12:18:20.910202 #4428]  INFO -- : [4098cf73-b2ea-42b6-b4c0-230598f3acb9] Started GET "/" for 127.0.0.1 at 2020-12-25 12:18:20 +0000
+I, [2020-12-25T12:18:20.911027 #4428]  INFO -- : [4098cf73-b2ea-42b6-b4c0-230598f3acb9] Processing by RestaurantsController#index as HTML
+I, [2020-12-25T12:18:20.913832 #4428]  INFO -- : [4098cf73-b2ea-42b6-b4c0-230598f3acb9]   Rendering restaurants/index.html.erb within layouts/application
+I, [2020-12-25T12:18:20.914262 #4428]  INFO -- : [4098cf73-b2ea-42b6-b4c0-230598f3acb9]   Rendered restaurants/index.html.erb within layouts/application (0.2ms)
+I, [2020-12-25T12:18:20.915429 #4428]  INFO -- : [4098cf73-b2ea-42b6-b4c0-230598f3acb9] Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+D, [2020-12-25T12:19:37.146855 #4671] DEBUG -- :   [1m[35m (49.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6817166200105519755)[0m
+D, [2020-12-25T12:19:37.490124 #4671] DEBUG -- :   [1m[35m (107.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+I, [2020-12-25T12:19:37.495196 #4671]  INFO -- : Migrating to AddRestaurants (20201225120517)
+D, [2020-12-25T12:19:37.548508 #4671] DEBUG -- :   [1m[35m (47.3ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:19:38.616635 #4671] DEBUG -- :   [1m[35m (1065.2ms)[0m  [1m[35mCREATE TABLE "restaurants" ("id" bigserial primary key, "name" character varying, "image_url" character varying, "category" character varying, "price_range" integer)[0m
+D, [2020-12-25T12:19:38.717985 #4671] DEBUG -- :   [1m[35mSQL (50.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201225120517"]]
+D, [2020-12-25T12:19:38.822936 #4671] DEBUG -- :   [1m[35m (104.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:19:39.077042 #4671] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (100.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2020-12-25T12:19:39.192227 #4671] DEBUG -- :   [1m[35m (46.4ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:19:39.242593 #4671] DEBUG -- :   [1m[35m (47.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:19:39.291287 #4671] DEBUG -- :   [1m[35m (47.8ms)[0m  [1m[34mSELECT pg_advisory_unlock(6817166200105519755)[0m
+I, [2020-12-25T12:19:55.830443 #4741]  INFO -- : [d69fccf8-9792-4a9e-84d8-618d0ca94b4a] Started GET "/" for 127.0.0.1 at 2020-12-25 12:19:55 +0000
+I, [2020-12-25T12:19:55.832466 #4741]  INFO -- : [d69fccf8-9792-4a9e-84d8-618d0ca94b4a] Processing by RestaurantsController#index as HTML
+I, [2020-12-25T12:19:55.841912 #4741]  INFO -- : [d69fccf8-9792-4a9e-84d8-618d0ca94b4a]   Rendering restaurants/index.html.erb within layouts/application
+I, [2020-12-25T12:19:55.843259 #4741]  INFO -- : [d69fccf8-9792-4a9e-84d8-618d0ca94b4a]   Rendered restaurants/index.html.erb within layouts/application (1.1ms)
+I, [2020-12-25T12:19:55.845409 #4741]  INFO -- : [d69fccf8-9792-4a9e-84d8-618d0ca94b4a] Completed 200 OK in 13ms (Views: 5.6ms)
+I, [2020-12-25T12:19:57.009559 #4741]  INFO -- : [5cb9a374-45b2-4a09-98ac-95816b767631] Started GET "/" for 127.0.0.1 at 2020-12-25 12:19:57 +0000
+I, [2020-12-25T12:19:57.010792 #4741]  INFO -- : [5cb9a374-45b2-4a09-98ac-95816b767631] Processing by RestaurantsController#index as HTML
+I, [2020-12-25T12:19:57.012262 #4741]  INFO -- : [5cb9a374-45b2-4a09-98ac-95816b767631]   Rendering restaurants/index.html.erb within layouts/application
+I, [2020-12-25T12:19:57.013130 #4741]  INFO -- : [5cb9a374-45b2-4a09-98ac-95816b767631]   Rendered restaurants/index.html.erb within layouts/application (0.4ms)
+I, [2020-12-25T12:19:57.014793 #4741]  INFO -- : [5cb9a374-45b2-4a09-98ac-95816b767631] Completed 200 OK in 4ms (Views: 3.0ms)
+I, [2020-12-25T12:19:58.937416 #4741]  INFO -- : [e3864261-34d5-40b2-9b41-af5ea859dae2] Started GET "/" for 127.0.0.1 at 2020-12-25 12:19:58 +0000
+I, [2020-12-25T12:19:58.939197 #4741]  INFO -- : [e3864261-34d5-40b2-9b41-af5ea859dae2] Processing by RestaurantsController#index as HTML
+I, [2020-12-25T12:19:58.941611 #4741]  INFO -- : [e3864261-34d5-40b2-9b41-af5ea859dae2]   Rendering restaurants/index.html.erb within layouts/application
+I, [2020-12-25T12:19:58.942467 #4741]  INFO -- : [e3864261-34d5-40b2-9b41-af5ea859dae2]   Rendered restaurants/index.html.erb within layouts/application (0.5ms)
+I, [2020-12-25T12:19:58.944598 #4741]  INFO -- : [e3864261-34d5-40b2-9b41-af5ea859dae2] Completed 200 OK in 5ms (Views: 3.6ms)
+I, [2020-12-25T12:19:59.926977 #4741]  INFO -- : [8b19f01d-bcc4-4545-bbbd-2e73bc8d3654] Started GET "/Italian" for 127.0.0.1 at 2020-12-25 12:19:59 +0000
+I, [2020-12-25T12:19:59.928279 #4741]  INFO -- : [8b19f01d-bcc4-4545-bbbd-2e73bc8d3654] Processing by RestaurantsController#category as HTML
+I, [2020-12-25T12:19:59.928416 #4741]  INFO -- : [8b19f01d-bcc4-4545-bbbd-2e73bc8d3654]   Parameters: {"category"=>"Italian"}
+I, [2020-12-25T12:20:01.214070 #4741]  INFO -- : [8b19f01d-bcc4-4545-bbbd-2e73bc8d3654]   Rendering restaurants/category.html.erb within layouts/application
+D, [2020-12-25T12:20:01.344287 #4741] DEBUG -- : [8b19f01d-bcc4-4545-bbbd-2e73bc8d3654]   [1m[36mRestaurant Load (127.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Italian')[0m
+I, [2020-12-25T12:20:01.562041 #4741]  INFO -- : [8b19f01d-bcc4-4545-bbbd-2e73bc8d3654]   Rendered restaurants/category.html.erb within layouts/application (347.5ms)
+I, [2020-12-25T12:20:01.564601 #4741]  INFO -- : [8b19f01d-bcc4-4545-bbbd-2e73bc8d3654] Completed 200 OK in 1636ms (Views: 11.2ms | ActiveRecord: 685.4ms)
+I, [2020-12-25T12:20:09.820476 #4741]  INFO -- : [4e68f80e-fd54-446d-bf26-d7a125304b57] Started GET "/Seafood" for 127.0.0.1 at 2020-12-25 12:20:09 +0000
+I, [2020-12-25T12:20:09.821808 #4741]  INFO -- : [4e68f80e-fd54-446d-bf26-d7a125304b57] Processing by RestaurantsController#category as HTML
+I, [2020-12-25T12:20:09.821945 #4741]  INFO -- : [4e68f80e-fd54-446d-bf26-d7a125304b57]   Parameters: {"category"=>"Seafood"}
+I, [2020-12-25T12:20:09.870495 #4741]  INFO -- : [4e68f80e-fd54-446d-bf26-d7a125304b57]   Rendering restaurants/category.html.erb within layouts/application
+D, [2020-12-25T12:20:09.919173 #4741] DEBUG -- : [4e68f80e-fd54-446d-bf26-d7a125304b57]   [1m[36mRestaurant Load (48.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Seafood')[0m
+I, [2020-12-25T12:20:09.919544 #4741]  INFO -- : [4e68f80e-fd54-446d-bf26-d7a125304b57]   Rendered restaurants/category.html.erb within layouts/application (48.9ms)
+I, [2020-12-25T12:20:09.920556 #4741]  INFO -- : [4e68f80e-fd54-446d-bf26-d7a125304b57] Completed 200 OK in 98ms (Views: 2.0ms | ActiveRecord: 48.2ms)
+I, [2020-12-25T12:20:13.459473 #4741]  INFO -- : [2c1d4408-7710-4fb4-95da-e169697918af] Started GET "/" for 127.0.0.1 at 2020-12-25 12:20:13 +0000
+I, [2020-12-25T12:20:13.460637 #4741]  INFO -- : [2c1d4408-7710-4fb4-95da-e169697918af] Processing by RestaurantsController#index as HTML
+I, [2020-12-25T12:20:13.461839 #4741]  INFO -- : [2c1d4408-7710-4fb4-95da-e169697918af]   Rendering restaurants/index.html.erb within layouts/application
+I, [2020-12-25T12:20:13.462192 #4741]  INFO -- : [2c1d4408-7710-4fb4-95da-e169697918af]   Rendered restaurants/index.html.erb within layouts/application (0.2ms)
+I, [2020-12-25T12:20:13.463095 #4741]  INFO -- : [2c1d4408-7710-4fb4-95da-e169697918af] Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+I, [2020-12-25T12:20:14.937906 #4741]  INFO -- : [2c0ef19c-c751-4f1e-bdf6-80326a503221] Started GET "/Icecream%20and%20sweets" for 127.0.0.1 at 2020-12-25 12:20:14 +0000
+I, [2020-12-25T12:20:14.939150 #4741]  INFO -- : [2c0ef19c-c751-4f1e-bdf6-80326a503221] Processing by RestaurantsController#category as HTML
+I, [2020-12-25T12:20:14.939287 #4741]  INFO -- : [2c0ef19c-c751-4f1e-bdf6-80326a503221]   Parameters: {"category"=>"Icecream and sweets"}
+I, [2020-12-25T12:20:14.986979 #4741]  INFO -- : [2c0ef19c-c751-4f1e-bdf6-80326a503221]   Rendering restaurants/category.html.erb within layouts/application
+D, [2020-12-25T12:20:15.037333 #4741] DEBUG -- : [2c0ef19c-c751-4f1e-bdf6-80326a503221]   [1m[36mRestaurant Load (49.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Icecream and sweets')[0m
+I, [2020-12-25T12:20:15.037647 #4741]  INFO -- : [2c0ef19c-c751-4f1e-bdf6-80326a503221]   Rendered restaurants/category.html.erb within layouts/application (50.5ms)
+I, [2020-12-25T12:20:15.038386 #4741]  INFO -- : [2c0ef19c-c751-4f1e-bdf6-80326a503221] Completed 200 OK in 99ms (Views: 2.1ms | ActiveRecord: 49.8ms)
+I, [2020-12-25T12:20:20.579434 #4741]  INFO -- : [68df1758-958a-4896-8dd7-ef7833b32bb5] Started GET "/Icecream%20and%20sweets" for 127.0.0.1 at 2020-12-25 12:20:20 +0000
+I, [2020-12-25T12:20:20.581046 #4741]  INFO -- : [68df1758-958a-4896-8dd7-ef7833b32bb5] Processing by RestaurantsController#category as HTML
+I, [2020-12-25T12:20:20.581937 #4741]  INFO -- : [68df1758-958a-4896-8dd7-ef7833b32bb5]   Parameters: {"category"=>"Icecream and sweets"}
+I, [2020-12-25T12:20:20.629860 #4741]  INFO -- : [68df1758-958a-4896-8dd7-ef7833b32bb5]   Rendering restaurants/category.html.erb within layouts/application
+D, [2020-12-25T12:20:20.679993 #4741] DEBUG -- : [68df1758-958a-4896-8dd7-ef7833b32bb5]   [1m[36mRestaurant Load (49.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Icecream and sweets')[0m
+I, [2020-12-25T12:20:20.680958 #4741]  INFO -- : [68df1758-958a-4896-8dd7-ef7833b32bb5]   Rendered restaurants/category.html.erb within layouts/application (50.6ms)
+I, [2020-12-25T12:20:20.684632 #4741]  INFO -- : [68df1758-958a-4896-8dd7-ef7833b32bb5] Completed 200 OK in 102ms (Views: 5.8ms | ActiveRecord: 49.1ms)
+I, [2020-12-25T12:23:21.336191 #5201]  INFO -- : [70e6d055-f64e-425b-be11-ec1d1c6900d8] Started GET "/" for 127.0.0.1 at 2020-12-25 12:23:21 +0000
+I, [2020-12-25T12:23:21.340866 #5201]  INFO -- : [70e6d055-f64e-425b-be11-ec1d1c6900d8] Processing by RestaurantsController#index as HTML
+I, [2020-12-25T12:23:21.361464 #5201]  INFO -- : [70e6d055-f64e-425b-be11-ec1d1c6900d8]   Rendering restaurants/index.html.erb within layouts/application
+I, [2020-12-25T12:23:21.367179 #5201]  INFO -- : [70e6d055-f64e-425b-be11-ec1d1c6900d8]   Rendered restaurants/index.html.erb within layouts/application (4.1ms)
+I, [2020-12-25T12:23:21.373137 #5201]  INFO -- : [70e6d055-f64e-425b-be11-ec1d1c6900d8] Completed 200 OK in 32ms (Views: 17.6ms)
+I, [2020-12-25T12:26:43.367548 #5201]  INFO -- : [ac694a84-10e5-43d7-aa6e-8cd444450fa1] Started GET "/" for 127.0.0.1 at 2020-12-25 12:26:43 +0000
+I, [2020-12-25T12:26:43.368938 #5201]  INFO -- : [ac694a84-10e5-43d7-aa6e-8cd444450fa1] Processing by RestaurantsController#index as HTML
+I, [2020-12-25T12:26:43.371264 #5201]  INFO -- : [ac694a84-10e5-43d7-aa6e-8cd444450fa1]   Rendering restaurants/index.html.erb within layouts/application
+I, [2020-12-25T12:26:43.372387 #5201]  INFO -- : [ac694a84-10e5-43d7-aa6e-8cd444450fa1]   Rendered restaurants/index.html.erb within layouts/application (0.7ms)
+I, [2020-12-25T12:26:43.375371 #5201]  INFO -- : [ac694a84-10e5-43d7-aa6e-8cd444450fa1] Completed 200 OK in 6ms (Views: 4.7ms)
+I, [2020-12-25T12:26:45.389999 #5201]  INFO -- : [5fac7e76-2525-44f7-9c75-8a80782307d7] Started GET "/" for 127.0.0.1 at 2020-12-25 12:26:45 +0000
+I, [2020-12-25T12:26:45.391598 #5201]  INFO -- : [5fac7e76-2525-44f7-9c75-8a80782307d7] Processing by RestaurantsController#index as HTML
+I, [2020-12-25T12:26:45.393372 #5201]  INFO -- : [5fac7e76-2525-44f7-9c75-8a80782307d7]   Rendering restaurants/index.html.erb within layouts/application
+I, [2020-12-25T12:26:45.393724 #5201]  INFO -- : [5fac7e76-2525-44f7-9c75-8a80782307d7]   Rendered restaurants/index.html.erb within layouts/application (0.2ms)
+I, [2020-12-25T12:26:45.394590 #5201]  INFO -- : [5fac7e76-2525-44f7-9c75-8a80782307d7] Completed 200 OK in 3ms (Views: 1.5ms)
+D, [2020-12-25T12:27:19.786477 #5663] DEBUG -- :   [1m[35m (127.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2020-12-25T12:27:20.070610 #5663] DEBUG -- :   [1m[35m (48.7ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:20.269743 #5663] DEBUG -- :   [1m[35mSQL (196.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category") VALUES ($1, $2) RETURNING "id"[0m  [["name", "Pizzas lux"], ["category", "italian"]]
+D, [2020-12-25T12:27:20.355863 #5663] DEBUG -- :   [1m[35m (84.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:20.405078 #5663] DEBUG -- :   [1m[35m (47.9ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:20.457808 #5663] DEBUG -- :   [1m[35mSQL (50.1ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category") VALUES ($1, $2) RETURNING "id"[0m  [["name", "Luca"], ["category", "italian"]]
+D, [2020-12-25T12:27:20.510926 #5663] DEBUG -- :   [1m[35m (51.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:20.559775 #5663] DEBUG -- :   [1m[35m (47.5ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:20.614219 #5663] DEBUG -- :   [1m[35mSQL (51.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category") VALUES ($1, $2) RETURNING "id"[0m  [["name", "Belalissa"], ["category", "italian"]]
+D, [2020-12-25T12:27:20.666580 #5663] DEBUG -- :   [1m[35m (50.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:20.715989 #5663] DEBUG -- :   [1m[35m (47.7ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:20.766816 #5663] DEBUG -- :   [1m[35mSQL (48.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category") VALUES ($1, $2) RETURNING "id"[0m  [["name", "Popolo"], ["category", "italian"]]
+D, [2020-12-25T12:27:20.820347 #5663] DEBUG -- :   [1m[35m (52.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:20.868890 #5663] DEBUG -- :   [1m[35m (47.4ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:20.920672 #5663] DEBUG -- :   [1m[35mSQL (50.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category") VALUES ($1, $2) RETURNING "id"[0m  [["name", "Este Oeste"], ["category", "italian"]]
+D, [2020-12-25T12:27:20.972127 #5663] DEBUG -- :   [1m[35m (50.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:21.021239 #5663] DEBUG -- :   [1m[35m (47.8ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:21.100561 #5663] DEBUG -- :   [1m[35mSQL (76.9ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Guilty"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+D, [2020-12-25T12:27:21.153170 #5663] DEBUG -- :   [1m[35m (51.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:21.202234 #5663] DEBUG -- :   [1m[35m (47.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:21.253882 #5663] DEBUG -- :   [1m[35mSQL (49.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pizzaria do bairro"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+D, [2020-12-25T12:27:21.306451 #5663] DEBUG -- :   [1m[35m (51.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:21.356536 #5663] DEBUG -- :   [1m[35m (48.5ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:21.408375 #5663] DEBUG -- :   [1m[35mSQL (49.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "La campania"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+D, [2020-12-25T12:27:21.465197 #5663] DEBUG -- :   [1m[35m (51.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:21.514915 #5663] DEBUG -- :   [1m[35m (47.9ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:21.568119 #5663] DEBUG -- :   [1m[35mSQL (48.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "La finestra"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+D, [2020-12-25T12:27:21.627484 #5663] DEBUG -- :   [1m[35m (58.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:21.680232 #5663] DEBUG -- :   [1m[35m (50.4ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:21.733593 #5663] DEBUG -- :   [1m[35mSQL (50.8ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Capriciosa"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+D, [2020-12-25T12:27:21.787127 #5663] DEBUG -- :   [1m[35m (52.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:21.841431 #5663] DEBUG -- :   [1m[35m (48.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:21.894684 #5663] DEBUG -- :   [1m[35mSQL (50.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Bellezza D'Italia II"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+D, [2020-12-25T12:27:21.947785 #5663] DEBUG -- :   [1m[35m (51.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:22.000787 #5663] DEBUG -- :   [1m[35m (47.9ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:22.054240 #5663] DEBUG -- :   [1m[35mSQL (50.9ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Zero Zero"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+D, [2020-12-25T12:27:22.106503 #5663] DEBUG -- :   [1m[35m (51.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:22.159980 #5663] DEBUG -- :   [1m[35m (47.8ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:22.211327 #5663] DEBUG -- :   [1m[35mSQL (48.7ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "La trattoria"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+D, [2020-12-25T12:27:22.266555 #5663] DEBUG -- :   [1m[35m (53.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:22.320733 #5663] DEBUG -- :   [1m[35m (47.2ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:22.371802 #5663] DEBUG -- :   [1m[35mSQL (48.8ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Madpizza (Healthy pizzas)"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+D, [2020-12-25T12:27:22.424652 #5663] DEBUG -- :   [1m[35m (51.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:22.478897 #5663] DEBUG -- :   [1m[35m (52.7ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:22.530446 #5663] DEBUG -- :   [1m[35mSQL (48.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Osteria cucina di amici"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+D, [2020-12-25T12:27:22.583191 #5663] DEBUG -- :   [1m[35m (51.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:22.633907 #5663] DEBUG -- :   [1m[35m (49.3ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:22.688005 #5663] DEBUG -- :   [1m[35mSQL (47.7ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Mercantina"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+D, [2020-12-25T12:27:22.745327 #5663] DEBUG -- :   [1m[35m (56.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:22.795086 #5663] DEBUG -- :   [1m[35m (47.8ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:22.849672 #5663] DEBUG -- :   [1m[35mSQL (48.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Di casa"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+D, [2020-12-25T12:27:22.903411 #5663] DEBUG -- :   [1m[35m (52.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:22.952350 #5663] DEBUG -- :   [1m[35m (47.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:23.006789 #5663] DEBUG -- :   [1m[35mSQL (48.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Luzzo"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+D, [2020-12-25T12:27:23.061505 #5663] DEBUG -- :   [1m[35m (53.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:23.111288 #5663] DEBUG -- :   [1m[35m (48.2ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:23.163449 #5663] DEBUG -- :   [1m[35mSQL (49.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Máfia das pizzas (Cacilhas)"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+D, [2020-12-25T12:27:23.221067 #5663] DEBUG -- :   [1m[35m (52.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:23.269289 #5663] DEBUG -- :   [1m[35m (47.0ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:23.318815 #5663] DEBUG -- :   [1m[35mSQL (48.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pasta non basta"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+D, [2020-12-25T12:27:23.376062 #5663] DEBUG -- :   [1m[35m (52.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:23.424821 #5663] DEBUG -- :   [1m[35m (47.3ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:23.476783 #5663] DEBUG -- :   [1m[35mSQL (49.1ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Come prima"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+D, [2020-12-25T12:27:23.534019 #5663] DEBUG -- :   [1m[35m (51.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:23.582889 #5663] DEBUG -- :   [1m[35m (47.5ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:23.632052 #5663] DEBUG -- :   [1m[35mSQL (47.9ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Maritaca (Campo de Ourique; delivery)"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+D, [2020-12-25T12:27:23.684593 #5663] DEBUG -- :   [1m[35m (51.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:23.736617 #5663] DEBUG -- :   [1m[35m (47.0ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:23.785715 #5663] DEBUG -- :   [1m[35mSQL (47.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Otto"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+D, [2020-12-25T12:27:23.839137 #5663] DEBUG -- :   [1m[35m (52.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:23.894616 #5663] DEBUG -- :   [1m[35m (49.9ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:23.946295 #5663] DEBUG -- :   [1m[35mSQL (48.8ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Casa Al Parma"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+D, [2020-12-25T12:27:24.001035 #5663] DEBUG -- :   [1m[35m (53.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:24.050692 #5663] DEBUG -- :   [1m[35m (48.0ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:24.105272 #5663] DEBUG -- :   [1m[35mSQL (48.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "II Matriciano"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+D, [2020-12-25T12:27:24.161956 #5663] DEBUG -- :   [1m[35m (55.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:24.211658 #5663] DEBUG -- :   [1m[35m (48.0ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:24.265190 #5663] DEBUG -- :   [1m[35mSQL (47.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Polpetta - Almondegaria artesanal"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+D, [2020-12-25T12:27:24.321160 #5663] DEBUG -- :   [1m[35m (54.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:24.371325 #5663] DEBUG -- :   [1m[35m (48.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:24.424544 #5663] DEBUG -- :   [1m[35mSQL (47.8ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Este Oeste"], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+D, [2020-12-25T12:27:24.477632 #5663] DEBUG -- :   [1m[35m (51.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:24.526612 #5663] DEBUG -- :   [1m[35m (47.5ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:24.577107 #5663] DEBUG -- :   [1m[35mSQL (48.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Cantina baldraca "], ["image_url", "zzzzzzz"], ["category", "Italian"], ["price_range", 1]]
+D, [2020-12-25T12:27:24.631062 #5663] DEBUG -- :   [1m[35m (52.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:24.683370 #5663] DEBUG -- :   [1m[35m (47.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:24.733129 #5663] DEBUG -- :   [1m[35mSQL (47.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Honorato"], ["image_url", "zzzzzzz"], ["category", "Hamburgers"], ["price_range", 1]]
+D, [2020-12-25T12:27:24.786925 #5663] DEBUG -- :   [1m[35m (52.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:24.837769 #5663] DEBUG -- :   [1m[35m (49.3ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:24.891488 #5663] DEBUG -- :   [1m[35mSQL (47.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Ground burguer"], ["image_url", "zzzzzzz"], ["category", "Hamburgers"], ["price_range", 1]]
+D, [2020-12-25T12:27:24.944890 #5663] DEBUG -- :   [1m[35m (51.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:24.994037 #5663] DEBUG -- :   [1m[35m (47.7ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:25.050439 #5663] DEBUG -- :   [1m[35mSQL (52.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Buns"], ["image_url", "zzzzzzz"], ["category", "Hamburgers"], ["price_range", 1]]
+D, [2020-12-25T12:27:25.102483 #5663] DEBUG -- :   [1m[35m (50.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:25.152073 #5663] DEBUG -- :   [1m[35m (47.7ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:25.206469 #5663] DEBUG -- :   [1m[35mSQL (48.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "A-100"], ["image_url", "zzzzzzz"], ["category", "Hamburgers"], ["price_range", 1]]
+D, [2020-12-25T12:27:25.260320 #5663] DEBUG -- :   [1m[35m (52.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:25.310531 #5663] DEBUG -- :   [1m[35m (48.8ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:25.361485 #5663] DEBUG -- :   [1m[35mSQL (48.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "To-b"], ["image_url", "zzzzzzz"], ["category", "Hamburgers"], ["price_range", 1]]
+D, [2020-12-25T12:27:25.415353 #5663] DEBUG -- :   [1m[35m (50.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:25.462107 #5663] DEBUG -- :   [1m[35m (46.2ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:25.510451 #5663] DEBUG -- :   [1m[35mSQL (47.1ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Hamburgaria do Bairro "], ["image_url", "zzzzzzz"], ["category", "Hamburgers"], ["price_range", 1]]
+D, [2020-12-25T12:27:25.563963 #5663] DEBUG -- :   [1m[35m (52.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:25.616975 #5663] DEBUG -- :   [1m[35m (48.8ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:25.671796 #5663] DEBUG -- :   [1m[35mSQL (52.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "McDonalds "], ["image_url", "zzzzzzz"], ["category", "Hamburgers"], ["price_range", 1]]
+D, [2020-12-25T12:27:25.724624 #5663] DEBUG -- :   [1m[35m (51.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:25.774788 #5663] DEBUG -- :   [1m[35m (48.7ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:25.831141 #5663] DEBUG -- :   [1m[35mSQL (49.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Café do Rio (gourmet)"], ["image_url", "zzzzzzz"], ["category", "Hamburgers"], ["price_range", 1]]
+D, [2020-12-25T12:27:25.882983 #5663] DEBUG -- :   [1m[35m (50.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:25.931601 #5663] DEBUG -- :   [1m[35m (46.9ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:25.987142 #5663] DEBUG -- :   [1m[35mSQL (48.8ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "B Perfect "], ["image_url", "zzzzzzz"], ["category", "Hamburgers"], ["price_range", 1]]
+D, [2020-12-25T12:27:26.040602 #5663] DEBUG -- :   [1m[35m (52.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:26.089614 #5663] DEBUG -- :   [1m[35m (47.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:26.144106 #5663] DEBUG -- :   [1m[35mSQL (47.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "The B Temple"], ["image_url", "zzzzzzz"], ["category", "Hamburgers"], ["price_range", 1]]
+D, [2020-12-25T12:27:26.196614 #5663] DEBUG -- :   [1m[35m (51.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:26.246840 #5663] DEBUG -- :   [1m[35m (48.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:26.297794 #5663] DEBUG -- :   [1m[35mSQL (48.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Hã"], ["image_url", "zzzzzzz"], ["category", "Hamburgers"], ["price_range", 1]]
+D, [2020-12-25T12:27:26.350752 #5663] DEBUG -- :   [1m[35m (51.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:26.403803 #5663] DEBUG -- :   [1m[35m (47.5ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:26.453729 #5663] DEBUG -- :   [1m[35mSQL (47.7ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Sushisan"], ["image_url", "zzzzzzz"], ["category", "Sushi"], ["price_range", 1]]
+D, [2020-12-25T12:27:26.506263 #5663] DEBUG -- :   [1m[35m (51.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:26.556234 #5663] DEBUG -- :   [1m[35m (48.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:26.614767 #5663] DEBUG -- :   [1m[35mSQL (51.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Suntory"], ["image_url", "zzzzzzz"], ["category", "Sushi"], ["price_range", 1]]
+D, [2020-12-25T12:27:26.670007 #5663] DEBUG -- :   [1m[35m (53.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:26.719759 #5663] DEBUG -- :   [1m[35m (48.0ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:26.771020 #5663] DEBUG -- :   [1m[35mSQL (48.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Aron sushi"], ["image_url", "zzzzzzz"], ["category", "Sushi"], ["price_range", 1]]
+D, [2020-12-25T12:27:26.826526 #5663] DEBUG -- :   [1m[35m (50.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:26.875725 #5663] DEBUG -- :   [1m[35m (47.5ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:26.930721 #5663] DEBUG -- :   [1m[35mSQL (52.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Rabo de peixe"], ["image_url", "zzzzzzz"], ["category", "Sushi"], ["price_range", 1]]
+D, [2020-12-25T12:27:26.983400 #5663] DEBUG -- :   [1m[35m (51.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:27.032039 #5663] DEBUG -- :   [1m[35m (46.3ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:27.081799 #5663] DEBUG -- :   [1m[35mSQL (47.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Sea me"], ["image_url", "zzzzzzz"], ["category", "Sushi"], ["price_range", 1]]
+D, [2020-12-25T12:27:27.134530 #5663] DEBUG -- :   [1m[35m (51.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:27.189009 #5663] DEBUG -- :   [1m[35m (53.0ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:27.241418 #5663] DEBUG -- :   [1m[35mSQL (48.9ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Sushi factory"], ["image_url", "zzzzzzz"], ["category", "Sushi"], ["price_range", 1]]
+D, [2020-12-25T12:27:27.293510 #5663] DEBUG -- :   [1m[35m (50.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:27.341705 #5663] DEBUG -- :   [1m[35m (47.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:27.391401 #5663] DEBUG -- :   [1m[35mSQL (47.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Confraria "], ["image_url", "zzzzzzz"], ["category", "Sushi"], ["price_range", 1]]
+D, [2020-12-25T12:27:27.447786 #5663] DEBUG -- :   [1m[35m (50.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:27.496368 #5663] DEBUG -- :   [1m[35m (47.2ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:27.546061 #5663] DEBUG -- :   [1m[35mSQL (47.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Miss jappa"], ["image_url", "zzzzzzz"], ["category", "Sushi"], ["price_range", 1]]
+D, [2020-12-25T12:27:27.598278 #5663] DEBUG -- :   [1m[35m (51.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:27.651274 #5663] DEBUG -- :   [1m[35m (47.8ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:27.701362 #5663] DEBUG -- :   [1m[35mSQL (47.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Yakuza"], ["image_url", "zzzzzzz"], ["category", "Sushi"], ["price_range", 1]]
+D, [2020-12-25T12:27:27.754062 #5663] DEBUG -- :   [1m[35m (51.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:27.807438 #5663] DEBUG -- :   [1m[35m (51.8ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:27.863234 #5663] DEBUG -- :   [1m[35mSQL (48.7ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Sushic "], ["image_url", "zzzzzzz"], ["category", "Sushi"], ["price_range", 1]]
+D, [2020-12-25T12:27:27.916495 #5663] DEBUG -- :   [1m[35m (52.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:27.965113 #5663] DEBUG -- :   [1m[35m (47.2ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:28.018634 #5663] DEBUG -- :   [1m[35mSQL (48.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Noori "], ["image_url", "zzzzzzz"], ["category", "Sushi"], ["price_range", 1]]
+D, [2020-12-25T12:27:28.071716 #5663] DEBUG -- :   [1m[35m (51.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:28.120945 #5663] DEBUG -- :   [1m[35m (47.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:28.178994 #5663] DEBUG -- :   [1m[35mSQL (53.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Kiuuby"], ["image_url", "zzzzzzz"], ["category", "Sushi"], ["price_range", 1]]
+D, [2020-12-25T12:27:28.233640 #5663] DEBUG -- :   [1m[35m (53.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:28.284432 #5663] DEBUG -- :   [1m[35m (49.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:28.336920 #5663] DEBUG -- :   [1m[35mSQL (49.8ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Nómada "], ["image_url", "zzzzzzz"], ["category", "Sushi"], ["price_range", 1]]
+D, [2020-12-25T12:27:28.391315 #5663] DEBUG -- :   [1m[35m (51.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:28.439978 #5663] DEBUG -- :   [1m[35m (47.2ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:28.489891 #5663] DEBUG -- :   [1m[35mSQL (47.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Chirashi Sushi (bowls;Telheiras)"], ["image_url", "zzzzzzz"], ["category", "Sushi"], ["price_range", 1]]
+D, [2020-12-25T12:27:28.543937 #5663] DEBUG -- :   [1m[35m (52.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:28.595546 #5663] DEBUG -- :   [1m[35m (47.2ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:28.673392 #5663] DEBUG -- :   [1m[35mSQL (50.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Sushi Café "], ["image_url", "zzzzzzz"], ["category", "Sushi"], ["price_range", 1]]
+D, [2020-12-25T12:27:28.727394 #5663] DEBUG -- :   [1m[35m (52.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:28.775768 #5663] DEBUG -- :   [1m[35m (47.4ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:28.827571 #5663] DEBUG -- :   [1m[35mSQL (49.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "SOI"], ["image_url", "zzzzzzz"], ["category", "Asian"], ["price_range", 1]]
+D, [2020-12-25T12:27:28.881360 #5663] DEBUG -- :   [1m[35m (52.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:28.931005 #5663] DEBUG -- :   [1m[35m (47.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:28.980841 #5663] DEBUG -- :   [1m[35mSQL (47.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "O Asiático"], ["image_url", "zzzzzzz"], ["category", "Asian"], ["price_range", 1]]
+D, [2020-12-25T12:27:29.034190 #5663] DEBUG -- :   [1m[35m (51.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:29.083307 #5663] DEBUG -- :   [1m[35m (47.7ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:29.134389 #5663] DEBUG -- :   [1m[35mSQL (47.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "BOA BAO"], ["image_url", "zzzzzzz"], ["category", "Asian"], ["price_range", 1]]
+D, [2020-12-25T12:27:29.188128 #5663] DEBUG -- :   [1m[35m (52.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:29.236135 #5663] DEBUG -- :   [1m[35m (46.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:29.284181 #5663] DEBUG -- :   [1m[35mSQL (46.9ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Tasquinha dim sum"], ["image_url", "zzzzzzz"], ["category", "Asian"], ["price_range", 1]]
+D, [2020-12-25T12:27:29.335546 #5663] DEBUG -- :   [1m[35m (50.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:29.383679 #5663] DEBUG -- :   [1m[35m (46.8ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:29.434529 #5663] DEBUG -- :   [1m[35mSQL (48.1ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Siam Square (tailandês)"], ["image_url", "zzzzzzz"], ["category", "Asian"], ["price_range", 1]]
+D, [2020-12-25T12:27:29.486171 #5663] DEBUG -- :   [1m[35m (50.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:29.533668 #5663] DEBUG -- :   [1m[35m (46.3ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:29.583751 #5663] DEBUG -- :   [1m[35mSQL (48.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pho-Pu (Vietnamita)"], ["image_url", "zzzzzzz"], ["category", "Asian"], ["price_range", 1]]
+D, [2020-12-25T12:27:29.636578 #5663] DEBUG -- :   [1m[35m (51.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:29.683333 #5663] DEBUG -- :   [1m[35m (46.2ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:29.734081 #5663] DEBUG -- :   [1m[35mSQL (49.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Este Oeste"], ["image_url", "zzzzzzz"], ["category", "Asian"], ["price_range", 1]]
+D, [2020-12-25T12:27:29.790352 #5663] DEBUG -- :   [1m[35m (55.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:29.839073 #5663] DEBUG -- :   [1m[35m (47.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:29.889627 #5663] DEBUG -- :   [1m[35mSQL (47.8ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Chutnify Lisbon"], ["image_url", "zzzzzzz"], ["category", "Indian"], ["price_range", 1]]
+D, [2020-12-25T12:27:29.946734 #5663] DEBUG -- :   [1m[35m (55.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:29.995531 #5663] DEBUG -- :   [1m[35m (47.0ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:30.045426 #5663] DEBUG -- :   [1m[35mSQL (47.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Indiano de telheiras"], ["image_url", "zzzzzzz"], ["category", "Indian"], ["price_range", 1]]
+D, [2020-12-25T12:27:30.098574 #5663] DEBUG -- :   [1m[35m (51.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:30.148370 #5663] DEBUG -- :   [1m[35m (48.2ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:30.199064 #5663] DEBUG -- :   [1m[35mSQL (47.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Indiano de alvalade"], ["image_url", "zzzzzzz"], ["category", "Indian"], ["price_range", 1]]
+D, [2020-12-25T12:27:30.253104 #5663] DEBUG -- :   [1m[35m (52.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:30.302474 #5663] DEBUG -- :   [1m[35m (47.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:30.353732 #5663] DEBUG -- :   [1m[35mSQL (48.7ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Índia gate (Chiado)"], ["image_url", "zzzzzzz"], ["category", "Indian"], ["price_range", 1]]
+D, [2020-12-25T12:27:30.407270 #5663] DEBUG -- :   [1m[35m (52.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:30.456404 #5663] DEBUG -- :   [1m[35m (47.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:30.506856 #5663] DEBUG -- :   [1m[35mSQL (48.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Rabo de peixe"], ["image_url", "zzzzzzz"], ["category", "Seafood"], ["price_range", 1]]
+D, [2020-12-25T12:27:30.559182 #5663] DEBUG -- :   [1m[35m (51.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:30.606624 #5663] DEBUG -- :   [1m[35m (46.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:30.657094 #5663] DEBUG -- :   [1m[35mSQL (48.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Monte mar"], ["image_url", "zzzzzzz"], ["category", "Seafood"], ["price_range", 1]]
+D, [2020-12-25T12:27:30.712873 #5663] DEBUG -- :   [1m[35m (54.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:30.762889 #5663] DEBUG -- :   [1m[35m (48.3ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:30.814105 #5663] DEBUG -- :   [1m[35mSQL (48.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Sea me"], ["image_url", "zzzzzzz"], ["category", "Seafood"], ["price_range", 1]]
+D, [2020-12-25T12:27:30.866802 #5663] DEBUG -- :   [1m[35m (51.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:30.916148 #5663] DEBUG -- :   [1m[35m (47.8ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:30.966549 #5663] DEBUG -- :   [1m[35mSQL (47.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Tasca da esquina"], ["image_url", "zzzzzzz"], ["category", "Seafood"], ["price_range", 1]]
+D, [2020-12-25T12:27:31.020516 #5663] DEBUG -- :   [1m[35m (52.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:31.069717 #5663] DEBUG -- :   [1m[35m (47.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:31.120498 #5663] DEBUG -- :   [1m[35mSQL (47.9ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pinóquio "], ["image_url", "zzzzzzz"], ["category", "Seafood"], ["price_range", 1]]
+D, [2020-12-25T12:27:31.173062 #5663] DEBUG -- :   [1m[35m (51.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:31.223325 #5663] DEBUG -- :   [1m[35m (48.5ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:31.273669 #5663] DEBUG -- :   [1m[35mSQL (47.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "tico tico "], ["image_url", "zzzzzzz"], ["category", "Seafood"], ["price_range", 1]]
+D, [2020-12-25T12:27:31.326595 #5663] DEBUG -- :   [1m[35m (51.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:31.376284 #5663] DEBUG -- :   [1m[35m (48.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:31.427313 #5663] DEBUG -- :   [1m[35mSQL (48.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Ramiro "], ["image_url", "zzzzzzz"], ["category", "Seafood"], ["price_range", 1]]
+D, [2020-12-25T12:27:31.479379 #5663] DEBUG -- :   [1m[35m (50.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:31.530102 #5663] DEBUG -- :   [1m[35m (48.8ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:31.580622 #5663] DEBUG -- :   [1m[35mSQL (47.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Moules & beer"], ["image_url", "zzzzzzz"], ["category", "Seafood"], ["price_range", 1]]
+D, [2020-12-25T12:27:31.633007 #5663] DEBUG -- :   [1m[35m (51.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:31.680729 #5663] DEBUG -- :   [1m[35m (46.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:31.728425 #5663] DEBUG -- :   [1m[35mSQL (46.7ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Peixaria da esquina"], ["image_url", "zzzzzzz"], ["category", "Seafood"], ["price_range", 1]]
+D, [2020-12-25T12:27:31.779679 #5663] DEBUG -- :   [1m[35m (50.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:31.829112 #5663] DEBUG -- :   [1m[35m (47.7ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:31.880199 #5663] DEBUG -- :   [1m[35mSQL (48.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Doc Cod "], ["image_url", "zzzzzzz"], ["category", "Seafood"], ["price_range", 1]]
+D, [2020-12-25T12:27:31.933286 #5663] DEBUG -- :   [1m[35m (52.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:31.980279 #5663] DEBUG -- :   [1m[35m (46.4ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:32.028277 #5663] DEBUG -- :   [1m[35mSQL (47.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pesqueiro 25 (marisco;grupos)"], ["image_url", "zzzzzzz"], ["category", "Seafood"], ["price_range", 1]]
+D, [2020-12-25T12:27:32.081504 #5663] DEBUG -- :   [1m[35m (52.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:32.127840 #5663] DEBUG -- :   [1m[35m (45.8ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:32.175286 #5663] DEBUG -- :   [1m[35mSQL (46.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pesca"], ["image_url", "zzzzzzz"], ["category", "Seafood"], ["price_range", 1]]
+D, [2020-12-25T12:27:32.227547 #5663] DEBUG -- :   [1m[35m (51.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:32.275898 #5663] DEBUG -- :   [1m[35m (47.9ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:32.323411 #5663] DEBUG -- :   [1m[35mSQL (46.9ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Cachorraria"], ["image_url", "zzzzzzz"], ["category", "Hotdogs"], ["price_range", 1]]
+D, [2020-12-25T12:27:32.375344 #5663] DEBUG -- :   [1m[35m (51.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:32.421537 #5663] DEBUG -- :   [1m[35m (45.7ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:32.469082 #5663] DEBUG -- :   [1m[35mSQL (46.7ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Frankie"], ["image_url", "zzzzzzz"], ["category", "Hotdogs"], ["price_range", 1]]
+D, [2020-12-25T12:27:32.519351 #5663] DEBUG -- :   [1m[35m (49.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:32.566423 #5663] DEBUG -- :   [1m[35m (46.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:32.630831 #5663] DEBUG -- :   [1m[35mSQL (63.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "100 montaditos"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+D, [2020-12-25T12:27:32.696268 #5663] DEBUG -- :   [1m[35m (65.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:32.796616 #5663] DEBUG -- :   [1m[35m (99.9ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:32.878966 #5663] DEBUG -- :   [1m[35mSQL (81.7ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Topo"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+D, [2020-12-25T12:27:32.965947 #5663] DEBUG -- :   [1m[35m (86.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:33.018302 #5663] DEBUG -- :   [1m[35m (51.9ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:33.086637 #5663] DEBUG -- :   [1m[35mSQL (67.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Cervejaria da esquina"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+D, [2020-12-25T12:27:33.164917 #5663] DEBUG -- :   [1m[35m (77.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:33.231194 #5663] DEBUG -- :   [1m[35m (65.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:33.297966 #5663] DEBUG -- :   [1m[35mSQL (66.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Tapas bar "], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+D, [2020-12-25T12:27:33.373076 #5663] DEBUG -- :   [1m[35m (74.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:33.441674 #5663] DEBUG -- :   [1m[35m (68.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:33.509622 #5663] DEBUG -- :   [1m[35mSQL (67.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Rubro"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+D, [2020-12-25T12:27:33.591092 #5663] DEBUG -- :   [1m[35m (80.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:33.646807 #5663] DEBUG -- :   [1m[35m (55.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:33.693814 #5663] DEBUG -- :   [1m[35mSQL (46.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Boteco do largo"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+D, [2020-12-25T12:27:33.745833 #5663] DEBUG -- :   [1m[35m (51.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:33.792301 #5663] DEBUG -- :   [1m[35m (45.9ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:33.840951 #5663] DEBUG -- :   [1m[35mSQL (48.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Masstige"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+D, [2020-12-25T12:27:33.892008 #5663] DEBUG -- :   [1m[35m (50.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:33.938795 #5663] DEBUG -- :   [1m[35m (46.4ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:33.985651 #5663] DEBUG -- :   [1m[35mSQL (46.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Mesa do bairro"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+D, [2020-12-25T12:27:34.037791 #5663] DEBUG -- :   [1m[35m (51.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:34.083916 #5663] DEBUG -- :   [1m[35m (45.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:34.131703 #5663] DEBUG -- :   [1m[35mSQL (46.9ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "By the wine"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+D, [2020-12-25T12:27:34.182162 #5663] DEBUG -- :   [1m[35m (50.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:34.228473 #5663] DEBUG -- :   [1m[35m (45.9ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:34.276065 #5663] DEBUG -- :   [1m[35mSQL (46.8ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pharmacia "], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+D, [2020-12-25T12:27:34.331036 #5663] DEBUG -- :   [1m[35m (54.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:34.381477 #5663] DEBUG -- :   [1m[35m (50.0ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:34.428265 #5663] DEBUG -- :   [1m[35mSQL (46.1ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Matateu"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+D, [2020-12-25T12:27:34.479649 #5663] DEBUG -- :   [1m[35m (51.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:34.527812 #5663] DEBUG -- :   [1m[35m (47.7ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:34.574610 #5663] DEBUG -- :   [1m[35mSQL (45.9ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pateo do petisco (Cascais)"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+D, [2020-12-25T12:27:34.628940 #5663] DEBUG -- :   [1m[35m (53.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:34.675987 #5663] DEBUG -- :   [1m[35m (46.5ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:34.726683 #5663] DEBUG -- :   [1m[35mSQL (49.9ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Luzboa "], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+D, [2020-12-25T12:27:34.776780 #5663] DEBUG -- :   [1m[35m (49.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:34.824465 #5663] DEBUG -- :   [1m[35m (47.2ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:34.872272 #5663] DEBUG -- :   [1m[35mSQL (47.1ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Água pela Barba"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+D, [2020-12-25T12:27:34.924199 #5663] DEBUG -- :   [1m[35m (51.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:34.970725 #5663] DEBUG -- :   [1m[35m (46.0ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:35.020561 #5663] DEBUG -- :   [1m[35mSQL (49.1ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Tapisco"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+D, [2020-12-25T12:27:35.072036 #5663] DEBUG -- :   [1m[35m (51.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:35.119876 #5663] DEBUG -- :   [1m[35m (47.3ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:35.166922 #5663] DEBUG -- :   [1m[35mSQL (46.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Bairro do Avillez - Taberna"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+D, [2020-12-25T12:27:35.217263 #5663] DEBUG -- :   [1m[35m (50.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:35.263807 #5663] DEBUG -- :   [1m[35m (46.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:35.311910 #5663] DEBUG -- :   [1m[35mSQL (47.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Mini Bar"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+D, [2020-12-25T12:27:35.364554 #5663] DEBUG -- :   [1m[35m (52.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:35.410474 #5663] DEBUG -- :   [1m[35m (45.5ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:35.458669 #5663] DEBUG -- :   [1m[35mSQL (47.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Madame petisca"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+D, [2020-12-25T12:27:35.508746 #5663] DEBUG -- :   [1m[35m (49.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:35.556074 #5663] DEBUG -- :   [1m[35m (46.9ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:35.606955 #5663] DEBUG -- :   [1m[35mSQL (50.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Vinhos e petiscos (costa)"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+D, [2020-12-25T12:27:35.657346 #5663] DEBUG -- :   [1m[35m (50.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:35.706439 #5663] DEBUG -- :   [1m[35m (48.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:35.754610 #5663] DEBUG -- :   [1m[35mSQL (47.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Boteco do largo (jantares grupo)"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+D, [2020-12-25T12:27:35.816872 #5663] DEBUG -- :   [1m[35m (61.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:35.864724 #5663] DEBUG -- :   [1m[35m (47.4ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:35.912700 #5663] DEBUG -- :   [1m[35mSQL (47.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Largo ao Tacho (fado as quartas)"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+D, [2020-12-25T12:27:35.962288 #5663] DEBUG -- :   [1m[35m (49.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:36.013231 #5663] DEBUG -- :   [1m[35m (50.3ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:36.061852 #5663] DEBUG -- :   [1m[35mSQL (47.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Maria azeitona (Amadora)"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+D, [2020-12-25T12:27:36.113274 #5663] DEBUG -- :   [1m[35m (51.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:36.160075 #5663] DEBUG -- :   [1m[35m (46.2ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:36.210440 #5663] DEBUG -- :   [1m[35mSQL (49.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Travessia Bar (Cacilhas)"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+D, [2020-12-25T12:27:36.261857 #5663] DEBUG -- :   [1m[35m (50.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:36.310291 #5663] DEBUG -- :   [1m[35m (47.3ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:36.361400 #5663] DEBUG -- :   [1m[35mSQL (48.9ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "NANA petiscos (Charnecas)"], ["image_url", "zzzzzzz"], ["category", "Tapas & snacks"], ["price_range", 1]]
+D, [2020-12-25T12:27:36.412607 #5663] DEBUG -- :   [1m[35m (50.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:36.461732 #5663] DEBUG -- :   [1m[35m (47.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:36.512494 #5663] DEBUG -- :   [1m[35mSQL (48.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Atalho Real"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+D, [2020-12-25T12:27:36.564322 #5663] DEBUG -- :   [1m[35m (50.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:36.613670 #5663] DEBUG -- :   [1m[35m (48.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:36.662081 #5663] DEBUG -- :   [1m[35mSQL (46.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Cafe império"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+D, [2020-12-25T12:27:36.717771 #5663] DEBUG -- :   [1m[35m (55.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:36.764492 #5663] DEBUG -- :   [1m[35m (46.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:36.814345 #5663] DEBUG -- :   [1m[35mSQL (47.8ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Cafe de Sao bento"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+D, [2020-12-25T12:27:36.866736 #5663] DEBUG -- :   [1m[35m (51.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:36.916050 #5663] DEBUG -- :   [1m[35m (47.9ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:36.967531 #5663] DEBUG -- :   [1m[35mSQL (49.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Grelhados alcantara"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+D, [2020-12-25T12:27:37.019500 #5663] DEBUG -- :   [1m[35m (51.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:37.068613 #5663] DEBUG -- :   [1m[35m (48.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:37.118877 #5663] DEBUG -- :   [1m[35mSQL (48.1ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "XL"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+D, [2020-12-25T12:27:37.173283 #5663] DEBUG -- :   [1m[35m (53.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:37.221026 #5663] DEBUG -- :   [1m[35m (46.5ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:37.271079 #5663] DEBUG -- :   [1m[35mSQL (47.9ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Dote"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+D, [2020-12-25T12:27:37.331157 #5663] DEBUG -- :   [1m[35m (58.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:37.380179 #5663] DEBUG -- :   [1m[35m (47.3ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:37.472183 #5663] DEBUG -- :   [1m[35mSQL (90.7ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pito do bairro"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+D, [2020-12-25T12:27:37.525653 #5663] DEBUG -- :   [1m[35m (52.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:37.574817 #5663] DEBUG -- :   [1m[35m (47.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:37.623707 #5663] DEBUG -- :   [1m[35mSQL (47.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Brasserie"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+D, [2020-12-25T12:27:37.682343 #5663] DEBUG -- :   [1m[35m (57.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:37.730940 #5663] DEBUG -- :   [1m[35m (46.7ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:37.780818 #5663] DEBUG -- :   [1m[35mSQL (47.8ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "O fondue"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+D, [2020-12-25T12:27:37.832718 #5663] DEBUG -- :   [1m[35m (50.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:37.881406 #5663] DEBUG -- :   [1m[35m (47.3ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:37.931104 #5663] DEBUG -- :   [1m[35mSQL (47.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Terrazza"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+D, [2020-12-25T12:27:37.983641 #5663] DEBUG -- :   [1m[35m (51.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:38.032814 #5663] DEBUG -- :   [1m[35m (47.9ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:38.083176 #5663] DEBUG -- :   [1m[35mSQL (48.1ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Butchers"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+D, [2020-12-25T12:27:38.135608 #5663] DEBUG -- :   [1m[35m (51.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:38.184197 #5663] DEBUG -- :   [1m[35m (47.3ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:38.235223 #5663] DEBUG -- :   [1m[35mSQL (49.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Carnalentejana"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+D, [2020-12-25T12:27:38.290574 #5663] DEBUG -- :   [1m[35m (53.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:38.340708 #5663] DEBUG -- :   [1m[35m (48.8ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:38.391919 #5663] DEBUG -- :   [1m[35mSQL (49.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "O Talho"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+D, [2020-12-25T12:27:38.444279 #5663] DEBUG -- :   [1m[35m (51.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:38.492968 #5663] DEBUG -- :   [1m[35m (47.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:38.542667 #5663] DEBUG -- :   [1m[35mSQL (47.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Kob"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+D, [2020-12-25T12:27:38.595266 #5663] DEBUG -- :   [1m[35m (51.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:38.642151 #5663] DEBUG -- :   [1m[35m (46.4ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:38.690311 #5663] DEBUG -- :   [1m[35mSQL (47.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Volver de carne y alma"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+D, [2020-12-25T12:27:38.742364 #5663] DEBUG -- :   [1m[35m (51.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:38.791241 #5663] DEBUG -- :   [1m[35m (47.3ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:38.843056 #5663] DEBUG -- :   [1m[35mSQL (49.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Carvoeiro de palma"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+D, [2020-12-25T12:27:38.896972 #5663] DEBUG -- :   [1m[35m (52.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:38.944894 #5663] DEBUG -- :   [1m[35m (46.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:38.995766 #5663] DEBUG -- :   [1m[35mSQL (48.8ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Tasca Chiado naco"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+D, [2020-12-25T12:27:39.050184 #5663] DEBUG -- :   [1m[35m (53.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:39.100311 #5663] DEBUG -- :   [1m[35m (48.5ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:39.149167 #5663] DEBUG -- :   [1m[35mSQL (46.9ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Adega das gravatas (carnide)"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+D, [2020-12-25T12:27:39.203531 #5663] DEBUG -- :   [1m[35m (53.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:39.253262 #5663] DEBUG -- :   [1m[35m (48.4ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:39.302676 #5663] DEBUG -- :   [1m[35mSQL (47.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Nogueira’s"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+D, [2020-12-25T12:27:39.354667 #5663] DEBUG -- :   [1m[35m (50.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:39.403374 #5663] DEBUG -- :   [1m[35m (47.2ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:39.454615 #5663] DEBUG -- :   [1m[35mSQL (48.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "C.O.W - Beef & Cocktails"], ["image_url", "zzzzzzz"], ["category", "Steak"], ["price_range", 1]]
+D, [2020-12-25T12:27:39.507462 #5663] DEBUG -- :   [1m[35m (51.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:39.557402 #5663] DEBUG -- :   [1m[35m (48.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:39.607167 #5663] DEBUG -- :   [1m[35mSQL (47.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "El pibe"], ["image_url", "zzzzzzz"], ["category", "Mexican"], ["price_range", 1]]
+D, [2020-12-25T12:27:39.657014 #5663] DEBUG -- :   [1m[35m (49.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:39.704617 #5663] DEBUG -- :   [1m[35m (47.0ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:39.755204 #5663] DEBUG -- :   [1m[35mSQL (48.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "El clandestino"], ["image_url", "zzzzzzz"], ["category", "Mexican"], ["price_range", 1]]
+D, [2020-12-25T12:27:39.812923 #5663] DEBUG -- :   [1m[35m (56.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:39.862942 #5663] DEBUG -- :   [1m[35m (48.2ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:39.913962 #5663] DEBUG -- :   [1m[35mSQL (48.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Las ficheras"], ["image_url", "zzzzzzz"], ["category", "Mexican"], ["price_range", 1]]
+D, [2020-12-25T12:27:39.966077 #5663] DEBUG -- :   [1m[35m (50.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:40.014868 #5663] DEBUG -- :   [1m[35m (47.2ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:40.065705 #5663] DEBUG -- :   [1m[35mSQL (48.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pistola y corazon"], ["image_url", "zzzzzzz"], ["category", "Mexican"], ["price_range", 1]]
+D, [2020-12-25T12:27:40.118792 #5663] DEBUG -- :   [1m[35m (51.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:40.167828 #5663] DEBUG -- :   [1m[35m (47.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:40.218683 #5663] DEBUG -- :   [1m[35mSQL (48.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Segundo muelle"], ["image_url", "zzzzzzz"], ["category", "Mexican"], ["price_range", 1]]
+D, [2020-12-25T12:27:40.270779 #5663] DEBUG -- :   [1m[35m (50.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:40.319937 #5663] DEBUG -- :   [1m[35m (47.5ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:40.371510 #5663] DEBUG -- :   [1m[35mSQL (48.9ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Cheviceria"], ["image_url", "zzzzzzz"], ["category", "Mexican"], ["price_range", 1]]
+D, [2020-12-25T12:27:40.423737 #5663] DEBUG -- :   [1m[35m (50.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:40.472804 #5663] DEBUG -- :   [1m[35m (47.4ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:40.523456 #5663] DEBUG -- :   [1m[35mSQL (48.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Mez cais"], ["image_url", "zzzzzzz"], ["category", "Mexican"], ["price_range", 1]]
+D, [2020-12-25T12:27:40.575681 #5663] DEBUG -- :   [1m[35m (51.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:40.625764 #5663] DEBUG -- :   [1m[35m (48.8ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:40.674705 #5663] DEBUG -- :   [1m[35mSQL (47.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Gazpaxo"], ["image_url", "zzzzzzz"], ["category", "Mexican"], ["price_range", 1]]
+D, [2020-12-25T12:27:40.727122 #5663] DEBUG -- :   [1m[35m (51.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:40.775718 #5663] DEBUG -- :   [1m[35m (47.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:40.826188 #5663] DEBUG -- :   [1m[35mSQL (47.9ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Cevicheria"], ["image_url", "zzzzzzz"], ["category", "Peruvian Nepalese"], ["price_range", 1]]
+D, [2020-12-25T12:27:40.880100 #5663] DEBUG -- :   [1m[35m (52.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:40.930033 #5663] DEBUG -- :   [1m[35m (48.3ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:40.980268 #5663] DEBUG -- :   [1m[35mSQL (47.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Casa Nepalesa"], ["image_url", "zzzzzzz"], ["category", "Peruvian Nepalese"], ["price_range", 1]]
+D, [2020-12-25T12:27:41.036196 #5663] DEBUG -- :   [1m[35m (54.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:41.084529 #5663] DEBUG -- :   [1m[35m (46.8ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:41.134176 #5663] DEBUG -- :   [1m[35mSQL (47.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Cantina Peruana"], ["image_url", "zzzzzzz"], ["category", "Peruvian Nepalese"], ["price_range", 1]]
+D, [2020-12-25T12:27:41.191829 #5663] DEBUG -- :   [1m[35m (56.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:41.241219 #5663] DEBUG -- :   [1m[35m (47.8ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:41.291283 #5663] DEBUG -- :   [1m[35mSQL (47.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Segundo Muelle"], ["image_url", "zzzzzzz"], ["category", "Peruvian Nepalese"], ["price_range", 1]]
+D, [2020-12-25T12:27:41.345591 #5663] DEBUG -- :   [1m[35m (53.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:41.394747 #5663] DEBUG -- :   [1m[35m (47.4ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:41.445946 #5663] DEBUG -- :   [1m[35mSQL (48.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "nicolau"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+D, [2020-12-25T12:27:41.499081 #5663] DEBUG -- :   [1m[35m (51.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:41.547652 #5663] DEBUG -- :   [1m[35m (47.2ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:41.597673 #5663] DEBUG -- :   [1m[35mSQL (48.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "fabrica dos sabores"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+D, [2020-12-25T12:27:41.651653 #5663] DEBUG -- :   [1m[35m (52.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:41.700425 #5663] DEBUG -- :   [1m[35m (47.3ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:41.753893 #5663] DEBUG -- :   [1m[35mSQL (50.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "brick cafe"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+D, [2020-12-25T12:27:41.806414 #5663] DEBUG -- :   [1m[35m (51.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:41.857533 #5663] DEBUG -- :   [1m[35m (49.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:41.908933 #5663] DEBUG -- :   [1m[35mSQL (48.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "O austriaco"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+D, [2020-12-25T12:27:41.960901 #5663] DEBUG -- :   [1m[35m (50.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:42.011305 #5663] DEBUG -- :   [1m[35m (49.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:42.058784 #5663] DEBUG -- :   [1m[35mSQL (46.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Choupana"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+D, [2020-12-25T12:27:42.112537 #5663] DEBUG -- :   [1m[35m (53.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:42.161716 #5663] DEBUG -- :   [1m[35m (47.4ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:42.211939 #5663] DEBUG -- :   [1m[35mSQL (48.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Brunch Cafe"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+D, [2020-12-25T12:27:42.263985 #5663] DEBUG -- :   [1m[35m (51.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:42.314125 #5663] DEBUG -- :   [1m[35m (48.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:42.364856 #5663] DEBUG -- :   [1m[35mSQL (48.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "The mill"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+D, [2020-12-25T12:27:42.417330 #5663] DEBUG -- :   [1m[35m (51.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:42.465405 #5663] DEBUG -- :   [1m[35m (47.0ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:42.515921 #5663] DEBUG -- :   [1m[35mSQL (48.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Infame (almoço também)"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+D, [2020-12-25T12:27:42.566972 #5663] DEBUG -- :   [1m[35m (50.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:42.616257 #5663] DEBUG -- :   [1m[35m (47.9ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:42.669125 #5663] DEBUG -- :   [1m[35mSQL (50.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "O ninho - café brunch"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+D, [2020-12-25T12:27:42.723952 #5663] DEBUG -- :   [1m[35m (52.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:42.774199 #5663] DEBUG -- :   [1m[35m (48.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:42.823457 #5663] DEBUG -- :   [1m[35mSQL (47.7ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Leitaria"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+D, [2020-12-25T12:27:42.878702 #5663] DEBUG -- :   [1m[35m (54.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:42.931237 #5663] DEBUG -- :   [1m[35m (50.9ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:42.979503 #5663] DEBUG -- :   [1m[35mSQL (47.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Delidelux"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+D, [2020-12-25T12:27:43.032483 #5663] DEBUG -- :   [1m[35m (52.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:43.082842 #5663] DEBUG -- :   [1m[35m (48.7ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:43.133803 #5663] DEBUG -- :   [1m[35mSQL (48.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Heim cafe"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+D, [2020-12-25T12:27:43.187235 #5663] DEBUG -- :   [1m[35m (52.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:43.236874 #5663] DEBUG -- :   [1m[35m (48.2ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:43.288027 #5663] DEBUG -- :   [1m[35mSQL (48.7ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Dear Breakfast"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+D, [2020-12-25T12:27:43.339096 #5663] DEBUG -- :   [1m[35m (50.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:43.393588 #5663] DEBUG -- :   [1m[35m (52.7ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:43.443783 #5663] DEBUG -- :   [1m[35mSQL (47.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Brooklyn"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+D, [2020-12-25T12:27:43.497581 #5663] DEBUG -- :   [1m[35m (52.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:43.546542 #5663] DEBUG -- :   [1m[35m (47.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:43.598978 #5663] DEBUG -- :   [1m[35mSQL (51.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "La Boulangerie"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+D, [2020-12-25T12:27:43.653116 #5663] DEBUG -- :   [1m[35m (53.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:43.706421 #5663] DEBUG -- :   [1m[35m (51.5ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:43.757142 #5663] DEBUG -- :   [1m[35mSQL (48.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Santo Bagel"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+D, [2020-12-25T12:27:43.809154 #5663] DEBUG -- :   [1m[35m (51.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:43.858662 #5663] DEBUG -- :   [1m[35m (48.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:43.909720 #5663] DEBUG -- :   [1m[35mSQL (48.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pão Nosso de cada dia"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+D, [2020-12-25T12:27:43.963359 #5663] DEBUG -- :   [1m[35m (52.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:44.015393 #5663] DEBUG -- :   [1m[35m (50.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:44.066671 #5663] DEBUG -- :   [1m[35mSQL (48.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", " Petit Prince Culture Cafe Lisbon"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+D, [2020-12-25T12:27:44.127348 #5663] DEBUG -- :   [1m[35m (59.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:44.177943 #5663] DEBUG -- :   [1m[35m (49.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:44.228350 #5663] DEBUG -- :   [1m[35mSQL (49.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Mercearia da Mila"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+D, [2020-12-25T12:27:44.282319 #5663] DEBUG -- :   [1m[35m (53.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:44.335903 #5663] DEBUG -- :   [1m[35m (52.0ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:44.388445 #5663] DEBUG -- :   [1m[35mSQL (49.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Ela canela"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+D, [2020-12-25T12:27:44.446021 #5663] DEBUG -- :   [1m[35m (56.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:44.495010 #5663] DEBUG -- :   [1m[35m (47.2ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:44.544848 #5663] DEBUG -- :   [1m[35mSQL (47.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Maria Limão"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+D, [2020-12-25T12:27:44.600540 #5663] DEBUG -- :   [1m[35m (54.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:44.649600 #5663] DEBUG -- :   [1m[35m (47.2ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:44.700068 #5663] DEBUG -- :   [1m[35mSQL (47.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "WISH slow coffee house"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+D, [2020-12-25T12:27:44.752104 #5663] DEBUG -- :   [1m[35m (50.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:44.801450 #5663] DEBUG -- :   [1m[35m (47.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:44.852392 #5663] DEBUG -- :   [1m[35mSQL (48.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "fauna e flora"], ["image_url", "zzzzzzz"], ["category", "Brunch"], ["price_range", 1]]
+D, [2020-12-25T12:27:44.908085 #5663] DEBUG -- :   [1m[35m (54.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:44.958571 #5663] DEBUG -- :   [1m[35m (48.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:45.012862 #5663] DEBUG -- :   [1m[35mSQL (51.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Conchanata"], ["image_url", "zzzzzzz"], ["category", "Icecream and sweets"], ["price_range", 1]]
+D, [2020-12-25T12:27:45.065232 #5663] DEBUG -- :   [1m[35m (50.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:45.113975 #5663] DEBUG -- :   [1m[35m (47.0ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:45.163566 #5663] DEBUG -- :   [1m[35mSQL (47.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Baguettes & Cornets"], ["image_url", "zzzzzzz"], ["category", "Icecream and sweets"], ["price_range", 1]]
+D, [2020-12-25T12:27:45.215592 #5663] DEBUG -- :   [1m[35m (51.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:45.266500 #5663] DEBUG -- :   [1m[35m (49.5ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:45.323014 #5663] DEBUG -- :   [1m[35mSQL (54.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Nosolo Italia"], ["image_url", "zzzzzzz"], ["category", "Icecream and sweets"], ["price_range", 1]]
+D, [2020-12-25T12:27:45.376978 #5663] DEBUG -- :   [1m[35m (52.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:45.427755 #5663] DEBUG -- :   [1m[35m (49.2ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:45.480144 #5663] DEBUG -- :   [1m[35mSQL (49.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Santini"], ["image_url", "zzzzzzz"], ["category", "Icecream and sweets"], ["price_range", 1]]
+D, [2020-12-25T12:27:45.533352 #5663] DEBUG -- :   [1m[35m (51.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:45.586330 #5663] DEBUG -- :   [1m[35m (51.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:45.635209 #5663] DEBUG -- :   [1m[35mSQL (46.8ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Daveroo"], ["image_url", "zzzzzzz"], ["category", "Icecream and sweets"], ["price_range", 1]]
+D, [2020-12-25T12:27:45.686295 #5663] DEBUG -- :   [1m[35m (50.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:45.733128 #5663] DEBUG -- :   [1m[35m (46.3ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:45.781224 #5663] DEBUG -- :   [1m[35mSQL (47.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Amorino"], ["image_url", "zzzzzzz"], ["category", "Icecream and sweets"], ["price_range", 1]]
+D, [2020-12-25T12:27:45.832215 #5663] DEBUG -- :   [1m[35m (50.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:45.878019 #5663] DEBUG -- :   [1m[35m (45.4ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:45.925632 #5663] DEBUG -- :   [1m[35mSQL (47.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Lambretta lanchonete"], ["image_url", "zzzzzzz"], ["category", "Icecream and sweets"], ["price_range", 1]]
+D, [2020-12-25T12:27:45.976600 #5663] DEBUG -- :   [1m[35m (50.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:46.024018 #5663] DEBUG -- :   [1m[35m (47.0ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:46.072597 #5663] DEBUG -- :   [1m[35mSQL (47.9ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Casa do Gelado"], ["image_url", "zzzzzzz"], ["category", "Icecream and sweets"], ["price_range", 1]]
+D, [2020-12-25T12:27:46.124719 #5663] DEBUG -- :   [1m[35m (51.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:46.173232 #5663] DEBUG -- :   [1m[35m (47.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:46.222758 #5663] DEBUG -- :   [1m[35mSQL (47.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Hora H"], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+D, [2020-12-25T12:27:46.274293 #5663] DEBUG -- :   [1m[35m (50.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:46.323515 #5663] DEBUG -- :   [1m[35m (47.7ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:46.373901 #5663] DEBUG -- :   [1m[35mSQL (47.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Cento e quatro"], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+D, [2020-12-25T12:27:46.425906 #5663] DEBUG -- :   [1m[35m (50.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:46.473649 #5663] DEBUG -- :   [1m[35m (46.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:46.523511 #5663] DEBUG -- :   [1m[35mSQL (47.1ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Gomo "], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+D, [2020-12-25T12:27:46.577528 #5663] DEBUG -- :   [1m[35m (52.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:46.625750 #5663] DEBUG -- :   [1m[35m (46.8ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:46.675351 #5663] DEBUG -- :   [1m[35mSQL (47.1ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Os gazeteiros"], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+D, [2020-12-25T12:27:46.727627 #5663] DEBUG -- :   [1m[35m (51.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:46.776632 #5663] DEBUG -- :   [1m[35m (47.2ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:46.828565 #5663] DEBUG -- :   [1m[35mSQL (49.1ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Piadinas "], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+D, [2020-12-25T12:27:46.882731 #5663] DEBUG -- :   [1m[35m (52.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:46.931535 #5663] DEBUG -- :   [1m[35m (47.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:46.981763 #5663] DEBUG -- :   [1m[35mSQL (47.7ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Nicolau"], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+D, [2020-12-25T12:27:47.034572 #5663] DEBUG -- :   [1m[35m (51.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:47.083022 #5663] DEBUG -- :   [1m[35m (46.9ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:47.133162 #5663] DEBUG -- :   [1m[35mSQL (47.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Dois três três"], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+D, [2020-12-25T12:27:47.185755 #5663] DEBUG -- :   [1m[35m (51.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:47.245270 #5663] DEBUG -- :   [1m[35m (57.9ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:47.297511 #5663] DEBUG -- :   [1m[35mSQL (49.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pachamama"], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+D, [2020-12-25T12:27:47.349322 #5663] DEBUG -- :   [1m[35m (50.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:47.398576 #5663] DEBUG -- :   [1m[35m (47.2ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:47.449207 #5663] DEBUG -- :   [1m[35mSQL (47.8ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Club life to go"], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+D, [2020-12-25T12:27:47.501593 #5663] DEBUG -- :   [1m[35m (50.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:47.549882 #5663] DEBUG -- :   [1m[35m (46.7ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:47.598463 #5663] DEBUG -- :   [1m[35mSQL (47.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "The cru (Oeiras)"], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+D, [2020-12-25T12:27:47.651660 #5663] DEBUG -- :   [1m[35m (52.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:47.701192 #5663] DEBUG -- :   [1m[35m (47.7ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:47.754997 #5663] DEBUG -- :   [1m[35mSQL (51.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Aloha Cafe"], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+D, [2020-12-25T12:27:47.810077 #5663] DEBUG -- :   [1m[35m (53.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:47.857933 #5663] DEBUG -- :   [1m[35m (46.7ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:47.908822 #5663] DEBUG -- :   [1m[35mSQL (48.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Bowl Lisboa "], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+D, [2020-12-25T12:27:47.961488 #5663] DEBUG -- :   [1m[35m (51.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:48.011224 #5663] DEBUG -- :   [1m[35m (48.3ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:48.062824 #5663] DEBUG -- :   [1m[35mSQL (49.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "A luz ideal"], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+D, [2020-12-25T12:27:48.117480 #5663] DEBUG -- :   [1m[35m (53.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:48.167607 #5663] DEBUG -- :   [1m[35m (48.3ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:48.217944 #5663] DEBUG -- :   [1m[35mSQL (47.1ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Organic Caffe Chiado"], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+D, [2020-12-25T12:27:48.271272 #5663] DEBUG -- :   [1m[35m (52.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:48.320750 #5663] DEBUG -- :   [1m[35m (48.0ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:48.372773 #5663] DEBUG -- :   [1m[35mSQL (49.1ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Montana Lisboa cafe"], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+D, [2020-12-25T12:27:48.426100 #5663] DEBUG -- :   [1m[35m (51.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:48.475667 #5663] DEBUG -- :   [1m[35m (47.9ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:48.526840 #5663] DEBUG -- :   [1m[35mSQL (48.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Naked"], ["image_url", "zzzzzzz"], ["category", "Healthy"], ["price_range", 1]]
+D, [2020-12-25T12:27:48.580361 #5663] DEBUG -- :   [1m[35m (51.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:48.629756 #5663] DEBUG -- :   [1m[35m (47.8ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:48.680603 #5663] DEBUG -- :   [1m[35mSQL (47.9ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Duplex 💰"], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+D, [2020-12-25T12:27:48.735033 #5663] DEBUG -- :   [1m[35m (52.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:48.783834 #5663] DEBUG -- :   [1m[35m (47.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:48.833797 #5663] DEBUG -- :   [1m[35mSQL (47.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Alma 💰"], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+D, [2020-12-25T12:27:48.887114 #5663] DEBUG -- :   [1m[35m (52.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:48.936503 #5663] DEBUG -- :   [1m[35m (47.8ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:48.996839 #5663] DEBUG -- :   [1m[35mSQL (58.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Cantinho do avillez "], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+D, [2020-12-25T12:27:49.050863 #5663] DEBUG -- :   [1m[35m (52.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:49.100282 #5663] DEBUG -- :   [1m[35m (47.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:49.150884 #5663] DEBUG -- :   [1m[35mSQL (47.8ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pap' açorda"], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+D, [2020-12-25T12:27:49.205912 #5663] DEBUG -- :   [1m[35m (53.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:49.256288 #5663] DEBUG -- :   [1m[35m (48.8ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:49.307464 #5663] DEBUG -- :   [1m[35mSQL (48.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Bica do sapato 💰"], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+D, [2020-12-25T12:27:49.360903 #5663] DEBUG -- :   [1m[35m (52.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:49.413130 #5663] DEBUG -- :   [1m[35m (50.7ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:49.464602 #5663] DEBUG -- :   [1m[35mSQL (48.7ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Salsa e Coentros "], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+D, [2020-12-25T12:27:49.520920 #5663] DEBUG -- :   [1m[35m (55.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:49.573017 #5663] DEBUG -- :   [1m[35m (49.5ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:49.622135 #5663] DEBUG -- :   [1m[35mSQL (47.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Belcanto 💰"], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+D, [2020-12-25T12:27:49.676954 #5663] DEBUG -- :   [1m[35m (53.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:49.726087 #5663] DEBUG -- :   [1m[35m (47.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:49.777024 #5663] DEBUG -- :   [1m[35mSQL (48.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Mercado c ourique ✅"], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+D, [2020-12-25T12:27:49.830892 #5663] DEBUG -- :   [1m[35m (52.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:49.879948 #5663] DEBUG -- :   [1m[35m (47.4ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:49.929643 #5663] DEBUG -- :   [1m[35mSQL (47.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Mercado ribeira ✅"], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+D, [2020-12-25T12:27:49.985083 #5663] DEBUG -- :   [1m[35m (54.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:50.033626 #5663] DEBUG -- :   [1m[35m (46.6ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:50.086102 #5663] DEBUG -- :   [1m[35mSQL (49.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Prego da peixaria "], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+D, [2020-12-25T12:27:50.139405 #5663] DEBUG -- :   [1m[35m (52.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:50.189756 #5663] DEBUG -- :   [1m[35m (48.8ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:50.240870 #5663] DEBUG -- :   [1m[35mSQL (48.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Doca de santo"], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+D, [2020-12-25T12:27:50.298292 #5663] DEBUG -- :   [1m[35m (56.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:50.347913 #5663] DEBUG -- :   [1m[35m (47.9ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:50.399175 #5663] DEBUG -- :   [1m[35mSQL (48.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Rui dos Pregos"], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+D, [2020-12-25T12:27:50.451908 #5663] DEBUG -- :   [1m[35m (51.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:50.501897 #5663] DEBUG -- :   [1m[35m (48.4ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:50.552578 #5663] DEBUG -- :   [1m[35mSQL (47.7ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Valbom "], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+D, [2020-12-25T12:27:50.605789 #5663] DEBUG -- :   [1m[35m (52.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:50.652731 #5663] DEBUG -- :   [1m[35m (46.4ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:50.699106 #5663] DEBUG -- :   [1m[35mSQL (45.7ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Tico tico "], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+D, [2020-12-25T12:27:50.749498 #5663] DEBUG -- :   [1m[35m (50.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:50.796851 #5663] DEBUG -- :   [1m[35m (46.8ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:50.843520 #5663] DEBUG -- :   [1m[35mSQL (46.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Sem palavras "], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+D, [2020-12-25T12:27:50.895282 #5663] DEBUG -- :   [1m[35m (51.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:50.942169 #5663] DEBUG -- :   [1m[35m (46.4ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:50.991388 #5663] DEBUG -- :   [1m[35mSQL (47.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Sancho "], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+D, [2020-12-25T12:27:51.046033 #5663] DEBUG -- :   [1m[35m (53.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:51.095877 #5663] DEBUG -- :   [1m[35m (48.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:51.148886 #5663] DEBUG -- :   [1m[35mSQL (50.1ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "JNcQUOI"], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+D, [2020-12-25T12:27:51.202817 #5663] DEBUG -- :   [1m[35m (52.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:51.251584 #5663] DEBUG -- :   [1m[35m (47.4ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:51.303286 #5663] DEBUG -- :   [1m[35mSQL (49.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Frutaria "], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+D, [2020-12-25T12:27:51.356742 #5663] DEBUG -- :   [1m[35m (52.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:51.405943 #5663] DEBUG -- :   [1m[35m (47.5ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:51.456110 #5663] DEBUG -- :   [1m[35mSQL (47.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Taberna sta Marta (Marquês)"], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+D, [2020-12-25T12:27:51.513311 #5663] DEBUG -- :   [1m[35m (55.9ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:51.562207 #5663] DEBUG -- :   [1m[35m (47.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:51.611894 #5663] DEBUG -- :   [1m[35mSQL (47.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Dona Tilia (Praça de Espanha)"], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+D, [2020-12-25T12:27:51.666618 #5663] DEBUG -- :   [1m[35m (53.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:51.715213 #5663] DEBUG -- :   [1m[35m (47.1ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:51.765949 #5663] DEBUG -- :   [1m[35mSQL (48.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Taberna dos gordos"], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+D, [2020-12-25T12:27:51.818242 #5663] DEBUG -- :   [1m[35m (51.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:51.869153 #5663] DEBUG -- :   [1m[35m (49.2ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:51.920551 #5663] DEBUG -- :   [1m[35mSQL (48.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Taberna Sal grosso "], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+D, [2020-12-25T12:27:51.973727 #5663] DEBUG -- :   [1m[35m (51.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:52.022716 #5663] DEBUG -- :   [1m[35m (47.3ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:52.074092 #5663] DEBUG -- :   [1m[35mSQL (49.1ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Maria Catita"], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+D, [2020-12-25T12:27:52.126285 #5663] DEBUG -- :   [1m[35m (51.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2020-12-25T12:27:52.176115 #5663] DEBUG -- :   [1m[35m (48.3ms)[0m  [1m[35mBEGIN[0m
+D, [2020-12-25T12:27:52.227674 #5663] DEBUG -- :   [1m[35mSQL (48.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "image_url", "category", "price_range") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Stop do bairro"], ["image_url", "zzzzzzz"], ["category", "Other"], ["price_range", 1]]
+D, [2020-12-25T12:27:52.280614 #5663] DEBUG -- :   [1m[35m (51.7ms)[0m  [1m[35mCOMMIT[0m
+I, [2020-12-25T12:28:12.298593 #5782]  INFO -- : [68124fa2-9b84-44ff-a8b3-2c5da6d06931] Started GET "/Italian" for 127.0.0.1 at 2020-12-25 12:28:12 +0000
+I, [2020-12-25T12:28:12.304767 #5782]  INFO -- : [68124fa2-9b84-44ff-a8b3-2c5da6d06931] Processing by RestaurantsController#category as HTML
+I, [2020-12-25T12:28:12.305008 #5782]  INFO -- : [68124fa2-9b84-44ff-a8b3-2c5da6d06931]   Parameters: {"category"=>"Italian"}
+I, [2020-12-25T12:28:12.748449 #5782]  INFO -- : [041416ea-7d29-47da-be9d-7918b5a5e869] Started GET "/Italian" for 127.0.0.1 at 2020-12-25 12:28:12 +0000
+I, [2020-12-25T12:28:12.751362 #5782]  INFO -- : [041416ea-7d29-47da-be9d-7918b5a5e869] Processing by RestaurantsController#category as HTML
+I, [2020-12-25T12:28:12.751630 #5782]  INFO -- : [041416ea-7d29-47da-be9d-7918b5a5e869]   Parameters: {"category"=>"Italian"}
+I, [2020-12-25T12:28:14.579728 #5782]  INFO -- : [041416ea-7d29-47da-be9d-7918b5a5e869]   Rendering restaurants/category.html.erb within layouts/application
+I, [2020-12-25T12:28:14.580610 #5782]  INFO -- : [68124fa2-9b84-44ff-a8b3-2c5da6d06931]   Rendering restaurants/category.html.erb within layouts/application
+D, [2020-12-25T12:28:14.683753 #5782] DEBUG -- : [68124fa2-9b84-44ff-a8b3-2c5da6d06931]   [1m[36mRestaurant Load (96.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Italian')[0m
+D, [2020-12-25T12:28:14.684419 #5782] DEBUG -- : [041416ea-7d29-47da-be9d-7918b5a5e869]   [1m[36mRestaurant Load (100.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Italian')[0m
+I, [2020-12-25T12:28:15.155466 #5782]  INFO -- : [68124fa2-9b84-44ff-a8b3-2c5da6d06931]   Rendered restaurants/category.html.erb within layouts/application (570.8ms)
+I, [2020-12-25T12:28:15.160960 #5782]  INFO -- : [68124fa2-9b84-44ff-a8b3-2c5da6d06931] Completed 200 OK in 2856ms (Views: 47.6ms | ActiveRecord: 1010.1ms)
+I, [2020-12-25T12:28:15.163628 #5782]  INFO -- : [041416ea-7d29-47da-be9d-7918b5a5e869]   Rendered restaurants/category.html.erb within layouts/application (582.3ms)
+I, [2020-12-25T12:28:15.171959 #5782]  INFO -- : [041416ea-7d29-47da-be9d-7918b5a5e869] Completed 200 OK in 2420ms (Views: 236.8ms | ActiveRecord: 836.8ms)
+I, [2020-12-25T12:28:19.849336 #5782]  INFO -- : [fc0e7acb-b5be-4768-aca0-10a4706ee2f3] Started GET "/" for 127.0.0.1 at 2020-12-25 12:28:19 +0000
+I, [2020-12-25T12:28:19.850306 #5782]  INFO -- : [fc0e7acb-b5be-4768-aca0-10a4706ee2f3] Processing by RestaurantsController#index as HTML
+I, [2020-12-25T12:28:19.851569 #5782]  INFO -- : [fc0e7acb-b5be-4768-aca0-10a4706ee2f3]   Rendering restaurants/index.html.erb within layouts/application
+I, [2020-12-25T12:28:19.852635 #5782]  INFO -- : [fc0e7acb-b5be-4768-aca0-10a4706ee2f3]   Rendered restaurants/index.html.erb within layouts/application (0.9ms)
+I, [2020-12-25T12:28:19.853744 #5782]  INFO -- : [fc0e7acb-b5be-4768-aca0-10a4706ee2f3] Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+I, [2020-12-25T12:28:22.070097 #5782]  INFO -- : [1091c7a5-08f0-4190-8760-c2cb5a7d6df8] Started GET "/Seafood" for 127.0.0.1 at 2020-12-25 12:28:22 +0000
+I, [2020-12-25T12:28:22.071309 #5782]  INFO -- : [1091c7a5-08f0-4190-8760-c2cb5a7d6df8] Processing by RestaurantsController#category as HTML
+I, [2020-12-25T12:28:22.071452 #5782]  INFO -- : [1091c7a5-08f0-4190-8760-c2cb5a7d6df8]   Parameters: {"category"=>"Seafood"}
+I, [2020-12-25T12:28:22.118589 #5782]  INFO -- : [1091c7a5-08f0-4190-8760-c2cb5a7d6df8]   Rendering restaurants/category.html.erb within layouts/application
+D, [2020-12-25T12:28:22.169297 #5782] DEBUG -- : [1091c7a5-08f0-4190-8760-c2cb5a7d6df8]   [1m[36mRestaurant Load (49.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Seafood')[0m
+I, [2020-12-25T12:28:22.171340 #5782]  INFO -- : [1091c7a5-08f0-4190-8760-c2cb5a7d6df8]   Rendered restaurants/category.html.erb within layouts/application (52.4ms)
+I, [2020-12-25T12:28:22.173763 #5782]  INFO -- : [1091c7a5-08f0-4190-8760-c2cb5a7d6df8] Completed 200 OK in 102ms (Views: 5.9ms | ActiveRecord: 49.5ms)
