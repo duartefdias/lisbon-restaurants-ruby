@@ -8,27 +8,15 @@
 <section class="hero-section">
   <div class="card-grid">
     <% restaurants_by_category.each do |restaurant| %>
-    <div class="card" href="#">
-      <% if restaurant.image_url.size > 0 %>
-      <div class="card__background" style="background-image: url('<%= restaurant.image_url %>')"></div>
-      <% else %>
+    <a class="card" href="<%= restaurant.zomato_url %>">
       <div class="card__background" style="background-image: url('https://image.freepik.com/free-photo/grunge-concrete-wall-dark-grey-color-texture-vintage-background_1484-2052.jpg')"></div>
-      <% end %>
+      <div class="card__background" style="background-image: url('https://lisbonrestaurantsmedia.blob.core.windows.net/restaurants/<%= restaurant.azure_id %>.webp')"></div>
+      <div class="card__background" style="background-image: url('https://lisbonrestaurantsmedia.blob.core.windows.net/restaurants/<%= restaurant.azure_id %>.jpg')"></div>
       <div class="card__content">
         <!-- <p class="card__category">Sub-heading</p> -->
         <h3 class="card__heading"><%= restaurant.name %></h3>
-        <% if restaurant.zomato_url.size > 0 %>
-          <a href="<%= restaurant.zomato_url %>">
-            <img src="/zomato-icon.png" class="zomato-icon"/>
-          </a>
-        <% end %>
-        <% if restaurant.zomato_url.size > 0 %>
-          <a href="<%= restaurant.google_maps_url %>">
-            <img src="/google-maps-icon.png" class="google-maps-icon"/>
-          </a>
-        <% end %>
       </div>
-    </div>
+    </a>
     <% end %>
   <div>
 </section>

@@ -10,18 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20201227025909) do
+ActiveRecord::Schema.define(version: 20201227192214) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "restaurants", force: :cascade do |t|
     t.string "name"
-    t.string "image_url"
     t.string "category"
     t.integer "price_range"
     t.string "zomato_url"
     t.string "google_maps_url"
+    t.string "azure_id"
   end
 
 end
