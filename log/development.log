@@ -11017,3 +11017,67 @@ Processing by RestaurantsController#index as HTML
 Completed 200 OK in 54ms (Views: 52.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/Icecream%20and%20sweets" for 127.0.0.1 at 2020-12-28 02:57:19 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Icecream and sweets"}
+  Rendering restaurants/category.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Icecream and sweets')[0m
+  Rendered restaurants/category.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 49ms (Views: 46.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-28 02:57:27 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 46ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Icecream%20and%20sweets" for 127.0.0.1 at 2020-12-28 02:57:32 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Icecream and sweets"}
+  Rendering restaurants/category.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Icecream and sweets')[0m
+  Rendered restaurants/category.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 46ms (Views: 43.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-28 02:57:35 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Icecream%20and%20sweets" for 127.0.0.1 at 2020-12-28 02:58:07 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Icecream and sweets"}
+  Rendering restaurants/category.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Icecream and sweets')[0m
+  Rendered restaurants/category.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 49ms (Views: 47.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/Icecream%20and%20sweets" for 127.0.0.1 at 2020-12-28 02:58:22 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Icecream and sweets"}
+  Rendering restaurants/category.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Icecream and sweets')[0m
+  Rendered restaurants/category.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 30ms (Views: 25.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-28 02:58:23 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-28 02:58:45 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 53ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
