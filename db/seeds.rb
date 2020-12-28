@@ -185,7 +185,7 @@ Restaurant.create(name: "Petit Prince Culture Cafe Lisbon", category: "Brunch", 
 Restaurant.create(name: "Mercearia da Mila", category: "Brunch", price_range: 1, zomato_url: "https://www.zomato.com/pt/grande-lisboa/mercearia-da-mila-santos-lisboa", google_maps_url: "", azure_id: "176")
 Restaurant.create(name: "Ela Canela", category: "Brunch", price_range: 1, zomato_url: "https://www.zomato.com/pt/grande-lisboa/ela-canela-campo-de-ourique-lisboa", google_maps_url: "", azure_id: "177")
 Restaurant.create(name: "Maria Limão", category: "Brunch", price_range: 1, zomato_url: "https://www.zomato.com/pt/grande-lisboa/maria-lim%C3%A3o-gra%C3%A7a-lisboa", google_maps_url: "", azure_id: "178")
-Restaurant.create(name: "WISH slow coffee house", category: "Brunch", price_range: 1, zomato_url: "", google_maps_url: "", azure_id: "179")
+Restaurant.create(name: "WISH slow coffee house", category: "Brunch", price_range: 1, zomato_url: "https://www.zomato.com/pt/grande-lisboa/wish-slow-coffee-house-alc%C3%A2ntara-lisboa", google_maps_url: "", azure_id: "179")
 Restaurant.create(name: "Fauna e Flora", category: "Brunch", price_range: 1, zomato_url: "https://www.zomato.com/pt/grande-lisboa/fauna-flora-madragoa-lisboa", google_maps_url: "", azure_id: "180")
 
 # Icecreams & Sweets

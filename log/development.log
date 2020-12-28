@@ -10052,3 +10052,968 @@ Processing by RestaurantsController#category as HTML
 Completed 200 OK in 35ms (Views: 31.0ms | ActiveRecord: 1.3ms)
 
 
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Casanova"], ["category", "Italian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/casanova-santa-apol%C3%B3nia-lisboa"], ["google_maps_url", ""], ["azure_id", "1"]]
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Pizzeria Lucca"], ["category", "Italian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/pizzeria-lucca-alvalade-lisboa"], ["google_maps_url", "https://goo.gl/maps/Gs74snX4Pt2PTF5QA"], ["azure_id", "2"]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Bellalisa Valmor"], ["category", "Italian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/bellalisa-valmor-pra%C3%A7a-de-espanha-lisboa"], ["google_maps_url", ""], ["azure_id", "3"]]
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Popolo"], ["category", "Italian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/popolo-pizza-burger-santos-lisboa"], ["google_maps_url", ""], ["azure_id", "4"]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Este Oeste"], ["category", "Italian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/este-oeste-bel%C3%A9m-lisboa"], ["google_maps_url", ""], ["azure_id", "5"]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Guilty by Olivier"], ["category", "Italian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/guiltybyolivier"], ["google_maps_url", ""], ["azure_id", "6"]]
+  [1m[35m (7.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Pizzaria do bairro"], ["category", "Italian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/pizzaria-do-bairro-cais-do-sodr%C3%A9-lisboa"], ["google_maps_url", ""], ["azure_id", "7"]]
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "La Campania"], ["category", "Italian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/la-campania-rato-lisboa"], ["google_maps_url", ""], ["azure_id", "8"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "La finestra"], ["category", "Italian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/la-finestra-pra%C3%A7a-de-espanha-lisboa"], ["google_maps_url", ""], ["azure_id", "9"]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Capriciosa"], ["category", "Italian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/capricciosa-alc%C3%A2ntara-lisboa"], ["google_maps_url", ""], ["azure_id", "10"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Bellezza D'Italia II"], ["category", "Italian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/bellezza-ditalia-ii-campo-pequeno-lisboa"], ["google_maps_url", ""], ["azure_id", "11"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Zero Zero"], ["category", "Italian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/zero-zero-pr%C3%ADncipe-real-pr%C3%ADncipe-real-lisboa"], ["google_maps_url", ""], ["azure_id", "12"]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "La trattoria"], ["category", "Italian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/la-trattoria-rato-lisboa"], ["google_maps_url", ""], ["azure_id", "13"]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Madpizza"], ["category", "Italian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/madpizza-saldanha-lisboa"], ["google_maps_url", ""], ["azure_id", "14"]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Osteria cucina di amici"], ["category", "Italian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/osteria-madragoa-lisboa"], ["google_maps_url", ""], ["azure_id", "15"]]
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Mercantina"], ["category", "Italian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/mercantina-alvalade-lisboa"], ["google_maps_url", ""], ["azure_id", "16"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Di casa"], ["category", "Italian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/di-casa-areeiro-lisboa"], ["google_maps_url", ""], ["azure_id", "17"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Luzzo"], ["category", "Italian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/pizzaria-luzzo-avenida-da-liberdade-lisboa"], ["google_maps_url", ""], ["azure_id", "18"]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Máfia das pizzas"], ["category", "Italian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/m%C3%A1fia-das-pizzas-cacilhas"], ["google_maps_url", ""], ["azure_id", "19"]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Pasta non basta"], ["category", "Italian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/pasta-non-basta-pra%C3%A7a-de-espanha-lisboa"], ["google_maps_url", ""], ["azure_id", "20"]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Come prima"], ["category", "Italian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/come-prima-lapa-estrela-lisboa"], ["google_maps_url", ""], ["azure_id", "21"]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Maritaca"], ["category", "Italian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/maritaca-lapa-estrela-lisboa"], ["google_maps_url", ""], ["azure_id", "22"]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Otto"], ["category", "Italian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/otto-2-cais-do-sodr%C3%A9-lisboa"], ["google_maps_url", ""], ["azure_id", "23"]]
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Casa Al Parma"], ["category", "Italian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/casa-al-parma-alvalade-lisboa"], ["google_maps_url", ""], ["azure_id", "24"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "II Matriciano"], ["category", "Italian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/il-matriciano-s%C3%A3o-bento-lisboa"], ["google_maps_url", ""], ["azure_id", "25"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Polpetta - Almondegaria artesanal"], ["category", "Italian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/polpetta-almondegaria-artesanal-arroios-lisboa"], ["google_maps_url", ""], ["azure_id", "26"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Cantina baldraca"], ["category", "Italian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/cantina-baldracca-mouraria-lisboa"], ["google_maps_url", ""], ["azure_id", "28"]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Honorato"], ["category", "Hamburgers"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/honorato-chiado-lisboa"], ["google_maps_url", ""], ["azure_id", "31"]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Ground burguer"], ["category", "Hamburgers"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/ground-burger-pra%C3%A7a-de-espanha-lisboa"], ["google_maps_url", ""], ["azure_id", "29"]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Buns"], ["category", "Hamburgers"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/buns-o-atelier-do-burger-rato-lisboa"], ["google_maps_url", ""], ["azure_id", "33"]]
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "A-100 Burguer Delivery"], ["category", "Hamburgers"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/a-100-burguer-delivery-campo-grande-lisboa"], ["google_maps_url", ""], ["azure_id", "34"]]
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "To.B"], ["category", "Hamburgers"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/to-b-chiado-lisboa"], ["google_maps_url", ""], ["azure_id", "35"]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Hamburgaria do Bairro"], ["category", "Hamburgers"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/hamburgueria-do-bairro-restelo-lisboa"], ["google_maps_url", ""], ["azure_id", "36"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "McDonalds"], ["category", "Hamburgers"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/mcdonalds-restelo"], ["google_maps_url", ""], ["azure_id", "37"]]
+  [1m[35m (14.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Café do Rio (gourmet)"], ["category", "Hamburgers"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/caf%C3%A9-do-rio-hamburgueria-gourmet-baixa-lisboa"], ["google_maps_url", ""], ["azure_id", "38"]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "B Perfect"], ["category", "Hamburgers"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/b-perfect-areeiro-lisboa"], ["google_maps_url", ""], ["azure_id", "39"]]
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "The B Temple"], ["category", "Hamburgers"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/the-b-temple-chiado-lisboa"], ["google_maps_url", ""], ["azure_id", "40"]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Hã"], ["category", "Hamburgers"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/h%C3%A3-campo-pequeno-lisboa"], ["google_maps_url", ""], ["azure_id", "41"]]
+  [1m[35m (11.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Sushisan"], ["category", "Sushi"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/sushisan-saldanha-lisboa"], ["google_maps_url", ""], ["azure_id", "44"]]
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Suntory"], ["category", "Sushi"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/suntory-campolide-lisboa"], ["google_maps_url", ""], ["azure_id", "45"]]
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Aron sushi"], ["category", "Sushi"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/aron-sushi-pra%C3%A7a-de-espanha-lisboa"], ["google_maps_url", ""], ["azure_id", "46"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Rabo d'Pêxe"], ["category", "Sushi"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/rabo-dp%C3%AAxe-saldanha-lisboa"], ["google_maps_url", ""], ["azure_id", "47"]]
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Sea me"], ["category", "Sushi"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/sea-me-peixaria-moderna-chiado-lisboa"], ["google_maps_url", ""], ["azure_id", "48"]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Sushi factory"], ["category", "Sushi"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/sushi-factory-alc%C3%A2ntara-lisboa"], ["google_maps_url", ""], ["azure_id", "49"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Confraria "], ["category", "Sushi"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/confraria-cascais-centro-lisboa"], ["google_maps_url", ""], ["azure_id", "50"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Miss jappa"], ["category", "Sushi"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/miss-jappa-pr%C3%ADncipe-real-lisboa"], ["google_maps_url", ""], ["azure_id", "51"]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Yakuza"], ["category", "Sushi"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/yakuza-first-floor-rato-lisboa"], ["google_maps_url", ""], ["azure_id", "52"]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Sushic "], ["category", "Sushi"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/sushic-chiado-chiado-lisboa"], ["google_maps_url", ""], ["azure_id", "53"]]
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Noori Sushi"], ["category", "Sushi"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/noori-sushi-benfica-lisboa/menu"], ["google_maps_url", ""], ["azure_id", "54"]]
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Kiuuby"], ["category", "Sushi"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/kyuubi-oeiras-e-s%C3%A3o-juli%C3%A3o-da-barra-lisboa"], ["google_maps_url", ""], ["azure_id", "55"]]
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Nómada "], ["category", "Sushi"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/n%C3%B3mada-campo-pequeno-lisboa"], ["google_maps_url", ""], ["azure_id", "56"]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Chirashi Sushi (bowls)"], ["category", "Sushi"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/chirashi-telheiras-lisboa"], ["google_maps_url", ""], ["azure_id", "57"]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Avenida SushiCafé"], ["category", "Sushi"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/avenida-sushicaf%C3%A9-avenida-da-liberdade-lisboa"], ["google_maps_url", ""], ["azure_id", "58"]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "SOI"], ["category", "Asian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/soi-cais-do-sodr%C3%A9-lisboa"], ["google_maps_url", ""], ["azure_id", "61"]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "O Asiático"], ["category", "Asian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/o-asitico-pr%C3%ADncipe-real"], ["google_maps_url", ""], ["azure_id", "62"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "BOA BAO"], ["category", "Asian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/boabao"], ["google_maps_url", ""], ["azure_id", "63"]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tasquinha dim sum"], ["category", "Asian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/tasquinha-dim-sum-s%C3%A3o-bento-lisboa"], ["google_maps_url", ""], ["azure_id", "64"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Siam Square (Thai)"], ["category", "Asian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/siam-square-saldanha-lisboa"], ["google_maps_url", ""], ["azure_id", "65"]]
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Pho-Pu (Vietnamise)"], ["category", "Asian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/pho-pu-mouraria-lisboa"], ["google_maps_url", ""], ["azure_id", "66"]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Este Oeste"], ["category", "Asian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/este-oeste-bel%C3%A9m-lisboa"], ["google_maps_url", ""], ["azure_id", "67"]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Chutnify Lisbon"], ["category", "Indian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/chutnify-pr%C3%ADncipe-real-pr%C3%ADncipe-real-lisboa"], ["google_maps_url", ""], ["azure_id", "70"]]
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Kaprixu"], ["category", "Indian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/kaprixu-telheiras-lisboa"], ["google_maps_url", ""], ["azure_id", "71"]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Soão - Taberna Asiática"], ["category", "Indian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/so%C3%A3o-taberna-asi%C3%A1tica-alvalade-lisboa"], ["google_maps_url", ""], ["azure_id", "72"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "India gate (Chiado)"], ["category", "Indian"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/india-gate-s%C3%A9-lisboa"], ["google_maps_url", ""], ["azure_id", "73"]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Rabo d'Pêxe"], ["category", "Seafood"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/rabo-dp%C3%AAxe-saldanha-lisboa"], ["google_maps_url", ""], ["azure_id", "47"]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Monte mar"], ["category", "Seafood"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/grande-lisboa/monte-mar-lisboa-cais-do-sodr%C3%A9-lisboa"], ["google_maps_url", ""], ["azure_id", "77"]]
+  [1m[35m (9.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Sea me"], ["category", "Seafood"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/sea-me-peixaria-moderna-chiado-lisboa"], ["google_maps_url", ""], ["azure_id", "48"]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tasca da esquina"], ["category", "Seafood"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/tasca-da-esquina-lapa-estrela-lisboa"], ["google_maps_url", ""], ["azure_id", "79"]]
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Pinóquio"], ["category", "Seafood"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/cervejaria-pin%C3%B3quio-baixa-lisboa/menu"], ["google_maps_url", ""], ["azure_id", "80"]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "tico tico"], ["category", "Seafood"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/tico-tico-alvalade-lisboa"], ["google_maps_url", ""], ["azure_id", "81"]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Ramiro"], ["category", "Seafood"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/ramiro-mouraria-lisboa"], ["google_maps_url", ""], ["azure_id", "82"]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Moules & Beer"], ["category", "Seafood"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/MoulesBeer"], ["google_maps_url", ""], ["azure_id", "83"]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Peixaria da esquina"], ["category", "Seafood"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/peixaria-da-esquina-campo-de-ourique-lisboa"], ["google_maps_url", ""], ["azure_id", "84"]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Doc Cod"], ["category", "Seafood"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/doc-cod-alc%C3%A2ntara-lisboa"], ["google_maps_url", ""], ["azure_id", "85"]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Pesqueiro 25 (groups)"], ["category", "Seafood"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/pesqueiro-25-cais-do-sodr%C3%A9-lisboa"], ["google_maps_url", ""], ["azure_id", "86"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Pesca"], ["category", "Seafood"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/pesca-pr%C3%ADncipe-real-lisboa"], ["google_maps_url", ""], ["azure_id", "87"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Cachorraria Nacional"], ["category", "Hotdogs"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/cachorraria-nacional-s%C3%A3o-bento-lisboa"], ["google_maps_url", ""], ["azure_id", "90"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Frankie"], ["category", "Hotdogs"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/frankie-hot-dogs-campo-grande-lisboa"], ["google_maps_url", ""], ["azure_id", "91"]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "100 montaditos"], ["category", "Tapas and Snacks"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/100-montaditos-campo-grande-lisboa"], ["google_maps_url", ""], ["azure_id", "94"]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Topo"], ["category", "Tapas and Snacks"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/topo-mouraria-lisboa"], ["google_maps_url", ""], ["azure_id", "95"]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Cervejaria da esquina"], ["category", "Tapas and Snacks"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/cervejaria-da-esquina-campo-de-ourique-lisboa"], ["google_maps_url", ""], ["azure_id", "96"]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tapas bar"], ["category", "Tapas and Snacks"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/tapas-bar-52-pr%C3%ADncipe-real-lisboa"], ["google_maps_url", ""], ["azure_id", "97"]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Rubro"], ["category", "Tapas and Snacks"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/rubro-campo-pequeno-lisboa"], ["google_maps_url", ""], ["azure_id", "98"]]
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Boteco do Largo"], ["category", "Tapas and Snacks"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/boteco-do-largo-1-santos-lisboa"], ["google_maps_url", ""], ["azure_id", "99"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Masstige"], ["category", "Tapas and Snacks"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/masstige-campo-pequeno-lisboa"], ["google_maps_url", ""], ["azure_id", "100"]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Mesa do bairro"], ["category", "Tapas and Snacks"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/mesa-do-bairro-areeiro-lisboa"], ["google_maps_url", ""], ["azure_id", "101"]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "By the wine"], ["category", "Tapas and Snacks"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/by-the-wine-chiado-lisboa"], ["google_maps_url", ""], ["azure_id", "102"]]
+  [1m[35m (7.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Pharmacia Felicidade"], ["category", "Tapas and Snacks"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/pharmacia-felicidade-bica-lisboa"], ["google_maps_url", ""], ["azure_id", "103"]]
+  [1m[35m (6.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Matateu"], ["category", "Tapas and Snacks"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/matateu-restelo-lisboa"], ["google_maps_url", ""], ["azure_id", "104"]]
+  [1m[35m (16.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Pateo do petisco (Cascais)"], ["category", "Tapas and Snacks"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/p%C3%A1teo-do-petisco-cascais-centro-lisboa"], ["google_maps_url", ""], ["azure_id", "105"]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Luzboa"], ["category", "Tapas and Snacks"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/luzboa-pra%C3%A7a-de-espanha-lisboa"], ["google_maps_url", ""], ["azure_id", "106"]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Água pela Barba"], ["category", "Tapas and Snacks"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/%C3%A1gua-pela-barba-bica-lisboa"], ["google_maps_url", ""], ["azure_id", "107"]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tapisco"], ["category", "Tapas and Snacks"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/tapisco-pr%C3%ADncipe-real-lisboa"], ["google_maps_url", ""], ["azure_id", "108"]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Bairro do Avillez - Taberna"], ["category", "Tapas and Snacks"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/taberna-bairro-do-avillez-chiado-lisboa"], ["google_maps_url", ""], ["azure_id", "109"]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Mini Bar"], ["category", "Tapas and Snacks"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/minibar"], ["google_maps_url", ""], ["azure_id", "110"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Madame petisca"], ["category", "Tapas and Snacks"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/madame-petisca-restaurante-bar-e-terra%C3%A7o-bica-lisboa"], ["google_maps_url", ""], ["azure_id", "111"]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Vinhos e petiscos (costa)"], ["category", "Tapas and Snacks"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/vinhos-petiscos-costa-da-caparica"], ["google_maps_url", ""], ["azure_id", "112"]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Largo ao Tacho (Fado on wednesdays)"], ["category", "Tapas and Snacks"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/largo-ao-tacho-2-pr%C3%ADncipe-real-lisboa"], ["google_maps_url", ""], ["azure_id", "114"]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Maria azeitona"], ["category", "Tapas and Snacks"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/maria-azeitona-venteira-lisboa"], ["google_maps_url", ""], ["azure_id", "115"]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Travessia Bar"], ["category", "Tapas and Snacks"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/travessia-bar-cacilhas"], ["google_maps_url", ""], ["azure_id", "116"]]
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "NANA petiscos"], ["category", "Tapas and Snacks"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/nana-petiscos-charneca-de-caparica"], ["google_maps_url", ""], ["azure_id", "117"]]
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Atalho Real"], ["category", "Steak"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/atalho-real-pr%C3%ADncipe-real-lisboa"], ["google_maps_url", ""], ["azure_id", "120"]]
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Café Império"], ["category", "Steak"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/caf%C3%A9-imp%C3%A9rio-arroios-lisboa"], ["google_maps_url", ""], ["azure_id", "121"]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Café de São Bento"], ["category", "Steak"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/grande-lisboa/caf%C3%A9-de-s%C3%A3o-bento-s%C3%A3o-bento-lisboa"], ["google_maps_url", ""], ["azure_id", "122"]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Grelhados Alcantara"], ["category", "Steak"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/grelhados-de-alc%C3%A2ntara-alc%C3%A2ntara-lisboa"], ["google_maps_url", ""], ["azure_id", "123"]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "XL"], ["category", "Steak"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/xl-lapa-estrela-lisboa"], ["google_maps_url", ""], ["azure_id", "124"]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Dote"], ["category", "Steak"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/grande-lisboa/dote-avenida-da-liberdade-lisboa"], ["google_maps_url", ""], ["azure_id", "125"]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Pito do Bairro"], ["category", "Steak"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/pito-do-bairro-by-olivier-chiado-lisboa"], ["google_maps_url", ""], ["azure_id", "126"]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "La Brasserie de L'Entrecôte"], ["category", "Steak"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/la-brasserie-de-lentrec%C3%B4te-chiado-lisboa"], ["google_maps_url", ""], ["azure_id", "127"]]
+  [1m[35m (7.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "O Fondue"], ["category", "Steak"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/o-fondue-saldanha-lisboa"], ["google_maps_url", ""], ["azure_id", "128"]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Terrazza"], ["category", "Steak"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/terrazza-steakhouse-rooftop-bar-cascais-centro-lisboa"], ["google_maps_url", ""], ["azure_id", "129"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Butchers"], ["category", "Steak"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/butchers-parque-das-na%C3%A7%C3%B5es-lisboa"], ["google_maps_url", ""], ["azure_id", "130"]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Carnalentejana"], ["category", "Steak"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/carnalentejana-campo-pequeno-campo-pequeno-lisboa"], ["google_maps_url", ""], ["azure_id", "131"]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "O Talho"], ["category", "Steak"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/otalho"], ["google_maps_url", ""], ["azure_id", "132"]]
+  [1m[35m (11.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Kob"], ["category", "Steak"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/k-o-b-by-olivier-avenida-da-liberdade-lisboa"], ["google_maps_url", ""], ["azure_id", "133"]]
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Volver de Carne Y Alma"], ["category", "Steak"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/volver-de-carne-y-alma"], ["google_maps_url", ""], ["azure_id", "134"]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Carvoeiro de palma"], ["category", "Steak"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/carvoeiro-de-palma-s%C3%A3o-domingos-de-benfica-lisboa"], ["google_maps_url", ""], ["azure_id", "135"]]
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Tasca Chiado naco"], ["category", "Steak"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/a-tasca-do-lado-chiado-lisboa"], ["google_maps_url", ""], ["azure_id", "136"]]
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Adega das gravatas (carnide)"], ["category", "Steak"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/adega-das-gravatas-carnide"], ["google_maps_url", ""], ["azure_id", "137"]]
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Nogueira’s"], ["category", "Steak"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/nogueiras-lisboa-santos-lisboa"], ["google_maps_url", ""], ["azure_id", "138"]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "C.O.W - Beef & Cocktails"], ["category", "Steak"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/c-o-w-beef-cocktails-santos-lisboa"], ["google_maps_url", ""], ["azure_id", "139"]]
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "El Pibe"], ["category", "Mexican"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/empanaderia-el-pibe-pena-lisboa"], ["google_maps_url", ""], ["azure_id", "142"]]
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "El Clandestino"], ["category", "Mexican"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/el-clandestino-pr%C3%ADncipe-real-lisboa"], ["google_maps_url", ""], ["azure_id", "143"]]
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Las Ficheras"], ["category", "Mexican"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/grande-lisboa/las-ficheras-cais-do-sodr%C3%A9-lisboa"], ["google_maps_url", ""], ["azure_id", "144"]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Pistola y Corazon"], ["category", "Mexican"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/pistola-y-coraz%C3%B3n-taqueria-cais-do-sodr%C3%A9-lisboa"], ["google_maps_url", ""], ["azure_id", "145"]]
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Segundo Muelle"], ["category", "Mexican"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/segundo-muelle-cais-do-sodr%C3%A9-lisboa"], ["google_maps_url", ""], ["azure_id", "146"]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Cheviceria"], ["category", "Mexican"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/acevicheria"], ["google_maps_url", ""], ["azure_id", "147"]]
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Mez Cais"], ["category", "Mexican"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/mez-cais-cais-do-sodr%C3%A9-lisboa"], ["google_maps_url", ""], ["azure_id", "148"]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Gazpaxo"], ["category", "Mexican"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/gazpaxo-comedor-ibericano-saldanha-lisboa"], ["google_maps_url", ""], ["azure_id", "149"]]
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Cheviceria"], ["category", "Peruvian or Nepalese"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/acevicheria"], ["google_maps_url", ""], ["azure_id", "147"]]
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Casa Nepalesa"], ["category", "Peruvian or Nepalese"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/casa-nepalesa-pra%C3%A7a-de-espanha-lisboa"], ["google_maps_url", ""], ["azure_id", "153"]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Cantina Peruana"], ["category", "Peruvian or Nepalese"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/cantina-peruana-cais-do-sodr%C3%A9-lisboa"], ["google_maps_url", ""], ["azure_id", "154"]]
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Segundo Muelle"], ["category", "Peruvian or Nepalese"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/segundo-muelle-cais-do-sodr%C3%A9-lisboa"], ["google_maps_url", ""], ["azure_id", "146"]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Nicolau"], ["category", "Brunch"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/nicolau-lisboa-baixa-lisboa"], ["google_maps_url", ""], ["azure_id", "158"]]
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Fabrica dos Sabores"], ["category", "Brunch"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/f%C3%A1brica-dos-sabores-saldanha-lisboa"], ["google_maps_url", ""], ["azure_id", "159"]]
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Brick Cafe"], ["category", "Brunch"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/grande-lisboa/brick-1-anjos-lisboa"], ["google_maps_url", ""], ["azure_id", "160"]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Kaffeehaus"], ["category", "Brunch"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/kaffeehaus-chiado-lisboa"], ["google_maps_url", ""], ["azure_id", "161"]]
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Choupana"], ["category", "Brunch"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/choupana-caff%C3%A9-saldanha-lisboa"], ["google_maps_url", ""], ["azure_id", "162"]]
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Brunch Cafe"], ["category", "Brunch"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/brunch-caf%C3%A9-baixa-lisboa"], ["google_maps_url", ""], ["azure_id", "163"]]
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "The Mill"], ["category", "Brunch"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/the-mill-s%C3%A3o-bento-lisboa"], ["google_maps_url", ""], ["azure_id", "164"]]
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Infame"], ["category", "Brunch"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/infame-intendente-lisboa"], ["google_maps_url", ""], ["azure_id", "165"]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "O Ninho - Café Brunch"], ["category", "Brunch"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/o-ninho-caf%C3%A9-brunch-mouraria-lisboa"], ["google_maps_url", ""], ["azure_id", "166"]]
+  [1m[35m (27.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Leitaria"], ["category", "Brunch"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/leitaria-lisboa-rato-lisboa"], ["google_maps_url", ""], ["azure_id", "167"]]
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Delidelux"], ["category", "Brunch"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/Delidelux"], ["google_maps_url", ""], ["azure_id", "168"]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Heim Cafe"], ["category", "Brunch"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/heim-cafe-santos-lisboa"], ["google_maps_url", ""], ["azure_id", "169"]]
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Dear Breakfast"], ["category", "Brunch"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/dear-breakfast-s%C3%A3o-bento-lisboa"], ["google_maps_url", ""], ["azure_id", "170"]]
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Brooklyn"], ["category", "Brunch"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/brooklyn-avenida-da-liberdade-lisboa"], ["google_maps_url", ""], ["azure_id", "171"]]
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "La Boulangerie"], ["category", "Brunch"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/la-boulangerie-lapa-estrela-lisboa"], ["google_maps_url", ""], ["azure_id", "172"]]
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Santo Bagel"], ["category", "Brunch"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/santo-bagel-campo-pequeno-lisboa"], ["google_maps_url", ""], ["azure_id", "173"]]
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Pão Nosso de cada dia"], ["category", "Brunch"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/o-p%C3%A3o-nosso-de-cada-dia-pra%C3%A7a-de-espanha-lisboa"], ["google_maps_url", ""], ["azure_id", "174"]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Petit Prince Culture Cafe Lisbon"], ["category", "Brunch"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/le-petit-prince-pr%C3%ADncipe-real-lisboa"], ["google_maps_url", ""], ["azure_id", "175"]]
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Mercearia da Mila"], ["category", "Brunch"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/mercearia-da-mila-santos-lisboa"], ["google_maps_url", ""], ["azure_id", "176"]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Ela Canela"], ["category", "Brunch"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/ela-canela-campo-de-ourique-lisboa"], ["google_maps_url", ""], ["azure_id", "177"]]
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Maria Limão"], ["category", "Brunch"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/maria-lim%C3%A3o-gra%C3%A7a-lisboa"], ["google_maps_url", ""], ["azure_id", "178"]]
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "WISH slow coffee house"], ["category", "Brunch"], ["price_range", 1], ["zomato_url", ""], ["google_maps_url", ""], ["azure_id", "179"]]
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Fauna e Flora"], ["category", "Brunch"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/fauna-flora-madragoa-lisboa"], ["google_maps_url", ""], ["azure_id", "180"]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Conchanata"], ["category", "Icecream and sweets"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/gelados-conchanata-alvalade-lisboa"], ["google_maps_url", ""], ["azure_id", "183"]]
+  [1m[35m (8.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Baguettes & Cornets"], ["category", "Icecream and sweets"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/baguettes-cornets-s%C3%A3o-bento-lisboa"], ["google_maps_url", ""], ["azure_id", "184"]]
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Nosolo Italia"], ["category", "Icecream and sweets"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/nosoloitaliabelem"], ["google_maps_url", ""], ["azure_id", "185"]]
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Santini"], ["category", "Icecream and sweets"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/santini-rossio-lisboa"], ["google_maps_url", ""], ["azure_id", "186"]]
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Amorino"], ["category", "Icecream and sweets"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/amorino-chiado-lisboa"], ["google_maps_url", ""], ["azure_id", "188"]]
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Lambretta Lanchonete"], ["category", "Icecream and sweets"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/lambretta-lanchonete-restelo"], ["google_maps_url", ""], ["azure_id", "189"]]
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Casa do Gelado"], ["category", "Icecream and sweets"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/casa-do-gelado-areeiro-lisboa"], ["google_maps_url", ""], ["azure_id", "190"]]
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Hora H"], ["category", "Healthy"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/hora-h-marqu%C3%AAs-de-pombal"], ["google_maps_url", ""], ["azure_id", "193"]]
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Cento e Quatro"], ["category", "Healthy"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/cento-e-quatro-saldanha-lisboa"], ["google_maps_url", ""], ["azure_id", "194"]]
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Gomo"], ["category", "Healthy"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/gomo-saldanha-lisboa"], ["google_maps_url", ""], ["azure_id", "195"]]
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Os Gazeteiros"], ["category", "Healthy"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/os-gazeteiros-alfama-lisboa"], ["google_maps_url", ""], ["azure_id", "196"]]
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "La Piadina"], ["category", "Healthy"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/la-piadina-bairro-alto-lisboa"], ["google_maps_url", ""], ["azure_id", "197"]]
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Nicolau"], ["category", "Healthy"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/nicolau-lisboa-baixa-lisboa"], ["google_maps_url", ""], ["azure_id", "198"]]
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Dois Três Três"], ["category", "Healthy"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/dois-tr%C3%AAs-tr%C3%AAs-campo-de-ourique-lisboa"], ["google_maps_url", ""], ["azure_id", "199"]]
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Pachamama"], ["category", "Healthy"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/pachamama-santos-lisboa"], ["google_maps_url", ""], ["azure_id", "200"]]
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Club Life To Go"], ["category", "Healthy"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/club-life-to-go-campo-pequeno-lisboa"], ["google_maps_url", ""], ["azure_id", "201"]]
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "The Cru"], ["category", "Healthy"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/the-cru-cascais-centro-lisboa"], ["google_maps_url", ""], ["azure_id", "202"]]
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Aloha Cafe"], ["category", "Healthy"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/aloha-caf%C3%A9-sesimbra-centro"], ["google_maps_url", ""], ["azure_id", "203"]]
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Bowl Lisboa"], ["category", "Healthy"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/bowl-campo-de-ourique-lisboa"], ["google_maps_url", ""], ["azure_id", "204"]]
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "A Luz Ideal"], ["category", "Healthy"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/aluzideal"], ["google_maps_url", ""], ["azure_id", "205"]]
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Organic Caffe Chiado"], ["category", "Healthy"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/organic-caffe-chiado-lisboa"], ["google_maps_url", ""], ["azure_id", "206"]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Montana Lisboa Cafe"], ["category", "Healthy"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/montanalisboacafe"], ["google_maps_url", ""], ["azure_id", "207"]]
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Naked"], ["category", "Healthy"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/naked-pr%C3%ADncipe-real-lisboa"], ["google_maps_url", ""], ["azure_id", "208"]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Duplex"], ["category", "Other"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/duplex-cais-do-sodr%C3%A9-lisboa"], ["google_maps_url", ""], ["azure_id", "211"]]
+  [1m[35m (11.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Alma"], ["category", "Other"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/alma-chiado-lisboa"], ["google_maps_url", ""], ["azure_id", "212"]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Cantinho do Avillez"], ["category", "Other"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/cantinhodoavillez"], ["google_maps_url", ""], ["azure_id", "213"]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Pap'Açôrda"], ["category", "Other"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/papa%C3%A7%C3%B4rda-1-cais-do-sodr%C3%A9-lisboa"], ["google_maps_url", ""], ["azure_id", "214"]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Bica do Sapato"], ["category", "Other"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/bica-do-sapato-santa-apol%C3%B3nia-lisboa"], ["google_maps_url", ""], ["azure_id", "215"]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Salsa e Coentros"], ["category", "Other"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/salsa-e-coentros-alvalade-lisboa"], ["google_maps_url", ""], ["azure_id", "216"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Belcanto"], ["category", "Other"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/belcanto"], ["google_maps_url", ""], ["azure_id", "217"]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Mercado Ribeira"], ["category", "Other"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/restaurants/in/mercado-da-ribeira-cais-do-sodr%C3%A9"], ["google_maps_url", ""], ["azure_id", "219"]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Prego da Peixaria "], ["category", "Other"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/o-prego-da-peixaria-saldanha-lisboa"], ["google_maps_url", ""], ["azure_id", "220"]]
+  [1m[35m (10.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Doca de Aanto"], ["category", "Other"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/doca-de-santo-alc%C3%A2ntara-lisboa"], ["google_maps_url", ""], ["azure_id", "221"]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Rui dos Pregos"], ["category", "Other"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/rui-dos-pregos-docas-alc%C3%A2ntara-lisboa"], ["google_maps_url", ""], ["azure_id", "222"]]
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Valbom"], ["category", "Other"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/restaurante-valbom-pra%C3%A7a-de-espanha-lisboa"], ["google_maps_url", ""], ["azure_id", "223"]]
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Sem Palavras"], ["category", "Other"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/sem-palavras-alvalade-lisboa"], ["google_maps_url", ""], ["azure_id", "225"]]
+  [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Sancho"], ["category", "Other"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/sancho-avenida-da-liberdade-lisboa"], ["google_maps_url", ""], ["azure_id", "226"]]
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "JNcQUOI"], ["category", "Other"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/jncquoi-avenida-avenida-da-liberdade-lisboa"], ["google_maps_url", ""], ["azure_id", "227"]]
+  [1m[35m (5.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Frutaria Café"], ["category", "Other"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/frutaria-caf%C3%A9-baixa-lisboa"], ["google_maps_url", ""], ["azure_id", "228"]]
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Taberna Santa Marta"], ["category", "Other"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/taberna-santa-marta-avenida-da-liberdade-lisboa"], ["google_maps_url", ""], ["azure_id", "229"]]
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Dona Tília"], ["category", "Other"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/dona-t%C3%ADlia-campolide-lisboa"], ["google_maps_url", ""], ["azure_id", "230"]]
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Taberna dos Gordos"], ["category", "Other"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/taberna-dos-gordos-pr%C3%ADncipe-real-lisboa"], ["google_maps_url", ""], ["azure_id", "231"]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Taberna Sal Grosso"], ["category", "Other"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/taberna-sal-grosso-santa-apol%C3%B3nia-lisboa"], ["google_maps_url", ""], ["azure_id", "232"]]
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Maria Catita"], ["category", "Other"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/maria-catita-s%C3%A9-lisboa"], ["google_maps_url", ""], ["azure_id", "233"]]
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Stop do Bairro"], ["category", "Other"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/stop-do-bairro-campolide-lisboa"], ["google_maps_url", ""], ["azure_id", "234"]]
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2020-12-28 02:45:06 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Seafood" for 127.0.0.1 at 2020-12-28 02:45:08 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Seafood"}
+  Rendering restaurants/category.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Seafood')[0m
+  Rendered restaurants/category.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 46ms (Views: 42.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-28 02:45:17 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 39ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Tapas%20and%20Snacks" for 127.0.0.1 at 2020-12-28 02:45:20 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Tapas and Snacks"}
+  Rendering restaurants/category.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Tapas and Snacks')[0m
+  Rendered restaurants/category.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 27ms (Views: 24.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-28 02:45:33 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Other" for 127.0.0.1 at 2020-12-28 02:45:35 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Other"}
+  Rendering restaurants/category.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Other')[0m
+  Rendered restaurants/category.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 30ms (Views: 26.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/Other" for 127.0.0.1 at 2020-12-28 02:46:00 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Other"}
+  Rendering restaurants/category.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Other')[0m
+  Rendered restaurants/category.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 25ms (Views: 20.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/Other" for 127.0.0.1 at 2020-12-28 02:47:14 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Other"}
+  Rendering restaurants/category.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Other')[0m
+  Rendered restaurants/category.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 27ms (Views: 24.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-28 02:47:19 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Italian" for 127.0.0.1 at 2020-12-28 02:47:19 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Italian"}
+  Rendering restaurants/category.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Italian')[0m
+  Rendered restaurants/category.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 47ms (Views: 44.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-28 02:47:28 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 46ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Hamburgers" for 127.0.0.1 at 2020-12-28 02:47:29 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Hamburgers"}
+  Rendering restaurants/category.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Hamburgers')[0m
+  Rendered restaurants/category.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 29ms (Views: 26.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-28 02:47:38 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Sushi" for 127.0.0.1 at 2020-12-28 02:47:39 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Sushi"}
+  Rendering restaurants/category.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Sushi')[0m
+  Rendered restaurants/category.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 32ms (Views: 29.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/Sushi" for 127.0.0.1 at 2020-12-28 02:48:31 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Sushi"}
+  Rendering restaurants/category.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Sushi')[0m
+  Rendered restaurants/category.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 79ms (Views: 75.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-28 02:48:38 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Asian" for 127.0.0.1 at 2020-12-28 02:48:39 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Asian"}
+  Rendering restaurants/category.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Asian')[0m
+  Rendered restaurants/category.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 30ms (Views: 27.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-28 02:48:44 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 38ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Indian" for 127.0.0.1 at 2020-12-28 02:48:46 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Indian"}
+  Rendering restaurants/category.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Indian')[0m
+  Rendered restaurants/category.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 27ms (Views: 24.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-28 02:48:57 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Seafood" for 127.0.0.1 at 2020-12-28 02:48:58 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Seafood"}
+  Rendering restaurants/category.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Seafood')[0m
+  Rendered restaurants/category.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 28ms (Views: 25.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-28 02:49:04 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 42ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Hotdogs" for 127.0.0.1 at 2020-12-28 02:49:06 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Hotdogs"}
+  Rendering restaurants/category.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Hotdogs')[0m
+  Rendered restaurants/category.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-28 02:49:07 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 42ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Tapas%20and%20Snacks" for 127.0.0.1 at 2020-12-28 02:49:08 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Tapas and Snacks"}
+  Rendering restaurants/category.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Tapas and Snacks')[0m
+  Rendered restaurants/category.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 36ms (Views: 33.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-28 02:49:27 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Steak" for 127.0.0.1 at 2020-12-28 02:49:29 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Steak"}
+  Rendering restaurants/category.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Steak')[0m
+  Rendered restaurants/category.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 69ms (Views: 66.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-28 02:49:37 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 38ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Mexican" for 127.0.0.1 at 2020-12-28 02:49:39 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Mexican"}
+  Rendering restaurants/category.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Mexican')[0m
+  Rendered restaurants/category.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-28 02:49:46 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 36ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Peruvian%20or%20Nepalese" for 127.0.0.1 at 2020-12-28 02:49:48 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Peruvian or Nepalese"}
+  Rendering restaurants/category.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Peruvian or Nepalese')[0m
+  Rendered restaurants/category.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 27ms (Views: 24.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-28 02:49:54 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Brunch" for 127.0.0.1 at 2020-12-28 02:49:56 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Brunch"}
+  Rendering restaurants/category.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Brunch')[0m
+  Rendered restaurants/category.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 29ms (Views: 26.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/Brunch" for 127.0.0.1 at 2020-12-28 02:51:26 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Brunch"}
+  Rendering restaurants/category.html.erb within layouts/application
+  [1m[36mRestaurant Load (1.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Brunch')[0m
+  Rendered restaurants/category.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 76ms (Views: 70.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-28 02:53:00 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Icecream%20and%20sweets" for 127.0.0.1 at 2020-12-28 02:53:05 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Icecream and sweets"}
+  Rendering restaurants/category.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Icecream and sweets')[0m
+  Rendered restaurants/category.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 41ms (Views: 30.8ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-28 02:53:13 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Healthy" for 127.0.0.1 at 2020-12-28 02:53:15 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Healthy"}
+  Rendering restaurants/category.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Healthy')[0m
+  Rendered restaurants/category.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 26ms (Views: 23.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-28 02:53:24 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Healthy" for 127.0.0.1 at 2020-12-28 02:53:28 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Healthy"}
+  Rendering restaurants/category.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Healthy')[0m
+  Rendered restaurants/category.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 28ms (Views: 25.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-28 02:53:32 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 40ms (Views: 38.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Other" for 127.0.0.1 at 2020-12-28 02:53:34 +0000
+Processing by RestaurantsController#category as HTML
+  Parameters: {"category"=>"Other"}
+  Rendering restaurants/category.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Other')[0m
+  Rendered restaurants/category.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 47ms (Views: 44.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-28 02:53:40 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 32ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-28 02:56:05 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-12-28 02:56:52 +0000
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 54ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+
+

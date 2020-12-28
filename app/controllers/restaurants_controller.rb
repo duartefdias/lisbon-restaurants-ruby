@@ -13,7 +13,7 @@ class RestaurantsController < ApplicationController
             {"name" => "Steak", "image_url" => "https://lisbonrestaurantsmedia.blob.core.windows.net/thumbnails/Steak.webp"},
             {"name" => "Mexican", "image_url" => "https://lisbonrestaurantsmedia.blob.core.windows.net/thumbnails/Mexican.jpg"},
             {"name" => "Peruvian or Nepalese", "image_url" => "https://lisbonrestaurantsmedia.blob.core.windows.net/thumbnails/Peruvian%20or%20Nepalese.jpg"},
-            {"name" => "Brunch", "image_url" => "https://lisbonrestaurantsmedia.blob.core.windows.net/thumbnails/Brunch.jpg"},
+            {"name" => "Brunch", "image_url" => "https://lisbonrestaurantsmedia.blob.core.windows.net/restaurants/179.jpg"},
             {"name" => "Icecream and sweets", "image_url" => "https://lisbonrestaurantsmedia.blob.core.windows.net/thumbnails/Icecream%20and%20sweets.jpg"},
             {"name" => "Healthy", "image_url" => "https://lisbonrestaurantsmedia.blob.core.windows.net/thumbnails/Healthy.jpeg"},
             {"name" => "Other", "image_url" => "https://lisbonrestaurantsmedia.blob.core.windows.net/thumbnails/Other.jpg"},
