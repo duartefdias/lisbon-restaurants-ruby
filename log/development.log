@@ -11081,3 +11081,36 @@ Processing by RestaurantsController#index as HTML
 Completed 200 OK in 53ms (Views: 51.2ms | ActiveRecord: 0.0ms)
 
 
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3046526807777167680)[0m
+  [1m[35m (4.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateAhoyVisitsAndEvents (20210102152909)
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (134.2ms)[0m  [1m[35mCREATE TABLE "ahoy_visits" ("id" bigserial primary key, "visit_token" character varying, "visitor_token" character varying, "user_id" bigint, "ip" character varying, "user_agent" text, "referrer" text, "referring_domain" character varying, "landing_page" text, "browser" character varying, "os" character varying, "device_type" character varying, "country" character varying, "region" character varying, "city" character varying, "latitude" float, "longitude" float, "utm_source" character varying, "utm_medium" character varying, "utm_term" character varying, "utm_content" character varying, "utm_campaign" character varying, "app_version" character varying, "os_version" character varying, "platform" character varying, "started_at" timestamp)[0m
+  [1m[35m (14.2ms)[0m  [1m[35mCREATE  INDEX  "index_ahoy_visits_on_user_id" ON "ahoy_visits"  ("user_id")[0m
+  [1m[35m (13.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_ahoy_visits_on_visit_token" ON "ahoy_visits"  ("visit_token")[0m
+  [1m[35m (28.4ms)[0m  [1m[35mCREATE TABLE "ahoy_events" ("id" bigserial primary key, "visit_id" bigint, "user_id" bigint, "name" character varying, "properties" jsonb, "time" timestamp)[0m
+  [1m[35m (13.6ms)[0m  [1m[35mCREATE  INDEX  "index_ahoy_events_on_visit_id" ON "ahoy_events"  ("visit_id")[0m
+  [1m[35m (14.7ms)[0m  [1m[35mCREATE  INDEX  "index_ahoy_events_on_user_id" ON "ahoy_events"  ("user_id")[0m
+  [1m[35m (14.8ms)[0m  [1m[35mCREATE  INDEX  "index_ahoy_events_on_name_and_time" ON "ahoy_events"  ("name", "time")[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE  INDEX  "index_ahoy_events_on_properties_jsonb_path_ops" ON "ahoy_events" USING gin (properties jsonb_path_ops)[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210102152909"]]
+  [1m[35m (9.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(3046526807777167680)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2021-01-02 15:31:42 +0000
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RestaurantsController#index as HTML
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "ahoy_visits" ("visit_token", "visitor_token", "ip", "user_agent", "landing_page", "browser", "os", "device_type", "started_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["visit_token", "fb4fa7ec-4624-4eac-9068-f1f5e56102cf"], ["visitor_token", "64b84a4a-5895-43cf-8887-9f0008962837"], ["ip", "127.0.0.1"], ["user_agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"], ["landing_page", "http://localhost:3000/"], ["browser", "Chrome"], ["os", "Windows"], ["device_type", "Desktop"], ["started_at", "2021-01-02 15:31:43.727225"]]
+  [1m[35m (5.1ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued Ahoy::GeocodeV2Job (Job ID: b1e9c36e-c290-47f1-a295-77e18b7aa919) to Async(ahoy) with arguments: "fb4fa7ec-4624-4eac-9068-f1f5e56102cf", "127.0.0.1"
+[ActiveJob] [Ahoy::GeocodeV2Job] [b1e9c36e-c290-47f1-a295-77e18b7aa919] Performing Ahoy::GeocodeV2Job (Job ID: b1e9c36e-c290-47f1-a295-77e18b7aa919) from Async(ahoy) with arguments: "fb4fa7ec-4624-4eac-9068-f1f5e56102cf", "127.0.0.1"
+  Rendering restaurants/index.html.erb within layouts/application
+  Rendered restaurants/index.html.erb within layouts/application (6.6ms)
+[ActiveJob] [Ahoy::GeocodeV2Job] [b1e9c36e-c290-47f1-a295-77e18b7aa919] Performed Ahoy::GeocodeV2Job (Job ID: b1e9c36e-c290-47f1-a295-77e18b7aa919) from Async(ahoy) in 578.63ms
+Completed 200 OK in 1800ms (Views: 836.4ms | ActiveRecord: 14.3ms)
+
+

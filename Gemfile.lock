@@ -40,6 +40,11 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    ahoy_matey (3.1.0)
+      activesupport (>= 5)
+      device_detector
+      geocoder (>= 1.4.5)
+      safely_block (>= 0.2.1)
     arel (8.0.0)
     bindex (0.5.0)
     builder (3.2.3)
@@ -63,9 +68,12 @@ GEM
     commonjs (0.2.7)
     concurrent-ruby (1.0.5)
     crass (1.0.4)
+    device_detector (1.0.5)
+    errbase (0.2.0)
     erubi (1.7.1)
     execjs (2.7.0)
     ffi (1.9.25)
+    geocoder (1.6.4)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     i18n (1.0.1)
@@ -138,6 +146,8 @@ GEM
     ref (2.0.0)
     ruby_dep (1.5.0)
     rubyzip (1.2.1)
+    safely_block (0.3.0)
+      errbase (>= 0.1.1)
     sass (3.5.6)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -197,6 +207,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  ahoy_matey
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
@@ -219,4 +230,4 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 BUNDLED WITH
-   1.16.2
+   1.17.2
