@@ -14,5 +14,6 @@ COPY . /home/app
 RUN bundle install
 RUN apt-get update -qq && apt-get install -y nodejs postgresql-client
 
-ENTRYPOINT [ "/bin/bash" ]
+# ENTRYPOINT [ "/bin/bash" ]
 # CMD ["rails", "server", "-b", "0.0.0.0"]
+ENTRYPOINT [ "rails", "server", "-b", "0.0.0.0", "-e", "production" ]

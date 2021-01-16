@@ -4471,3 +4471,24 @@ I, [2021-01-16T02:38:57.349802 #1855]  INFO -- : [6b85b662-5563-41c0-9bd4-9a370f
 I, [2021-01-16T02:38:57.358025 #1855]  INFO -- : [6b85b662-5563-41c0-9bd4-9a370f869309]   Rendering restaurants/index.html.erb within layouts/application
 I, [2021-01-16T02:38:57.359628 #1855]  INFO -- : [6b85b662-5563-41c0-9bd4-9a370f869309]   Rendered restaurants/index.html.erb within layouts/application (1.2ms)
 I, [2021-01-16T02:38:57.361047 #1855]  INFO -- : [6b85b662-5563-41c0-9bd4-9a370f869309] Completed 200 OK in 11ms (Views: 5.4ms)
+I, [2021-01-16T03:14:26.977538 #7]  INFO -- : [0a4caf2b-5506-469c-8cee-0efd74e847d7] Started GET "/" for 172.19.0.1 at 2021-01-16 03:14:26 +0000
+I, [2021-01-16T03:14:26.979197 #7]  INFO -- : [0a4caf2b-5506-469c-8cee-0efd74e847d7] Processing by RestaurantsController#index as HTML
+I, [2021-01-16T03:14:26.987566 #7]  INFO -- : [0a4caf2b-5506-469c-8cee-0efd74e847d7]   Rendering restaurants/index.html.erb within layouts/application
+I, [2021-01-16T03:14:26.989285 #7]  INFO -- : [0a4caf2b-5506-469c-8cee-0efd74e847d7]   Rendered restaurants/index.html.erb within layouts/application (1.1ms)
+I, [2021-01-16T03:14:26.993516 #7]  INFO -- : [0a4caf2b-5506-469c-8cee-0efd74e847d7] Completed 200 OK in 14ms (Views: 7.5ms)
+I, [2021-01-16T03:14:31.022570 #7]  INFO -- : [b95674ba-2289-428b-904e-7633b7506eb5] Started GET "/Hamburgers" for 172.19.0.1 at 2021-01-16 03:14:31 +0000
+I, [2021-01-16T03:14:31.024950 #7]  INFO -- : [b95674ba-2289-428b-904e-7633b7506eb5] Processing by RestaurantsController#category as HTML
+I, [2021-01-16T03:14:31.025311 #7]  INFO -- : [b95674ba-2289-428b-904e-7633b7506eb5]   Parameters: {"category"=>"Hamburgers"}
+I, [2021-01-16T03:14:31.038774 #7]  INFO -- : [b95674ba-2289-428b-904e-7633b7506eb5] Completed 500 Internal Server Error in 13ms
+F, [2021-01-16T03:14:31.041940 #7] FATAL -- : [b95674ba-2289-428b-904e-7633b7506eb5]   
+F, [2021-01-16T03:14:31.042236 #7] FATAL -- : [b95674ba-2289-428b-904e-7633b7506eb5] PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+):
+F, [2021-01-16T03:14:31.043303 #7] FATAL -- : [b95674ba-2289-428b-904e-7633b7506eb5]   
+F, [2021-01-16T03:14:31.043464 #7] FATAL -- : [b95674ba-2289-428b-904e-7633b7506eb5] app/controllers/restaurants_controller.rb:30:in `category'
+I, [2021-01-16T03:14:33.018579 #7]  INFO -- : [d1b172be-534a-4637-b132-3d6f0831d84f] Started GET "/" for 172.19.0.1 at 2021-01-16 03:14:33 +0000
+I, [2021-01-16T03:14:33.021890 #7]  INFO -- : [d1b172be-534a-4637-b132-3d6f0831d84f] Processing by RestaurantsController#index as HTML
+I, [2021-01-16T03:14:33.027742 #7]  INFO -- : [d1b172be-534a-4637-b132-3d6f0831d84f]   Rendering restaurants/index.html.erb within layouts/application
+I, [2021-01-16T03:14:33.028430 #7]  INFO -- : [d1b172be-534a-4637-b132-3d6f0831d84f]   Rendered restaurants/index.html.erb within layouts/application (0.3ms)
+I, [2021-01-16T03:14:33.030211 #7]  INFO -- : [d1b172be-534a-4637-b132-3d6f0831d84f] Completed 200 OK in 8ms (Views: 4.0ms)
