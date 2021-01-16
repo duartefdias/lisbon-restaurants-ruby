@@ -5,6 +5,9 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# Fix warning
+gem 'sprockets', '3.6.3'
+
 # Track user app visits in db
 # https://github.com/ankane/ahoy
 gem 'ahoy_matey'

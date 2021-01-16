@@ -3268,3 +3268,1206 @@ D, [2020-12-28T03:00:33.501467 #21672] DEBUG -- :   [1m[35m (52.2ms)[0m  [1m
 D, [2020-12-28T03:00:33.548640 #21672] DEBUG -- :   [1m[35m (46.0ms)[0m  [1m[35mBEGIN[0m
 D, [2020-12-28T03:00:33.597160 #21672] DEBUG -- :   [1m[35mSQL (46.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "category", "price_range", "zomato_url", "google_maps_url", "azure_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Stop do Bairro"], ["category", "Other"], ["price_range", 1], ["zomato_url", "https://www.zomato.com/pt/grande-lisboa/stop-do-bairro-campolide-lisboa"], ["google_maps_url", ""], ["azure_id", "234"]]
 D, [2020-12-28T03:00:33.648054 #21672] DEBUG -- :   [1m[35m (50.0ms)[0m  [1m[35mCOMMIT[0m
+I, [2021-01-08T02:14:44.163038 #18259]  INFO -- : [5de483e0-3df9-4ea6-a863-26a007d12c11] Started GET "/" for 127.0.0.1 at 2021-01-08 02:14:44 +0000
+I, [2021-01-08T02:14:44.166971 #18259]  INFO -- : [5de483e0-3df9-4ea6-a863-26a007d12c11] Processing by RestaurantsController#index as HTML
+I, [2021-01-08T02:14:44.174858 #18259]  INFO -- : [5de483e0-3df9-4ea6-a863-26a007d12c11]   Rendering restaurants/index.html.erb within layouts/application
+I, [2021-01-08T02:14:44.176257 #18259]  INFO -- : [5de483e0-3df9-4ea6-a863-26a007d12c11]   Rendered restaurants/index.html.erb within layouts/application (1.0ms)
+I, [2021-01-08T02:14:44.178085 #18259]  INFO -- : [5de483e0-3df9-4ea6-a863-26a007d12c11] Completed 200 OK in 11ms (Views: 5.0ms)
+I, [2021-01-08T02:14:46.861048 #18259]  INFO -- : [5f75991d-3e98-402e-908f-6eb563646e83] Started GET "/Hamburgers" for 127.0.0.1 at 2021-01-08 02:14:46 +0000
+I, [2021-01-08T02:14:46.864796 #18259]  INFO -- : [5f75991d-3e98-402e-908f-6eb563646e83] Processing by RestaurantsController#category as HTML
+I, [2021-01-08T02:14:46.865048 #18259]  INFO -- : [5f75991d-3e98-402e-908f-6eb563646e83]   Parameters: {"category"=>"Hamburgers"}
+I, [2021-01-08T02:14:53.055552 #18259]  INFO -- : [5f75991d-3e98-402e-908f-6eb563646e83]   Rendering restaurants/category.html.erb within layouts/application
+D, [2021-01-08T02:14:53.323961 #18259] DEBUG -- : [5f75991d-3e98-402e-908f-6eb563646e83]   [1m[36mRestaurant Load (263.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Hamburgers')[0m
+I, [2021-01-08T02:14:55.698026 #18259]  INFO -- : [5f75991d-3e98-402e-908f-6eb563646e83]   Rendered restaurants/category.html.erb within layouts/application (2641.7ms)
+I, [2021-01-08T02:14:55.701956 #18259]  INFO -- : [5f75991d-3e98-402e-908f-6eb563646e83] Completed 200 OK in 8837ms (Views: 57.4ms | ActiveRecord: 3606.8ms)
+I, [2021-01-08T02:15:05.663832 #18259]  INFO -- : [4280d835-ad43-4412-b134-8aaa82d91a5f] Started GET "/" for 127.0.0.1 at 2021-01-08 02:15:05 +0000
+I, [2021-01-08T02:15:05.679937 #18259]  INFO -- : [4280d835-ad43-4412-b134-8aaa82d91a5f] Processing by RestaurantsController#index as HTML
+I, [2021-01-08T02:15:05.684226 #18259]  INFO -- : [4280d835-ad43-4412-b134-8aaa82d91a5f]   Rendering restaurants/index.html.erb within layouts/application
+I, [2021-01-08T02:15:05.685297 #18259]  INFO -- : [4280d835-ad43-4412-b134-8aaa82d91a5f]   Rendered restaurants/index.html.erb within layouts/application (0.5ms)
+I, [2021-01-08T02:15:05.690593 #18259]  INFO -- : [4280d835-ad43-4412-b134-8aaa82d91a5f] Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+I, [2021-01-16T02:14:39.135586 #62]  INFO -- : [992f192c-4f81-4515-ac73-c3e1bd9005a2] Started GET "/" for 172.19.0.1 at 2021-01-16 02:14:39 +0000
+I, [2021-01-16T02:14:39.137525 #62]  INFO -- : [992f192c-4f81-4515-ac73-c3e1bd9005a2] Processing by RestaurantsController#index as HTML
+I, [2021-01-16T02:14:39.146278 #62]  INFO -- : [992f192c-4f81-4515-ac73-c3e1bd9005a2]   Rendering restaurants/index.html.erb within layouts/application
+I, [2021-01-16T02:14:39.147773 #62]  INFO -- : [992f192c-4f81-4515-ac73-c3e1bd9005a2]   Rendered restaurants/index.html.erb within layouts/application (0.8ms)
+I, [2021-01-16T02:14:39.150768 #62]  INFO -- : [992f192c-4f81-4515-ac73-c3e1bd9005a2] Completed 200 OK in 13ms (Views: 6.6ms)
+I, [2021-01-16T02:14:57.363412 #62]  INFO -- : [34de2571-e0fb-40ea-8c80-c42f1fefe323] Started GET "/Steak" for 172.19.0.1 at 2021-01-16 02:14:57 +0000
+I, [2021-01-16T02:14:57.364650 #62]  INFO -- : [34de2571-e0fb-40ea-8c80-c42f1fefe323] Processing by RestaurantsController#category as HTML
+I, [2021-01-16T02:14:57.364819 #62]  INFO -- : [34de2571-e0fb-40ea-8c80-c42f1fefe323]   Parameters: {"category"=>"Steak"}
+I, [2021-01-16T02:14:58.280085 #62]  INFO -- : [34de2571-e0fb-40ea-8c80-c42f1fefe323] Completed 500 Internal Server Error in 915ms
+F, [2021-01-16T02:14:58.281046 #62] FATAL -- : [34de2571-e0fb-40ea-8c80-c42f1fefe323]   
+F, [2021-01-16T02:14:58.281121 #62] FATAL -- : [34de2571-e0fb-40ea-8c80-c42f1fefe323] PG::ConnectionBad (FATAL:  no pg_hba.conf entry for host "79.168.76.7", user "duartefdiasdb", database "restaurantsappdb", SSL on
+FATAL:  SSL connection is required. Please specify SSL options and retry.
+):
+F, [2021-01-16T02:14:58.281160 #62] FATAL -- : [34de2571-e0fb-40ea-8c80-c42f1fefe323]   
+F, [2021-01-16T02:14:58.281202 #62] FATAL -- : [34de2571-e0fb-40ea-8c80-c42f1fefe323] app/controllers/restaurants_controller.rb:30:in `category'
+I, [2021-01-16T02:15:06.076667 #62]  INFO -- : [d7fac3ab-2f20-4775-8f8e-ce3acd8b60f1] Started GET "/" for 172.19.0.1 at 2021-01-16 02:15:06 +0000
+I, [2021-01-16T02:15:06.077491 #62]  INFO -- : [d7fac3ab-2f20-4775-8f8e-ce3acd8b60f1] Processing by RestaurantsController#index as HTML
+I, [2021-01-16T02:15:06.078577 #62]  INFO -- : [d7fac3ab-2f20-4775-8f8e-ce3acd8b60f1]   Rendering restaurants/index.html.erb within layouts/application
+I, [2021-01-16T02:15:06.078961 #62]  INFO -- : [d7fac3ab-2f20-4775-8f8e-ce3acd8b60f1]   Rendered restaurants/index.html.erb within layouts/application (0.2ms)
+I, [2021-01-16T02:15:06.080148 #62]  INFO -- : [d7fac3ab-2f20-4775-8f8e-ce3acd8b60f1] Completed 200 OK in 2ms (Views: 1.7ms)
+I, [2021-01-16T02:17:27.232736 #62]  INFO -- : [ba130023-5f5a-4fe6-ac13-7d594daa8498] Started GET "/" for 172.19.0.1 at 2021-01-16 02:17:27 +0000
+I, [2021-01-16T02:17:27.233871 #62]  INFO -- : [ba130023-5f5a-4fe6-ac13-7d594daa8498] Processing by RestaurantsController#index as HTML
+I, [2021-01-16T02:17:27.235405 #62]  INFO -- : [ba130023-5f5a-4fe6-ac13-7d594daa8498]   Rendering restaurants/index.html.erb within layouts/application
+I, [2021-01-16T02:17:27.235817 #62]  INFO -- : [ba130023-5f5a-4fe6-ac13-7d594daa8498]   Rendered restaurants/index.html.erb within layouts/application (0.2ms)
+I, [2021-01-16T02:17:27.236862 #62]  INFO -- : [ba130023-5f5a-4fe6-ac13-7d594daa8498] Completed 200 OK in 3ms (Views: 1.7ms)
+I, [2021-01-16T02:17:29.469590 #62]  INFO -- : [b30b5543-be79-4f34-965a-6a99740f8aff] Started GET "/Italian" for 172.19.0.1 at 2021-01-16 02:17:29 +0000
+I, [2021-01-16T02:17:29.471128 #62]  INFO -- : [b30b5543-be79-4f34-965a-6a99740f8aff] Processing by RestaurantsController#category as HTML
+I, [2021-01-16T02:17:29.471340 #62]  INFO -- : [b30b5543-be79-4f34-965a-6a99740f8aff]   Parameters: {"category"=>"Italian"}
+I, [2021-01-16T02:17:30.140974 #62]  INFO -- : [b30b5543-be79-4f34-965a-6a99740f8aff] Completed 500 Internal Server Error in 669ms
+F, [2021-01-16T02:17:30.142044 #62] FATAL -- : [b30b5543-be79-4f34-965a-6a99740f8aff]   
+F, [2021-01-16T02:17:30.142174 #62] FATAL -- : [b30b5543-be79-4f34-965a-6a99740f8aff] PG::ConnectionBad (FATAL:  no pg_hba.conf entry for host "79.168.76.7", user "duartefdiasdb", database "restaurantsappdb", SSL on
+FATAL:  SSL connection is required. Please specify SSL options and retry.
+):
+F, [2021-01-16T02:17:30.142260 #62] FATAL -- : [b30b5543-be79-4f34-965a-6a99740f8aff]   
+F, [2021-01-16T02:17:30.142365 #62] FATAL -- : [b30b5543-be79-4f34-965a-6a99740f8aff] app/controllers/restaurants_controller.rb:30:in `category'
+I, [2021-01-16T02:17:34.005794 #62]  INFO -- : [3ecafff2-2f23-46b8-9f75-d92aa9713fb6] Started GET "/" for 172.19.0.1 at 2021-01-16 02:17:34 +0000
+I, [2021-01-16T02:17:34.007111 #62]  INFO -- : [3ecafff2-2f23-46b8-9f75-d92aa9713fb6] Processing by RestaurantsController#index as HTML
+I, [2021-01-16T02:17:34.008461 #62]  INFO -- : [3ecafff2-2f23-46b8-9f75-d92aa9713fb6]   Rendering restaurants/index.html.erb within layouts/application
+I, [2021-01-16T02:17:34.008815 #62]  INFO -- : [3ecafff2-2f23-46b8-9f75-d92aa9713fb6]   Rendered restaurants/index.html.erb within layouts/application (0.2ms)
+I, [2021-01-16T02:17:34.009548 #62]  INFO -- : [3ecafff2-2f23-46b8-9f75-d92aa9713fb6] Completed 200 OK in 2ms (Views: 1.4ms)
+I, [2021-01-16T02:19:06.985298 #62]  INFO -- : [c0739b2f-34eb-475b-9108-f578c667da47] Started GET "/" for 172.19.0.1 at 2021-01-16 02:19:06 +0000
+I, [2021-01-16T02:19:06.986768 #62]  INFO -- : [c0739b2f-34eb-475b-9108-f578c667da47] Processing by RestaurantsController#index as HTML
+I, [2021-01-16T02:19:06.988690 #62]  INFO -- : [c0739b2f-34eb-475b-9108-f578c667da47]   Rendering restaurants/index.html.erb within layouts/application
+I, [2021-01-16T02:19:06.989349 #62]  INFO -- : [c0739b2f-34eb-475b-9108-f578c667da47]   Rendered restaurants/index.html.erb within layouts/application (0.3ms)
+I, [2021-01-16T02:19:06.991091 #62]  INFO -- : [c0739b2f-34eb-475b-9108-f578c667da47] Completed 200 OK in 4ms (Views: 2.6ms)
+I, [2021-01-16T02:19:13.589063 #62]  INFO -- : [5fa94f26-a11c-48b2-a2e9-b30554d7a2ee] Started GET "/Italian" for 172.19.0.1 at 2021-01-16 02:19:13 +0000
+I, [2021-01-16T02:19:13.589852 #62]  INFO -- : [5fa94f26-a11c-48b2-a2e9-b30554d7a2ee] Processing by RestaurantsController#category as HTML
+I, [2021-01-16T02:19:13.589929 #62]  INFO -- : [5fa94f26-a11c-48b2-a2e9-b30554d7a2ee]   Parameters: {"category"=>"Italian"}
+I, [2021-01-16T02:19:14.871643 #62]  INFO -- : [5fa94f26-a11c-48b2-a2e9-b30554d7a2ee]   Rendering restaurants/category.html.erb within layouts/application
+D, [2021-01-16T02:19:15.956326 #62] DEBUG -- : [5fa94f26-a11c-48b2-a2e9-b30554d7a2ee]   [1m[36mRestaurant Load (1082.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Italian')[0m
+I, [2021-01-16T02:19:17.218606 #62]  INFO -- : [5fa94f26-a11c-48b2-a2e9-b30554d7a2ee]   Rendered restaurants/category.html.erb within layouts/application (2346.7ms)
+I, [2021-01-16T02:19:17.220052 #62]  INFO -- : [5fa94f26-a11c-48b2-a2e9-b30554d7a2ee] Completed 200 OK in 3630ms (Views: 15.6ms | ActiveRecord: 2673.3ms)
+I, [2021-01-16T02:19:28.082014 #62]  INFO -- : [72dace64-1670-4bae-b0a4-216f953d4a9b] Started GET "/" for 172.19.0.1 at 2021-01-16 02:19:28 +0000
+I, [2021-01-16T02:19:28.083172 #62]  INFO -- : [72dace64-1670-4bae-b0a4-216f953d4a9b] Processing by RestaurantsController#index as HTML
+I, [2021-01-16T02:19:28.084776 #62]  INFO -- : [72dace64-1670-4bae-b0a4-216f953d4a9b]   Rendering restaurants/index.html.erb within layouts/application
+I, [2021-01-16T02:19:28.085291 #62]  INFO -- : [72dace64-1670-4bae-b0a4-216f953d4a9b]   Rendered restaurants/index.html.erb within layouts/application (0.2ms)
+I, [2021-01-16T02:19:28.088047 #62]  INFO -- : [72dace64-1670-4bae-b0a4-216f953d4a9b] Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+I, [2021-01-16T02:20:51.880224 #74]  INFO -- : [071c6369-f47a-4dec-92d9-4b33b18a0dbb] Started GET "/" for 172.19.0.1 at 2021-01-16 02:20:51 +0000
+I, [2021-01-16T02:20:51.882199 #74]  INFO -- : [071c6369-f47a-4dec-92d9-4b33b18a0dbb] Processing by RestaurantsController#index as HTML
+I, [2021-01-16T02:20:51.896559 #74]  INFO -- : [071c6369-f47a-4dec-92d9-4b33b18a0dbb]   Rendering restaurants/index.html.erb within layouts/application
+I, [2021-01-16T02:20:51.897933 #74]  INFO -- : [071c6369-f47a-4dec-92d9-4b33b18a0dbb]   Rendered restaurants/index.html.erb within layouts/application (1.1ms)
+I, [2021-01-16T02:20:51.899660 #74]  INFO -- : [071c6369-f47a-4dec-92d9-4b33b18a0dbb] Completed 200 OK in 17ms (Views: 6.9ms)
+I, [2021-01-16T02:20:58.511658 #74]  INFO -- : [93825321-3103-4808-83f2-7743723d9b6c] Started GET "/" for 172.19.0.1 at 2021-01-16 02:20:58 +0000
+I, [2021-01-16T02:20:58.512823 #74]  INFO -- : [93825321-3103-4808-83f2-7743723d9b6c] Processing by RestaurantsController#index as HTML
+I, [2021-01-16T02:20:58.514738 #74]  INFO -- : [93825321-3103-4808-83f2-7743723d9b6c]   Rendering restaurants/index.html.erb within layouts/application
+I, [2021-01-16T02:20:58.515422 #74]  INFO -- : [93825321-3103-4808-83f2-7743723d9b6c]   Rendered restaurants/index.html.erb within layouts/application (0.3ms)
+I, [2021-01-16T02:20:58.517042 #74]  INFO -- : [93825321-3103-4808-83f2-7743723d9b6c] Completed 200 OK in 4ms (Views: 2.7ms)
+I, [2021-01-16T02:21:03.170303 #74]  INFO -- : [08cf126f-46c3-42d6-b78e-2cce22b442e2] Started GET "/Italian" for 172.19.0.1 at 2021-01-16 02:21:03 +0000
+I, [2021-01-16T02:21:03.171163 #74]  INFO -- : [08cf126f-46c3-42d6-b78e-2cce22b442e2] Processing by RestaurantsController#category as HTML
+I, [2021-01-16T02:21:03.171255 #74]  INFO -- : [08cf126f-46c3-42d6-b78e-2cce22b442e2]   Parameters: {"category"=>"Italian"}
+I, [2021-01-16T02:21:04.547690 #74]  INFO -- : [08cf126f-46c3-42d6-b78e-2cce22b442e2]   Rendering restaurants/category.html.erb within layouts/application
+D, [2021-01-16T02:21:04.629969 #74] DEBUG -- : [08cf126f-46c3-42d6-b78e-2cce22b442e2]   [1m[36mRestaurant Load (80.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Italian')[0m
+I, [2021-01-16T02:21:05.100183 #74]  INFO -- : [08cf126f-46c3-42d6-b78e-2cce22b442e2]   Rendered restaurants/category.html.erb within layouts/application (552.3ms)
+I, [2021-01-16T02:21:05.101172 #74]  INFO -- : [08cf126f-46c3-42d6-b78e-2cce22b442e2] Completed 200 OK in 1930ms (Views: 17.5ms | ActiveRecord: 894.1ms)
+I, [2021-01-16T02:21:06.717091 #74]  INFO -- : [4654dc26-bd32-4bee-afcc-873c19c31c17] Started GET "/" for 172.19.0.1 at 2021-01-16 02:21:06 +0000
+I, [2021-01-16T02:21:06.718464 #74]  INFO -- : [4654dc26-bd32-4bee-afcc-873c19c31c17] Processing by RestaurantsController#index as HTML
+I, [2021-01-16T02:21:06.720269 #74]  INFO -- : [4654dc26-bd32-4bee-afcc-873c19c31c17]   Rendering restaurants/index.html.erb within layouts/application
+I, [2021-01-16T02:21:06.720836 #74]  INFO -- : [4654dc26-bd32-4bee-afcc-873c19c31c17]   Rendered restaurants/index.html.erb within layouts/application (0.3ms)
+I, [2021-01-16T02:21:06.722203 #74]  INFO -- : [4654dc26-bd32-4bee-afcc-873c19c31c17] Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+I, [2021-01-16T02:21:20.041002 #74]  INFO -- : [b002fac8-c4ad-4441-8708-6657a48db26e] Started GET "/Steak" for 172.19.0.1 at 2021-01-16 02:21:20 +0000
+I, [2021-01-16T02:21:20.041997 #74]  INFO -- : [b002fac8-c4ad-4441-8708-6657a48db26e] Processing by RestaurantsController#category as HTML
+I, [2021-01-16T02:21:20.042123 #74]  INFO -- : [b002fac8-c4ad-4441-8708-6657a48db26e]   Parameters: {"category"=>"Steak"}
+I, [2021-01-16T02:21:20.091327 #74]  INFO -- : [b002fac8-c4ad-4441-8708-6657a48db26e]   Rendering restaurants/category.html.erb within layouts/application
+D, [2021-01-16T02:21:20.141921 #74] DEBUG -- : [b002fac8-c4ad-4441-8708-6657a48db26e]   [1m[36mRestaurant Load (49.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Steak')[0m
+I, [2021-01-16T02:21:20.143484 #74]  INFO -- : [b002fac8-c4ad-4441-8708-6657a48db26e]   Rendered restaurants/category.html.erb within layouts/application (52.0ms)
+I, [2021-01-16T02:21:20.144315 #74]  INFO -- : [b002fac8-c4ad-4441-8708-6657a48db26e] Completed 200 OK in 102ms (Views: 3.3ms | ActiveRecord: 49.9ms)
+I, [2021-01-16T02:21:21.450726 #74]  INFO -- : [02647036-97af-4593-a13a-8ddb37566444] Started GET "/" for 172.19.0.1 at 2021-01-16 02:21:21 +0000
+I, [2021-01-16T02:21:21.453153 #74]  INFO -- : [02647036-97af-4593-a13a-8ddb37566444] Processing by RestaurantsController#index as HTML
+I, [2021-01-16T02:21:21.455716 #74]  INFO -- : [02647036-97af-4593-a13a-8ddb37566444]   Rendering restaurants/index.html.erb within layouts/application
+I, [2021-01-16T02:21:21.456283 #74]  INFO -- : [02647036-97af-4593-a13a-8ddb37566444]   Rendered restaurants/index.html.erb within layouts/application (0.2ms)
+I, [2021-01-16T02:21:21.457598 #74]  INFO -- : [02647036-97af-4593-a13a-8ddb37566444] Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+I, [2021-01-16T02:22:58.565496 #74]  INFO -- : [f0a16a81-3c80-4349-9040-9f01fba85bd9] Started GET "/" for 172.19.0.1 at 2021-01-16 02:22:58 +0000
+I, [2021-01-16T02:22:58.567087 #74]  INFO -- : [f0a16a81-3c80-4349-9040-9f01fba85bd9] Processing by RestaurantsController#index as HTML
+I, [2021-01-16T02:22:58.568455 #74]  INFO -- : [f0a16a81-3c80-4349-9040-9f01fba85bd9]   Rendering restaurants/index.html.erb within layouts/application
+I, [2021-01-16T02:22:58.568864 #74]  INFO -- : [f0a16a81-3c80-4349-9040-9f01fba85bd9]   Rendered restaurants/index.html.erb within layouts/application (0.2ms)
+I, [2021-01-16T02:22:58.569534 #74]  INFO -- : [f0a16a81-3c80-4349-9040-9f01fba85bd9] Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+I, [2021-01-16T02:23:01.589992 #74]  INFO -- : [f3b28bc2-a881-4398-8416-171f61a37d12] Started GET "/Sushi" for 172.19.0.1 at 2021-01-16 02:23:01 +0000
+I, [2021-01-16T02:23:01.590924 #74]  INFO -- : [f3b28bc2-a881-4398-8416-171f61a37d12] Processing by RestaurantsController#category as HTML
+I, [2021-01-16T02:23:01.591016 #74]  INFO -- : [f3b28bc2-a881-4398-8416-171f61a37d12]   Parameters: {"category"=>"Sushi"}
+I, [2021-01-16T02:23:01.639532 #74]  INFO -- : [f3b28bc2-a881-4398-8416-171f61a37d12]   Rendering restaurants/category.html.erb within layouts/application
+D, [2021-01-16T02:23:01.689335 #74] DEBUG -- : [f3b28bc2-a881-4398-8416-171f61a37d12]   [1m[36mRestaurant Load (49.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Sushi')[0m
+I, [2021-01-16T02:23:01.691357 #74]  INFO -- : [f3b28bc2-a881-4398-8416-171f61a37d12]   Rendered restaurants/category.html.erb within layouts/application (51.6ms)
+I, [2021-01-16T02:23:01.692271 #74]  INFO -- : [f3b28bc2-a881-4398-8416-171f61a37d12] Completed 200 OK in 101ms (Views: 3.8ms | ActiveRecord: 49.1ms)
+I, [2021-01-16T02:23:14.413399 #74]  INFO -- : [cbbc3028-eaae-41f9-ba8d-1e365b4e88b6] Started GET "/Sushi" for 172.19.0.1 at 2021-01-16 02:23:14 +0000
+I, [2021-01-16T02:23:14.416575 #74]  INFO -- : [cbbc3028-eaae-41f9-ba8d-1e365b4e88b6] Processing by RestaurantsController#category as HTML
+I, [2021-01-16T02:23:14.417161 #74]  INFO -- : [cbbc3028-eaae-41f9-ba8d-1e365b4e88b6]   Parameters: {"category"=>"Sushi"}
+I, [2021-01-16T02:23:14.471417 #74]  INFO -- : [cbbc3028-eaae-41f9-ba8d-1e365b4e88b6]   Rendering restaurants/category.html.erb within layouts/application
+D, [2021-01-16T02:23:14.521771 #74] DEBUG -- : [cbbc3028-eaae-41f9-ba8d-1e365b4e88b6]   [1m[36mRestaurant Load (49.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Sushi')[0m
+I, [2021-01-16T02:23:14.523670 #74]  INFO -- : [cbbc3028-eaae-41f9-ba8d-1e365b4e88b6]   Rendered restaurants/category.html.erb within layouts/application (51.9ms)
+I, [2021-01-16T02:23:14.524880 #74]  INFO -- : [cbbc3028-eaae-41f9-ba8d-1e365b4e88b6] Completed 200 OK in 107ms (Views: 4.6ms | ActiveRecord: 49.3ms)
+I, [2021-01-16T02:26:56.083477 #32497]  INFO -- : [bd4fab42-1466-4f86-a873-bab9d7ed52c1] Started GET "/" for 127.0.0.1 at 2021-01-16 02:26:56 +0000
+I, [2021-01-16T02:26:56.084937 #32497]  INFO -- : [bd4fab42-1466-4f86-a873-bab9d7ed52c1] Processing by RestaurantsController#index as HTML
+I, [2021-01-16T02:26:56.093457 #32497]  INFO -- : [bd4fab42-1466-4f86-a873-bab9d7ed52c1]   Rendering restaurants/index.html.erb within layouts/application
+I, [2021-01-16T02:26:56.094377 #32497]  INFO -- : [bd4fab42-1466-4f86-a873-bab9d7ed52c1]   Rendered restaurants/index.html.erb within layouts/application (0.7ms)
+I, [2021-01-16T02:26:56.095699 #32497]  INFO -- : [bd4fab42-1466-4f86-a873-bab9d7ed52c1] Completed 200 OK in 11ms (Views: 4.4ms)
+I, [2021-01-16T02:26:56.313953 #32497]  INFO -- : [83c5277e-9954-4bfb-9a5c-40ab6a30a078] Started GET "/favicon.ico" for 127.0.0.1 at 2021-01-16 02:26:56 +0000
+I, [2021-01-16T02:26:56.315594 #32497]  INFO -- : [83c5277e-9954-4bfb-9a5c-40ab6a30a078] Processing by RestaurantsController#category as 
+I, [2021-01-16T02:26:56.315779 #32497]  INFO -- : [83c5277e-9954-4bfb-9a5c-40ab6a30a078]   Parameters: {"category"=>"favicon"}
+I, [2021-01-16T02:26:57.963258 #32497]  INFO -- : [83c5277e-9954-4bfb-9a5c-40ab6a30a078]   Rendering restaurants/category.html.erb within layouts/application
+D, [2021-01-16T02:26:58.035373 #32497] DEBUG -- : [83c5277e-9954-4bfb-9a5c-40ab6a30a078]   [1m[36mRestaurant Load (70.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'favicon')[0m
+I, [2021-01-16T02:26:58.336857 #32497]  INFO -- : [83c5277e-9954-4bfb-9a5c-40ab6a30a078]   Rendered restaurants/category.html.erb within layouts/application (373.4ms)
+I, [2021-01-16T02:26:58.338339 #32497]  INFO -- : [83c5277e-9954-4bfb-9a5c-40ab6a30a078] Completed 200 OK in 2022ms (Views: 9.4ms | ActiveRecord: 1069.2ms)
+I, [2021-01-16T02:27:01.212541 #32497]  INFO -- : [7cc40290-3576-4052-9e7e-050b81945cda] Started GET "/" for 127.0.0.1 at 2021-01-16 02:27:01 +0000
+I, [2021-01-16T02:27:01.214004 #32497]  INFO -- : [7cc40290-3576-4052-9e7e-050b81945cda] Processing by RestaurantsController#index as HTML
+I, [2021-01-16T02:27:01.215726 #32497]  INFO -- : [7cc40290-3576-4052-9e7e-050b81945cda]   Rendering restaurants/index.html.erb within layouts/application
+I, [2021-01-16T02:27:01.216391 #32497]  INFO -- : [7cc40290-3576-4052-9e7e-050b81945cda]   Rendered restaurants/index.html.erb within layouts/application (0.3ms)
+I, [2021-01-16T02:27:01.219803 #32497]  INFO -- : [7cc40290-3576-4052-9e7e-050b81945cda] Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+I, [2021-01-16T02:27:01.302499 #32497]  INFO -- : [a7d48465-f584-43fc-9ef9-c51e602fdf59] Started GET "/assets/application-d055096eb8c69fcdce63d78829826d550688f7c83c694cee65786fd1e7d41f8c.css" for 127.0.0.1 at 2021-01-16 02:27:01 +0000
+F, [2021-01-16T02:27:01.303815 #32497] FATAL -- : [a7d48465-f584-43fc-9ef9-c51e602fdf59]   
+F, [2021-01-16T02:27:01.304273 #32497] FATAL -- : [a7d48465-f584-43fc-9ef9-c51e602fdf59] ActionController::RoutingError (No route matches [GET] "/assets/application-d055096eb8c69fcdce63d78829826d550688f7c83c694cee65786fd1e7d41f8c.css"):
+F, [2021-01-16T02:27:01.304694 #32497] FATAL -- : [a7d48465-f584-43fc-9ef9-c51e602fdf59]   
+F, [2021-01-16T02:27:01.305646 #32497] FATAL -- : [a7d48465-f584-43fc-9ef9-c51e602fdf59] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[a7d48465-f584-43fc-9ef9-c51e602fdf59] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[a7d48465-f584-43fc-9ef9-c51e602fdf59] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:36:in `call_app'
+[a7d48465-f584-43fc-9ef9-c51e602fdf59] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `block in call'
+[a7d48465-f584-43fc-9ef9-c51e602fdf59] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[a7d48465-f584-43fc-9ef9-c51e602fdf59] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:26:in `tagged'
+[a7d48465-f584-43fc-9ef9-c51e602fdf59] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `tagged'
+[a7d48465-f584-43fc-9ef9-c51e602fdf59] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `call'
+[a7d48465-f584-43fc-9ef9-c51e602fdf59] vendor/bundle/ruby/2.6.0/gems/ahoy_matey-3.1.0/lib/ahoy/engine.rb:22:in `call_with_quiet_ahoy'
+[a7d48465-f584-43fc-9ef9-c51e602fdf59] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[a7d48465-f584-43fc-9ef9-c51e602fdf59] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[a7d48465-f584-43fc-9ef9-c51e602fdf59] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+[a7d48465-f584-43fc-9ef9-c51e602fdf59] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+[a7d48465-f584-43fc-9ef9-c51e602fdf59] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[a7d48465-f584-43fc-9ef9-c51e602fdf59] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+[a7d48465-f584-43fc-9ef9-c51e602fdf59] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+[a7d48465-f584-43fc-9ef9-c51e602fdf59] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/engine.rb:522:in `call'
+[a7d48465-f584-43fc-9ef9-c51e602fdf59] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+[a7d48465-f584-43fc-9ef9-c51e602fdf59] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+[a7d48465-f584-43fc-9ef9-c51e602fdf59] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+[a7d48465-f584-43fc-9ef9-c51e602fdf59] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+[a7d48465-f584-43fc-9ef9-c51e602fdf59] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2021-01-16T02:27:01.305394 #32497]  INFO -- : [d7ecedf9-163c-450e-bca1-3335a6296f5b] Started GET "/assets/application-abe2eb2d579dc747f77ef5a0c5d1983d92affc985a28949214dcc25d38078459.js" for 127.0.0.1 at 2021-01-16 02:27:01 +0000
+F, [2021-01-16T02:27:01.307210 #32497] FATAL -- : [d7ecedf9-163c-450e-bca1-3335a6296f5b]   
+F, [2021-01-16T02:27:01.307592 #32497] FATAL -- : [d7ecedf9-163c-450e-bca1-3335a6296f5b] ActionController::RoutingError (No route matches [GET] "/assets/application-abe2eb2d579dc747f77ef5a0c5d1983d92affc985a28949214dcc25d38078459.js"):
+F, [2021-01-16T02:27:01.307797 #32497] FATAL -- : [d7ecedf9-163c-450e-bca1-3335a6296f5b]   
+F, [2021-01-16T02:27:01.308212 #32497] FATAL -- : [d7ecedf9-163c-450e-bca1-3335a6296f5b] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[d7ecedf9-163c-450e-bca1-3335a6296f5b] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[d7ecedf9-163c-450e-bca1-3335a6296f5b] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:36:in `call_app'
+[d7ecedf9-163c-450e-bca1-3335a6296f5b] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `block in call'
+[d7ecedf9-163c-450e-bca1-3335a6296f5b] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[d7ecedf9-163c-450e-bca1-3335a6296f5b] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:26:in `tagged'
+[d7ecedf9-163c-450e-bca1-3335a6296f5b] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `tagged'
+[d7ecedf9-163c-450e-bca1-3335a6296f5b] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `call'
+[d7ecedf9-163c-450e-bca1-3335a6296f5b] vendor/bundle/ruby/2.6.0/gems/ahoy_matey-3.1.0/lib/ahoy/engine.rb:22:in `call_with_quiet_ahoy'
+[d7ecedf9-163c-450e-bca1-3335a6296f5b] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[d7ecedf9-163c-450e-bca1-3335a6296f5b] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[d7ecedf9-163c-450e-bca1-3335a6296f5b] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+[d7ecedf9-163c-450e-bca1-3335a6296f5b] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+[d7ecedf9-163c-450e-bca1-3335a6296f5b] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[d7ecedf9-163c-450e-bca1-3335a6296f5b] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+[d7ecedf9-163c-450e-bca1-3335a6296f5b] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+[d7ecedf9-163c-450e-bca1-3335a6296f5b] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/engine.rb:522:in `call'
+[d7ecedf9-163c-450e-bca1-3335a6296f5b] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+[d7ecedf9-163c-450e-bca1-3335a6296f5b] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+[d7ecedf9-163c-450e-bca1-3335a6296f5b] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+[d7ecedf9-163c-450e-bca1-3335a6296f5b] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+[d7ecedf9-163c-450e-bca1-3335a6296f5b] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2021-01-16T02:27:01.386494 #32497]  INFO -- : [e86268bd-857e-45fd-a6ed-c09a01b98668] Started GET "/lisbon_restaurants_logo.png" for 127.0.0.1 at 2021-01-16 02:27:01 +0000
+I, [2021-01-16T02:27:01.387860 #32497]  INFO -- : [e86268bd-857e-45fd-a6ed-c09a01b98668] Processing by RestaurantsController#category as PNG
+I, [2021-01-16T02:27:01.388023 #32497]  INFO -- : [e86268bd-857e-45fd-a6ed-c09a01b98668]   Parameters: {"category"=>"lisbon_restaurants_logo"}
+I, [2021-01-16T02:27:01.445969 #32497]  INFO -- : [e86268bd-857e-45fd-a6ed-c09a01b98668] Completed 500 Internal Server Error in 58ms (ActiveRecord: 0.0ms)
+F, [2021-01-16T02:27:01.447539 #32497] FATAL -- : [e86268bd-857e-45fd-a6ed-c09a01b98668]   
+F, [2021-01-16T02:27:01.447975 #32497] FATAL -- : [e86268bd-857e-45fd-a6ed-c09a01b98668] ActionView::MissingTemplate (Missing template restaurants/category, application/category with {:locale=>[:en], :formats=>[:png], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/duartefdias/ruby/personal-projects/lisbon-restaurants-ruby/app/views"
+  * "/home/duartefdias/ruby/personal-projects/lisbon-restaurants-ruby/vendor/bundle/ruby/2.6.0/gems/twitter-bootstrap-rails-4.0.0/app/views"
+):
+F, [2021-01-16T02:27:01.448119 #32497] FATAL -- : [e86268bd-857e-45fd-a6ed-c09a01b98668]   
+F, [2021-01-16T02:27:01.448204 #32497] FATAL -- : [e86268bd-857e-45fd-a6ed-c09a01b98668] app/controllers/restaurants_controller.rb:31:in `category'
+I, [2021-01-16T02:27:12.953424 #32497]  INFO -- : [98f8816b-e2e5-47db-ae4e-efbe971566d8] Started GET "/Italian" for 127.0.0.1 at 2021-01-16 02:27:12 +0000
+I, [2021-01-16T02:27:12.954507 #32497]  INFO -- : [98f8816b-e2e5-47db-ae4e-efbe971566d8] Processing by RestaurantsController#category as HTML
+I, [2021-01-16T02:27:12.954604 #32497]  INFO -- : [98f8816b-e2e5-47db-ae4e-efbe971566d8]   Parameters: {"category"=>"Italian"}
+I, [2021-01-16T02:27:13.005428 #32497]  INFO -- : [98f8816b-e2e5-47db-ae4e-efbe971566d8]   Rendering restaurants/category.html.erb within layouts/application
+D, [2021-01-16T02:27:13.056673 #32497] DEBUG -- : [98f8816b-e2e5-47db-ae4e-efbe971566d8]   [1m[36mRestaurant Load (49.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Italian')[0m
+I, [2021-01-16T02:27:13.282399 #32497]  INFO -- : [98f8816b-e2e5-47db-ae4e-efbe971566d8]   Rendered restaurants/category.html.erb within layouts/application (276.7ms)
+I, [2021-01-16T02:27:13.284579 #32497]  INFO -- : [98f8816b-e2e5-47db-ae4e-efbe971566d8] Completed 200 OK in 330ms (Views: 14.1ms | ActiveRecord: 265.6ms)
+I, [2021-01-16T02:27:13.339843 #32497]  INFO -- : [1ca35ffd-acfe-4669-a3a4-fb152ce0005e] Started GET "/assets/application-d055096eb8c69fcdce63d78829826d550688f7c83c694cee65786fd1e7d41f8c.css" for 127.0.0.1 at 2021-01-16 02:27:13 +0000
+F, [2021-01-16T02:27:13.341289 #32497] FATAL -- : [1ca35ffd-acfe-4669-a3a4-fb152ce0005e]   
+F, [2021-01-16T02:27:13.342333 #32497] FATAL -- : [1ca35ffd-acfe-4669-a3a4-fb152ce0005e] ActionController::RoutingError (No route matches [GET] "/assets/application-d055096eb8c69fcdce63d78829826d550688f7c83c694cee65786fd1e7d41f8c.css"):
+F, [2021-01-16T02:27:13.342574 #32497] FATAL -- : [1ca35ffd-acfe-4669-a3a4-fb152ce0005e]   
+F, [2021-01-16T02:27:13.342821 #32497] FATAL -- : [1ca35ffd-acfe-4669-a3a4-fb152ce0005e] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[1ca35ffd-acfe-4669-a3a4-fb152ce0005e] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[1ca35ffd-acfe-4669-a3a4-fb152ce0005e] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:36:in `call_app'
+[1ca35ffd-acfe-4669-a3a4-fb152ce0005e] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `block in call'
+[1ca35ffd-acfe-4669-a3a4-fb152ce0005e] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[1ca35ffd-acfe-4669-a3a4-fb152ce0005e] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:26:in `tagged'
+[1ca35ffd-acfe-4669-a3a4-fb152ce0005e] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `tagged'
+[1ca35ffd-acfe-4669-a3a4-fb152ce0005e] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `call'
+[1ca35ffd-acfe-4669-a3a4-fb152ce0005e] vendor/bundle/ruby/2.6.0/gems/ahoy_matey-3.1.0/lib/ahoy/engine.rb:22:in `call_with_quiet_ahoy'
+[1ca35ffd-acfe-4669-a3a4-fb152ce0005e] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[1ca35ffd-acfe-4669-a3a4-fb152ce0005e] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[1ca35ffd-acfe-4669-a3a4-fb152ce0005e] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+[1ca35ffd-acfe-4669-a3a4-fb152ce0005e] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+[1ca35ffd-acfe-4669-a3a4-fb152ce0005e] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[1ca35ffd-acfe-4669-a3a4-fb152ce0005e] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+[1ca35ffd-acfe-4669-a3a4-fb152ce0005e] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+[1ca35ffd-acfe-4669-a3a4-fb152ce0005e] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/engine.rb:522:in `call'
+[1ca35ffd-acfe-4669-a3a4-fb152ce0005e] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+[1ca35ffd-acfe-4669-a3a4-fb152ce0005e] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+[1ca35ffd-acfe-4669-a3a4-fb152ce0005e] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+[1ca35ffd-acfe-4669-a3a4-fb152ce0005e] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+[1ca35ffd-acfe-4669-a3a4-fb152ce0005e] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2021-01-16T02:27:13.342027 #32497]  INFO -- : [53cf60c2-3790-4cda-b98e-26c62fe4fd20] Started GET "/assets/application-abe2eb2d579dc747f77ef5a0c5d1983d92affc985a28949214dcc25d38078459.js" for 127.0.0.1 at 2021-01-16 02:27:13 +0000
+F, [2021-01-16T02:27:13.344951 #32497] FATAL -- : [53cf60c2-3790-4cda-b98e-26c62fe4fd20]   
+F, [2021-01-16T02:27:13.345470 #32497] FATAL -- : [53cf60c2-3790-4cda-b98e-26c62fe4fd20] ActionController::RoutingError (No route matches [GET] "/assets/application-abe2eb2d579dc747f77ef5a0c5d1983d92affc985a28949214dcc25d38078459.js"):
+F, [2021-01-16T02:27:13.346250 #32497] FATAL -- : [53cf60c2-3790-4cda-b98e-26c62fe4fd20]   
+F, [2021-01-16T02:27:13.346884 #32497] FATAL -- : [53cf60c2-3790-4cda-b98e-26c62fe4fd20] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[53cf60c2-3790-4cda-b98e-26c62fe4fd20] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[53cf60c2-3790-4cda-b98e-26c62fe4fd20] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:36:in `call_app'
+[53cf60c2-3790-4cda-b98e-26c62fe4fd20] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `block in call'
+[53cf60c2-3790-4cda-b98e-26c62fe4fd20] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[53cf60c2-3790-4cda-b98e-26c62fe4fd20] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:26:in `tagged'
+[53cf60c2-3790-4cda-b98e-26c62fe4fd20] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `tagged'
+[53cf60c2-3790-4cda-b98e-26c62fe4fd20] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `call'
+[53cf60c2-3790-4cda-b98e-26c62fe4fd20] vendor/bundle/ruby/2.6.0/gems/ahoy_matey-3.1.0/lib/ahoy/engine.rb:22:in `call_with_quiet_ahoy'
+[53cf60c2-3790-4cda-b98e-26c62fe4fd20] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[53cf60c2-3790-4cda-b98e-26c62fe4fd20] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[53cf60c2-3790-4cda-b98e-26c62fe4fd20] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+[53cf60c2-3790-4cda-b98e-26c62fe4fd20] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+[53cf60c2-3790-4cda-b98e-26c62fe4fd20] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[53cf60c2-3790-4cda-b98e-26c62fe4fd20] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+[53cf60c2-3790-4cda-b98e-26c62fe4fd20] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+[53cf60c2-3790-4cda-b98e-26c62fe4fd20] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/engine.rb:522:in `call'
+[53cf60c2-3790-4cda-b98e-26c62fe4fd20] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+[53cf60c2-3790-4cda-b98e-26c62fe4fd20] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+[53cf60c2-3790-4cda-b98e-26c62fe4fd20] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+[53cf60c2-3790-4cda-b98e-26c62fe4fd20] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+[53cf60c2-3790-4cda-b98e-26c62fe4fd20] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2021-01-16T02:27:13.408404 #32497]  INFO -- : [886a4b5a-27d9-4480-a377-fb83ea99f9ab] Started GET "/left-arrow-symbol-in-a-circle.png" for 127.0.0.1 at 2021-01-16 02:27:13 +0000
+I, [2021-01-16T02:27:13.410409 #32497]  INFO -- : [886a4b5a-27d9-4480-a377-fb83ea99f9ab] Processing by RestaurantsController#category as PNG
+I, [2021-01-16T02:27:13.410721 #32497]  INFO -- : [886a4b5a-27d9-4480-a377-fb83ea99f9ab]   Parameters: {"category"=>"left-arrow-symbol-in-a-circle"}
+I, [2021-01-16T02:27:13.460823 #32497]  INFO -- : [886a4b5a-27d9-4480-a377-fb83ea99f9ab] Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms)
+F, [2021-01-16T02:27:13.461963 #32497] FATAL -- : [886a4b5a-27d9-4480-a377-fb83ea99f9ab]   
+F, [2021-01-16T02:27:13.462164 #32497] FATAL -- : [886a4b5a-27d9-4480-a377-fb83ea99f9ab] ActionView::MissingTemplate (Missing template restaurants/category, application/category with {:locale=>[:en], :formats=>[:png], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/duartefdias/ruby/personal-projects/lisbon-restaurants-ruby/app/views"
+  * "/home/duartefdias/ruby/personal-projects/lisbon-restaurants-ruby/vendor/bundle/ruby/2.6.0/gems/twitter-bootstrap-rails-4.0.0/app/views"
+):
+F, [2021-01-16T02:27:13.462269 #32497] FATAL -- : [886a4b5a-27d9-4480-a377-fb83ea99f9ab]   
+F, [2021-01-16T02:27:13.462328 #32497] FATAL -- : [886a4b5a-27d9-4480-a377-fb83ea99f9ab] app/controllers/restaurants_controller.rb:31:in `category'
+I, [2021-01-16T02:27:16.035506 #32497]  INFO -- : [b86639ef-cc10-4c60-8812-37af6ec3f004] Started GET "/" for 127.0.0.1 at 2021-01-16 02:27:16 +0000
+I, [2021-01-16T02:27:16.037371 #32497]  INFO -- : [b86639ef-cc10-4c60-8812-37af6ec3f004] Processing by RestaurantsController#index as HTML
+I, [2021-01-16T02:27:16.040983 #32497]  INFO -- : [b86639ef-cc10-4c60-8812-37af6ec3f004]   Rendering restaurants/index.html.erb within layouts/application
+I, [2021-01-16T02:27:16.042304 #32497]  INFO -- : [b86639ef-cc10-4c60-8812-37af6ec3f004]   Rendered restaurants/index.html.erb within layouts/application (0.8ms)
+I, [2021-01-16T02:27:16.045274 #32497]  INFO -- : [b86639ef-cc10-4c60-8812-37af6ec3f004] Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+I, [2021-01-16T02:27:16.134012 #32497]  INFO -- : [63ea8e7c-04b4-451c-86eb-3698fdaa734c] Started GET "/assets/application-d055096eb8c69fcdce63d78829826d550688f7c83c694cee65786fd1e7d41f8c.css" for 127.0.0.1 at 2021-01-16 02:27:16 +0000
+F, [2021-01-16T02:27:16.135620 #32497] FATAL -- : [63ea8e7c-04b4-451c-86eb-3698fdaa734c]   
+F, [2021-01-16T02:27:16.135865 #32497] FATAL -- : [63ea8e7c-04b4-451c-86eb-3698fdaa734c] ActionController::RoutingError (No route matches [GET] "/assets/application-d055096eb8c69fcdce63d78829826d550688f7c83c694cee65786fd1e7d41f8c.css"):
+F, [2021-01-16T02:27:16.135955 #32497] FATAL -- : [63ea8e7c-04b4-451c-86eb-3698fdaa734c]   
+F, [2021-01-16T02:27:16.136037 #32497] FATAL -- : [63ea8e7c-04b4-451c-86eb-3698fdaa734c] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[63ea8e7c-04b4-451c-86eb-3698fdaa734c] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[63ea8e7c-04b4-451c-86eb-3698fdaa734c] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:36:in `call_app'
+[63ea8e7c-04b4-451c-86eb-3698fdaa734c] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `block in call'
+[63ea8e7c-04b4-451c-86eb-3698fdaa734c] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[63ea8e7c-04b4-451c-86eb-3698fdaa734c] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:26:in `tagged'
+[63ea8e7c-04b4-451c-86eb-3698fdaa734c] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `tagged'
+[63ea8e7c-04b4-451c-86eb-3698fdaa734c] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `call'
+[63ea8e7c-04b4-451c-86eb-3698fdaa734c] vendor/bundle/ruby/2.6.0/gems/ahoy_matey-3.1.0/lib/ahoy/engine.rb:22:in `call_with_quiet_ahoy'
+[63ea8e7c-04b4-451c-86eb-3698fdaa734c] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[63ea8e7c-04b4-451c-86eb-3698fdaa734c] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[63ea8e7c-04b4-451c-86eb-3698fdaa734c] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+[63ea8e7c-04b4-451c-86eb-3698fdaa734c] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+[63ea8e7c-04b4-451c-86eb-3698fdaa734c] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[63ea8e7c-04b4-451c-86eb-3698fdaa734c] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+[63ea8e7c-04b4-451c-86eb-3698fdaa734c] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+[63ea8e7c-04b4-451c-86eb-3698fdaa734c] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/engine.rb:522:in `call'
+[63ea8e7c-04b4-451c-86eb-3698fdaa734c] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+[63ea8e7c-04b4-451c-86eb-3698fdaa734c] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+[63ea8e7c-04b4-451c-86eb-3698fdaa734c] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+[63ea8e7c-04b4-451c-86eb-3698fdaa734c] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+[63ea8e7c-04b4-451c-86eb-3698fdaa734c] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2021-01-16T02:27:16.142273 #32497]  INFO -- : [d819c211-bc67-40e5-9761-2d8ef8b068b8] Started GET "/assets/application-abe2eb2d579dc747f77ef5a0c5d1983d92affc985a28949214dcc25d38078459.js" for 127.0.0.1 at 2021-01-16 02:27:16 +0000
+F, [2021-01-16T02:27:16.143444 #32497] FATAL -- : [d819c211-bc67-40e5-9761-2d8ef8b068b8]   
+F, [2021-01-16T02:27:16.143633 #32497] FATAL -- : [d819c211-bc67-40e5-9761-2d8ef8b068b8] ActionController::RoutingError (No route matches [GET] "/assets/application-abe2eb2d579dc747f77ef5a0c5d1983d92affc985a28949214dcc25d38078459.js"):
+F, [2021-01-16T02:27:16.143720 #32497] FATAL -- : [d819c211-bc67-40e5-9761-2d8ef8b068b8]   
+F, [2021-01-16T02:27:16.143818 #32497] FATAL -- : [d819c211-bc67-40e5-9761-2d8ef8b068b8] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[d819c211-bc67-40e5-9761-2d8ef8b068b8] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[d819c211-bc67-40e5-9761-2d8ef8b068b8] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:36:in `call_app'
+[d819c211-bc67-40e5-9761-2d8ef8b068b8] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `block in call'
+[d819c211-bc67-40e5-9761-2d8ef8b068b8] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[d819c211-bc67-40e5-9761-2d8ef8b068b8] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:26:in `tagged'
+[d819c211-bc67-40e5-9761-2d8ef8b068b8] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `tagged'
+[d819c211-bc67-40e5-9761-2d8ef8b068b8] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `call'
+[d819c211-bc67-40e5-9761-2d8ef8b068b8] vendor/bundle/ruby/2.6.0/gems/ahoy_matey-3.1.0/lib/ahoy/engine.rb:22:in `call_with_quiet_ahoy'
+[d819c211-bc67-40e5-9761-2d8ef8b068b8] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[d819c211-bc67-40e5-9761-2d8ef8b068b8] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[d819c211-bc67-40e5-9761-2d8ef8b068b8] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+[d819c211-bc67-40e5-9761-2d8ef8b068b8] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+[d819c211-bc67-40e5-9761-2d8ef8b068b8] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[d819c211-bc67-40e5-9761-2d8ef8b068b8] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+[d819c211-bc67-40e5-9761-2d8ef8b068b8] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+[d819c211-bc67-40e5-9761-2d8ef8b068b8] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/engine.rb:522:in `call'
+[d819c211-bc67-40e5-9761-2d8ef8b068b8] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+[d819c211-bc67-40e5-9761-2d8ef8b068b8] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+[d819c211-bc67-40e5-9761-2d8ef8b068b8] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+[d819c211-bc67-40e5-9761-2d8ef8b068b8] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+[d819c211-bc67-40e5-9761-2d8ef8b068b8] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2021-01-16T02:27:16.217409 #32497]  INFO -- : [ba077582-1939-483b-86cd-909bd16397b2] Started GET "/lisbon_restaurants_logo.png" for 127.0.0.1 at 2021-01-16 02:27:16 +0000
+I, [2021-01-16T02:27:16.219479 #32497]  INFO -- : [ba077582-1939-483b-86cd-909bd16397b2] Processing by RestaurantsController#category as PNG
+I, [2021-01-16T02:27:16.219737 #32497]  INFO -- : [ba077582-1939-483b-86cd-909bd16397b2]   Parameters: {"category"=>"lisbon_restaurants_logo"}
+I, [2021-01-16T02:27:16.641109 #32497]  INFO -- : [ba077582-1939-483b-86cd-909bd16397b2] Completed 500 Internal Server Error in 421ms (ActiveRecord: 0.0ms)
+F, [2021-01-16T02:27:16.642740 #32497] FATAL -- : [ba077582-1939-483b-86cd-909bd16397b2]   
+F, [2021-01-16T02:27:16.643137 #32497] FATAL -- : [ba077582-1939-483b-86cd-909bd16397b2] ActionView::MissingTemplate (Missing template restaurants/category, application/category with {:locale=>[:en], :formats=>[:png], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/duartefdias/ruby/personal-projects/lisbon-restaurants-ruby/app/views"
+  * "/home/duartefdias/ruby/personal-projects/lisbon-restaurants-ruby/vendor/bundle/ruby/2.6.0/gems/twitter-bootstrap-rails-4.0.0/app/views"
+):
+F, [2021-01-16T02:27:16.643285 #32497] FATAL -- : [ba077582-1939-483b-86cd-909bd16397b2]   
+F, [2021-01-16T02:27:16.643344 #32497] FATAL -- : [ba077582-1939-483b-86cd-909bd16397b2] app/controllers/restaurants_controller.rb:31:in `category'
+I, [2021-01-16T02:27:19.288123 #32497]  INFO -- : [7a5bb50e-6366-41df-9e2f-9f86b948b863] Started GET "/favicon.ico" for 127.0.0.1 at 2021-01-16 02:27:19 +0000
+I, [2021-01-16T02:27:19.290768 #32497]  INFO -- : [7a5bb50e-6366-41df-9e2f-9f86b948b863] Processing by RestaurantsController#category as 
+I, [2021-01-16T02:27:19.291387 #32497]  INFO -- : [7a5bb50e-6366-41df-9e2f-9f86b948b863]   Parameters: {"category"=>"favicon"}
+I, [2021-01-16T02:27:19.344824 #32497]  INFO -- : [7a5bb50e-6366-41df-9e2f-9f86b948b863]   Rendering restaurants/category.html.erb within layouts/application
+D, [2021-01-16T02:27:19.393791 #32497] DEBUG -- : [7a5bb50e-6366-41df-9e2f-9f86b948b863]   [1m[36mRestaurant Load (48.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'favicon')[0m
+I, [2021-01-16T02:27:19.394288 #32497]  INFO -- : [7a5bb50e-6366-41df-9e2f-9f86b948b863]   Rendered restaurants/category.html.erb within layouts/application (49.2ms)
+I, [2021-01-16T02:27:19.395405 #32497]  INFO -- : [7a5bb50e-6366-41df-9e2f-9f86b948b863] Completed 200 OK in 104ms (Views: 2.9ms | ActiveRecord: 48.1ms)
+I, [2021-01-16T02:29:47.416192 #369]  INFO -- : [94c209cf-064e-4a4d-94ff-f4554b87c081] Started GET "/" for 127.0.0.1 at 2021-01-16 02:29:47 +0000
+I, [2021-01-16T02:29:47.417842 #369]  INFO -- : [94c209cf-064e-4a4d-94ff-f4554b87c081] Processing by RestaurantsController#index as HTML
+I, [2021-01-16T02:29:47.425919 #369]  INFO -- : [94c209cf-064e-4a4d-94ff-f4554b87c081]   Rendering restaurants/index.html.erb within layouts/application
+I, [2021-01-16T02:29:47.426965 #369]  INFO -- : [94c209cf-064e-4a4d-94ff-f4554b87c081]   Rendered restaurants/index.html.erb within layouts/application (0.8ms)
+I, [2021-01-16T02:29:47.428395 #369]  INFO -- : [94c209cf-064e-4a4d-94ff-f4554b87c081] Completed 200 OK in 10ms (Views: 4.2ms)
+I, [2021-01-16T02:29:47.511313 #369]  INFO -- : [b051a247-b14c-4a9b-a572-646c32eb5339] Started GET "/assets/application-d055096eb8c69fcdce63d78829826d550688f7c83c694cee65786fd1e7d41f8c.css" for 127.0.0.1 at 2021-01-16 02:29:47 +0000
+I, [2021-01-16T02:29:47.817496 #369]  INFO -- : [4f4e2b99-721c-4e89-91dd-246eb86ff03f] Started GET "/assets/application-abe2eb2d579dc747f77ef5a0c5d1983d92affc985a28949214dcc25d38078459.js" for 127.0.0.1 at 2021-01-16 02:29:47 +0000
+F, [2021-01-16T02:29:48.535503 #369] FATAL -- : [b051a247-b14c-4a9b-a572-646c32eb5339]   
+F, [2021-01-16T02:29:48.535609 #369] FATAL -- : [b051a247-b14c-4a9b-a572-646c32eb5339] ActionController::RoutingError (No route matches [GET] "/assets/application-d055096eb8c69fcdce63d78829826d550688f7c83c694cee65786fd1e7d41f8c.css"):
+F, [2021-01-16T02:29:48.535656 #369] FATAL -- : [b051a247-b14c-4a9b-a572-646c32eb5339]   
+F, [2021-01-16T02:29:48.535709 #369] FATAL -- : [b051a247-b14c-4a9b-a572-646c32eb5339] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[b051a247-b14c-4a9b-a572-646c32eb5339] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[b051a247-b14c-4a9b-a572-646c32eb5339] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:36:in `call_app'
+[b051a247-b14c-4a9b-a572-646c32eb5339] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `block in call'
+[b051a247-b14c-4a9b-a572-646c32eb5339] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[b051a247-b14c-4a9b-a572-646c32eb5339] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:26:in `tagged'
+[b051a247-b14c-4a9b-a572-646c32eb5339] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `tagged'
+[b051a247-b14c-4a9b-a572-646c32eb5339] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `call'
+[b051a247-b14c-4a9b-a572-646c32eb5339] vendor/bundle/ruby/2.6.0/gems/ahoy_matey-3.1.0/lib/ahoy/engine.rb:22:in `call_with_quiet_ahoy'
+[b051a247-b14c-4a9b-a572-646c32eb5339] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[b051a247-b14c-4a9b-a572-646c32eb5339] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[b051a247-b14c-4a9b-a572-646c32eb5339] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+[b051a247-b14c-4a9b-a572-646c32eb5339] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+[b051a247-b14c-4a9b-a572-646c32eb5339] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[b051a247-b14c-4a9b-a572-646c32eb5339] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+[b051a247-b14c-4a9b-a572-646c32eb5339] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+[b051a247-b14c-4a9b-a572-646c32eb5339] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/engine.rb:522:in `call'
+[b051a247-b14c-4a9b-a572-646c32eb5339] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+[b051a247-b14c-4a9b-a572-646c32eb5339] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+[b051a247-b14c-4a9b-a572-646c32eb5339] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+[b051a247-b14c-4a9b-a572-646c32eb5339] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+[b051a247-b14c-4a9b-a572-646c32eb5339] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2021-01-16T02:29:48.545479 #369]  INFO -- : [bd4dbfcf-9685-4dc3-91f5-386d48c74898] Started GET "/lisbon_restaurants_logo.png" for 127.0.0.1 at 2021-01-16 02:29:48 +0000
+I, [2021-01-16T02:29:48.546400 #369]  INFO -- : [bd4dbfcf-9685-4dc3-91f5-386d48c74898] Processing by RestaurantsController#category as PNG
+I, [2021-01-16T02:29:48.546477 #369]  INFO -- : [bd4dbfcf-9685-4dc3-91f5-386d48c74898]   Parameters: {"category"=>"lisbon_restaurants_logo"}
+F, [2021-01-16T02:29:50.497477 #369] FATAL -- : [4f4e2b99-721c-4e89-91dd-246eb86ff03f]   
+F, [2021-01-16T02:29:50.497566 #369] FATAL -- : [4f4e2b99-721c-4e89-91dd-246eb86ff03f] ActionController::RoutingError (No route matches [GET] "/assets/application-abe2eb2d579dc747f77ef5a0c5d1983d92affc985a28949214dcc25d38078459.js"):
+F, [2021-01-16T02:29:50.497595 #369] FATAL -- : [4f4e2b99-721c-4e89-91dd-246eb86ff03f]   
+F, [2021-01-16T02:29:50.497625 #369] FATAL -- : [4f4e2b99-721c-4e89-91dd-246eb86ff03f] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[4f4e2b99-721c-4e89-91dd-246eb86ff03f] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[4f4e2b99-721c-4e89-91dd-246eb86ff03f] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:36:in `call_app'
+[4f4e2b99-721c-4e89-91dd-246eb86ff03f] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `block in call'
+[4f4e2b99-721c-4e89-91dd-246eb86ff03f] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[4f4e2b99-721c-4e89-91dd-246eb86ff03f] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:26:in `tagged'
+[4f4e2b99-721c-4e89-91dd-246eb86ff03f] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `tagged'
+[4f4e2b99-721c-4e89-91dd-246eb86ff03f] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `call'
+[4f4e2b99-721c-4e89-91dd-246eb86ff03f] vendor/bundle/ruby/2.6.0/gems/ahoy_matey-3.1.0/lib/ahoy/engine.rb:22:in `call_with_quiet_ahoy'
+[4f4e2b99-721c-4e89-91dd-246eb86ff03f] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[4f4e2b99-721c-4e89-91dd-246eb86ff03f] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[4f4e2b99-721c-4e89-91dd-246eb86ff03f] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+[4f4e2b99-721c-4e89-91dd-246eb86ff03f] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+[4f4e2b99-721c-4e89-91dd-246eb86ff03f] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[4f4e2b99-721c-4e89-91dd-246eb86ff03f] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+[4f4e2b99-721c-4e89-91dd-246eb86ff03f] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+[4f4e2b99-721c-4e89-91dd-246eb86ff03f] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/engine.rb:522:in `call'
+[4f4e2b99-721c-4e89-91dd-246eb86ff03f] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+[4f4e2b99-721c-4e89-91dd-246eb86ff03f] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+[4f4e2b99-721c-4e89-91dd-246eb86ff03f] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+[4f4e2b99-721c-4e89-91dd-246eb86ff03f] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+[4f4e2b99-721c-4e89-91dd-246eb86ff03f] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2021-01-16T02:29:51.407600 #369]  INFO -- : [bd4dbfcf-9685-4dc3-91f5-386d48c74898] Completed 500 Internal Server Error in 2861ms (ActiveRecord: 726.2ms)
+F, [2021-01-16T02:29:51.411290 #369] FATAL -- : [bd4dbfcf-9685-4dc3-91f5-386d48c74898]   
+F, [2021-01-16T02:29:51.411571 #369] FATAL -- : [bd4dbfcf-9685-4dc3-91f5-386d48c74898] ActionView::MissingTemplate (Missing template restaurants/category, application/category with {:locale=>[:en], :formats=>[:png], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/duartefdias/ruby/personal-projects/lisbon-restaurants-ruby/app/views"
+  * "/home/duartefdias/ruby/personal-projects/lisbon-restaurants-ruby/vendor/bundle/ruby/2.6.0/gems/twitter-bootstrap-rails-4.0.0/app/views"
+):
+F, [2021-01-16T02:29:51.411670 #369] FATAL -- : [bd4dbfcf-9685-4dc3-91f5-386d48c74898]   
+F, [2021-01-16T02:29:51.411750 #369] FATAL -- : [bd4dbfcf-9685-4dc3-91f5-386d48c74898] app/controllers/restaurants_controller.rb:31:in `category'
+I, [2021-01-16T02:29:57.014108 #369]  INFO -- : [9172a4b5-3039-4654-a47e-2f7fa99af6e3] Started GET "/" for 127.0.0.1 at 2021-01-16 02:29:57 +0000
+I, [2021-01-16T02:29:57.015979 #369]  INFO -- : [9172a4b5-3039-4654-a47e-2f7fa99af6e3] Processing by RestaurantsController#index as HTML
+I, [2021-01-16T02:29:57.025435 #369]  INFO -- : [9172a4b5-3039-4654-a47e-2f7fa99af6e3]   Rendering restaurants/index.html.erb within layouts/application
+I, [2021-01-16T02:29:57.029834 #369]  INFO -- : [9172a4b5-3039-4654-a47e-2f7fa99af6e3]   Rendered restaurants/index.html.erb within layouts/application (4.0ms)
+I, [2021-01-16T02:29:57.033060 #369]  INFO -- : [9172a4b5-3039-4654-a47e-2f7fa99af6e3] Completed 200 OK in 15ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+I, [2021-01-16T02:29:57.181319 #369]  INFO -- : [d4a76ddb-7d28-4385-bcb4-18eb860fe6b8] Started GET "/assets/application-d055096eb8c69fcdce63d78829826d550688f7c83c694cee65786fd1e7d41f8c.css" for 127.0.0.1 at 2021-01-16 02:29:57 +0000
+F, [2021-01-16T02:29:57.217599 #369] FATAL -- : [d4a76ddb-7d28-4385-bcb4-18eb860fe6b8]   
+F, [2021-01-16T02:29:57.218334 #369] FATAL -- : [d4a76ddb-7d28-4385-bcb4-18eb860fe6b8] ActionController::RoutingError (No route matches [GET] "/assets/application-d055096eb8c69fcdce63d78829826d550688f7c83c694cee65786fd1e7d41f8c.css"):
+F, [2021-01-16T02:29:57.219283 #369] FATAL -- : [d4a76ddb-7d28-4385-bcb4-18eb860fe6b8]   
+F, [2021-01-16T02:29:57.219479 #369] FATAL -- : [d4a76ddb-7d28-4385-bcb4-18eb860fe6b8] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[d4a76ddb-7d28-4385-bcb4-18eb860fe6b8] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[d4a76ddb-7d28-4385-bcb4-18eb860fe6b8] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:36:in `call_app'
+[d4a76ddb-7d28-4385-bcb4-18eb860fe6b8] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `block in call'
+[d4a76ddb-7d28-4385-bcb4-18eb860fe6b8] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[d4a76ddb-7d28-4385-bcb4-18eb860fe6b8] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:26:in `tagged'
+[d4a76ddb-7d28-4385-bcb4-18eb860fe6b8] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `tagged'
+[d4a76ddb-7d28-4385-bcb4-18eb860fe6b8] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `call'
+[d4a76ddb-7d28-4385-bcb4-18eb860fe6b8] vendor/bundle/ruby/2.6.0/gems/ahoy_matey-3.1.0/lib/ahoy/engine.rb:22:in `call_with_quiet_ahoy'
+[d4a76ddb-7d28-4385-bcb4-18eb860fe6b8] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[d4a76ddb-7d28-4385-bcb4-18eb860fe6b8] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[d4a76ddb-7d28-4385-bcb4-18eb860fe6b8] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+[d4a76ddb-7d28-4385-bcb4-18eb860fe6b8] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+[d4a76ddb-7d28-4385-bcb4-18eb860fe6b8] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[d4a76ddb-7d28-4385-bcb4-18eb860fe6b8] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+[d4a76ddb-7d28-4385-bcb4-18eb860fe6b8] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+[d4a76ddb-7d28-4385-bcb4-18eb860fe6b8] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/engine.rb:522:in `call'
+[d4a76ddb-7d28-4385-bcb4-18eb860fe6b8] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+[d4a76ddb-7d28-4385-bcb4-18eb860fe6b8] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+[d4a76ddb-7d28-4385-bcb4-18eb860fe6b8] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+[d4a76ddb-7d28-4385-bcb4-18eb860fe6b8] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+[d4a76ddb-7d28-4385-bcb4-18eb860fe6b8] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2021-01-16T02:29:57.219103 #369]  INFO -- : [a71cdede-9c6f-4a9b-a126-254b229b575a] Started GET "/assets/application-abe2eb2d579dc747f77ef5a0c5d1983d92affc985a28949214dcc25d38078459.js" for 127.0.0.1 at 2021-01-16 02:29:57 +0000
+F, [2021-01-16T02:29:57.222497 #369] FATAL -- : [a71cdede-9c6f-4a9b-a126-254b229b575a]   
+F, [2021-01-16T02:29:57.222793 #369] FATAL -- : [a71cdede-9c6f-4a9b-a126-254b229b575a] ActionController::RoutingError (No route matches [GET] "/assets/application-abe2eb2d579dc747f77ef5a0c5d1983d92affc985a28949214dcc25d38078459.js"):
+F, [2021-01-16T02:29:57.223151 #369] FATAL -- : [a71cdede-9c6f-4a9b-a126-254b229b575a]   
+F, [2021-01-16T02:29:57.223263 #369] FATAL -- : [a71cdede-9c6f-4a9b-a126-254b229b575a] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[a71cdede-9c6f-4a9b-a126-254b229b575a] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[a71cdede-9c6f-4a9b-a126-254b229b575a] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:36:in `call_app'
+[a71cdede-9c6f-4a9b-a126-254b229b575a] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `block in call'
+[a71cdede-9c6f-4a9b-a126-254b229b575a] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[a71cdede-9c6f-4a9b-a126-254b229b575a] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:26:in `tagged'
+[a71cdede-9c6f-4a9b-a126-254b229b575a] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `tagged'
+[a71cdede-9c6f-4a9b-a126-254b229b575a] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `call'
+[a71cdede-9c6f-4a9b-a126-254b229b575a] vendor/bundle/ruby/2.6.0/gems/ahoy_matey-3.1.0/lib/ahoy/engine.rb:22:in `call_with_quiet_ahoy'
+[a71cdede-9c6f-4a9b-a126-254b229b575a] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[a71cdede-9c6f-4a9b-a126-254b229b575a] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[a71cdede-9c6f-4a9b-a126-254b229b575a] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+[a71cdede-9c6f-4a9b-a126-254b229b575a] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+[a71cdede-9c6f-4a9b-a126-254b229b575a] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[a71cdede-9c6f-4a9b-a126-254b229b575a] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+[a71cdede-9c6f-4a9b-a126-254b229b575a] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+[a71cdede-9c6f-4a9b-a126-254b229b575a] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/engine.rb:522:in `call'
+[a71cdede-9c6f-4a9b-a126-254b229b575a] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+[a71cdede-9c6f-4a9b-a126-254b229b575a] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+[a71cdede-9c6f-4a9b-a126-254b229b575a] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+[a71cdede-9c6f-4a9b-a126-254b229b575a] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+[a71cdede-9c6f-4a9b-a126-254b229b575a] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2021-01-16T02:29:57.260141 #369]  INFO -- : [6db380de-49e4-469d-92df-f2c2f1cd9e9d] Started GET "/lisbon_restaurants_logo.png" for 127.0.0.1 at 2021-01-16 02:29:57 +0000
+I, [2021-01-16T02:29:57.261002 #369]  INFO -- : [6db380de-49e4-469d-92df-f2c2f1cd9e9d] Processing by RestaurantsController#category as PNG
+I, [2021-01-16T02:29:57.261076 #369]  INFO -- : [6db380de-49e4-469d-92df-f2c2f1cd9e9d]   Parameters: {"category"=>"lisbon_restaurants_logo"}
+I, [2021-01-16T02:29:57.316618 #369]  INFO -- : [6db380de-49e4-469d-92df-f2c2f1cd9e9d] Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.0ms)
+F, [2021-01-16T02:29:57.319075 #369] FATAL -- : [6db380de-49e4-469d-92df-f2c2f1cd9e9d]   
+F, [2021-01-16T02:29:57.319324 #369] FATAL -- : [6db380de-49e4-469d-92df-f2c2f1cd9e9d] ActionView::MissingTemplate (Missing template restaurants/category, application/category with {:locale=>[:en], :formats=>[:png], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/duartefdias/ruby/personal-projects/lisbon-restaurants-ruby/app/views"
+  * "/home/duartefdias/ruby/personal-projects/lisbon-restaurants-ruby/vendor/bundle/ruby/2.6.0/gems/twitter-bootstrap-rails-4.0.0/app/views"
+):
+F, [2021-01-16T02:29:57.319439 #369] FATAL -- : [6db380de-49e4-469d-92df-f2c2f1cd9e9d]   
+F, [2021-01-16T02:29:57.319506 #369] FATAL -- : [6db380de-49e4-469d-92df-f2c2f1cd9e9d] app/controllers/restaurants_controller.rb:31:in `category'
+I, [2021-01-16T02:29:59.502209 #369]  INFO -- : [7b117a14-d5e0-40d8-b464-eb3efbaaa18d] Started GET "/favicon.ico" for 127.0.0.1 at 2021-01-16 02:29:59 +0000
+I, [2021-01-16T02:29:59.506664 #369]  INFO -- : [7b117a14-d5e0-40d8-b464-eb3efbaaa18d] Processing by RestaurantsController#category as 
+I, [2021-01-16T02:29:59.506901 #369]  INFO -- : [7b117a14-d5e0-40d8-b464-eb3efbaaa18d]   Parameters: {"category"=>"favicon"}
+I, [2021-01-16T02:29:59.565709 #369]  INFO -- : [7b117a14-d5e0-40d8-b464-eb3efbaaa18d]   Rendering restaurants/category.html.erb within layouts/application
+D, [2021-01-16T02:29:59.645081 #369] DEBUG -- : [7b117a14-d5e0-40d8-b464-eb3efbaaa18d]   [1m[36mRestaurant Load (75.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'favicon')[0m
+I, [2021-01-16T02:29:59.912282 #369]  INFO -- : [7b117a14-d5e0-40d8-b464-eb3efbaaa18d]   Rendered restaurants/category.html.erb within layouts/application (346.3ms)
+I, [2021-01-16T02:29:59.913245 #369]  INFO -- : [7b117a14-d5e0-40d8-b464-eb3efbaaa18d] Completed 200 OK in 406ms (Views: 12.6ms | ActiveRecord: 338.9ms)
+I, [2021-01-16T02:30:39.679441 #560]  INFO -- : [c92b9589-8649-4ad1-b58f-f00a091ac4b1] Started GET "/" for 127.0.0.1 at 2021-01-16 02:30:39 +0000
+I, [2021-01-16T02:30:39.681294 #560]  INFO -- : [c92b9589-8649-4ad1-b58f-f00a091ac4b1] Processing by RestaurantsController#index as HTML
+I, [2021-01-16T02:30:39.689879 #560]  INFO -- : [c92b9589-8649-4ad1-b58f-f00a091ac4b1]   Rendering restaurants/index.html.erb within layouts/application
+I, [2021-01-16T02:30:39.690762 #560]  INFO -- : [c92b9589-8649-4ad1-b58f-f00a091ac4b1]   Rendered restaurants/index.html.erb within layouts/application (0.7ms)
+I, [2021-01-16T02:30:39.691936 #560]  INFO -- : [c92b9589-8649-4ad1-b58f-f00a091ac4b1] Completed 200 OK in 9ms (Views: 3.6ms)
+I, [2021-01-16T02:30:39.738919 #560]  INFO -- : [7176e334-4165-496f-90fe-49a7c501e9cc] Started GET "/assets/application-d055096eb8c69fcdce63d78829826d550688f7c83c694cee65786fd1e7d41f8c.css" for 127.0.0.1 at 2021-01-16 02:30:39 +0000
+F, [2021-01-16T02:30:39.740133 #560] FATAL -- : [7176e334-4165-496f-90fe-49a7c501e9cc]   
+F, [2021-01-16T02:30:39.740303 #560] FATAL -- : [7176e334-4165-496f-90fe-49a7c501e9cc] ActionController::RoutingError (No route matches [GET] "/assets/application-d055096eb8c69fcdce63d78829826d550688f7c83c694cee65786fd1e7d41f8c.css"):
+F, [2021-01-16T02:30:39.740370 #560] FATAL -- : [7176e334-4165-496f-90fe-49a7c501e9cc]   
+F, [2021-01-16T02:30:39.740479 #560] FATAL -- : [7176e334-4165-496f-90fe-49a7c501e9cc] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[7176e334-4165-496f-90fe-49a7c501e9cc] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[7176e334-4165-496f-90fe-49a7c501e9cc] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:36:in `call_app'
+[7176e334-4165-496f-90fe-49a7c501e9cc] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `block in call'
+[7176e334-4165-496f-90fe-49a7c501e9cc] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[7176e334-4165-496f-90fe-49a7c501e9cc] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:26:in `tagged'
+[7176e334-4165-496f-90fe-49a7c501e9cc] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `tagged'
+[7176e334-4165-496f-90fe-49a7c501e9cc] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `call'
+[7176e334-4165-496f-90fe-49a7c501e9cc] vendor/bundle/ruby/2.6.0/gems/ahoy_matey-3.1.0/lib/ahoy/engine.rb:22:in `call_with_quiet_ahoy'
+[7176e334-4165-496f-90fe-49a7c501e9cc] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[7176e334-4165-496f-90fe-49a7c501e9cc] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[7176e334-4165-496f-90fe-49a7c501e9cc] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+[7176e334-4165-496f-90fe-49a7c501e9cc] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+[7176e334-4165-496f-90fe-49a7c501e9cc] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[7176e334-4165-496f-90fe-49a7c501e9cc] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+[7176e334-4165-496f-90fe-49a7c501e9cc] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+[7176e334-4165-496f-90fe-49a7c501e9cc] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/engine.rb:522:in `call'
+[7176e334-4165-496f-90fe-49a7c501e9cc] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+[7176e334-4165-496f-90fe-49a7c501e9cc] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+[7176e334-4165-496f-90fe-49a7c501e9cc] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+[7176e334-4165-496f-90fe-49a7c501e9cc] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+[7176e334-4165-496f-90fe-49a7c501e9cc] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2021-01-16T02:30:39.744147 #560]  INFO -- : [510cdf5d-bec5-40be-9daa-5fafe1d15972] Started GET "/assets/application-abe2eb2d579dc747f77ef5a0c5d1983d92affc985a28949214dcc25d38078459.js" for 127.0.0.1 at 2021-01-16 02:30:39 +0000
+F, [2021-01-16T02:30:39.745905 #560] FATAL -- : [510cdf5d-bec5-40be-9daa-5fafe1d15972]   
+F, [2021-01-16T02:30:39.746125 #560] FATAL -- : [510cdf5d-bec5-40be-9daa-5fafe1d15972] ActionController::RoutingError (No route matches [GET] "/assets/application-abe2eb2d579dc747f77ef5a0c5d1983d92affc985a28949214dcc25d38078459.js"):
+F, [2021-01-16T02:30:39.746293 #560] FATAL -- : [510cdf5d-bec5-40be-9daa-5fafe1d15972]   
+F, [2021-01-16T02:30:39.746406 #560] FATAL -- : [510cdf5d-bec5-40be-9daa-5fafe1d15972] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[510cdf5d-bec5-40be-9daa-5fafe1d15972] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[510cdf5d-bec5-40be-9daa-5fafe1d15972] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:36:in `call_app'
+[510cdf5d-bec5-40be-9daa-5fafe1d15972] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `block in call'
+[510cdf5d-bec5-40be-9daa-5fafe1d15972] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[510cdf5d-bec5-40be-9daa-5fafe1d15972] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:26:in `tagged'
+[510cdf5d-bec5-40be-9daa-5fafe1d15972] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `tagged'
+[510cdf5d-bec5-40be-9daa-5fafe1d15972] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `call'
+[510cdf5d-bec5-40be-9daa-5fafe1d15972] vendor/bundle/ruby/2.6.0/gems/ahoy_matey-3.1.0/lib/ahoy/engine.rb:22:in `call_with_quiet_ahoy'
+[510cdf5d-bec5-40be-9daa-5fafe1d15972] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[510cdf5d-bec5-40be-9daa-5fafe1d15972] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[510cdf5d-bec5-40be-9daa-5fafe1d15972] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+[510cdf5d-bec5-40be-9daa-5fafe1d15972] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+[510cdf5d-bec5-40be-9daa-5fafe1d15972] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[510cdf5d-bec5-40be-9daa-5fafe1d15972] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+[510cdf5d-bec5-40be-9daa-5fafe1d15972] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+[510cdf5d-bec5-40be-9daa-5fafe1d15972] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/engine.rb:522:in `call'
+[510cdf5d-bec5-40be-9daa-5fafe1d15972] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+[510cdf5d-bec5-40be-9daa-5fafe1d15972] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+[510cdf5d-bec5-40be-9daa-5fafe1d15972] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+[510cdf5d-bec5-40be-9daa-5fafe1d15972] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+[510cdf5d-bec5-40be-9daa-5fafe1d15972] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2021-01-16T02:30:39.814947 #560]  INFO -- : [591cf369-7773-4b2d-8201-be188a42f335] Started GET "/lisbon_restaurants_logo.png" for 127.0.0.1 at 2021-01-16 02:30:39 +0000
+I, [2021-01-16T02:30:39.817909 #560]  INFO -- : [591cf369-7773-4b2d-8201-be188a42f335] Processing by RestaurantsController#category as PNG
+I, [2021-01-16T02:30:39.818314 #560]  INFO -- : [591cf369-7773-4b2d-8201-be188a42f335]   Parameters: {"category"=>"lisbon_restaurants_logo"}
+I, [2021-01-16T02:30:41.823232 #560]  INFO -- : [591cf369-7773-4b2d-8201-be188a42f335] Completed 500 Internal Server Error in 2004ms (ActiveRecord: 633.8ms)
+F, [2021-01-16T02:30:41.825056 #560] FATAL -- : [591cf369-7773-4b2d-8201-be188a42f335]   
+F, [2021-01-16T02:30:41.825414 #560] FATAL -- : [591cf369-7773-4b2d-8201-be188a42f335] ActionView::MissingTemplate (Missing template restaurants/category, application/category with {:locale=>[:en], :formats=>[:png], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/duartefdias/ruby/personal-projects/lisbon-restaurants-ruby/app/views"
+  * "/home/duartefdias/ruby/personal-projects/lisbon-restaurants-ruby/vendor/bundle/ruby/2.6.0/gems/twitter-bootstrap-rails-4.0.0/app/views"
+):
+F, [2021-01-16T02:30:41.825522 #560] FATAL -- : [591cf369-7773-4b2d-8201-be188a42f335]   
+F, [2021-01-16T02:30:41.825575 #560] FATAL -- : [591cf369-7773-4b2d-8201-be188a42f335] app/controllers/restaurants_controller.rb:31:in `category'
+I, [2021-01-16T02:30:42.131449 #560]  INFO -- : [aab32e3c-e7b6-4623-9336-b8aad9ddc261] Started GET "/favicon.ico" for 127.0.0.1 at 2021-01-16 02:30:42 +0000
+I, [2021-01-16T02:30:42.132704 #560]  INFO -- : [aab32e3c-e7b6-4623-9336-b8aad9ddc261] Processing by RestaurantsController#category as 
+I, [2021-01-16T02:30:42.132859 #560]  INFO -- : [aab32e3c-e7b6-4623-9336-b8aad9ddc261]   Parameters: {"category"=>"favicon"}
+I, [2021-01-16T02:30:42.185552 #560]  INFO -- : [aab32e3c-e7b6-4623-9336-b8aad9ddc261]   Rendering restaurants/category.html.erb within layouts/application
+D, [2021-01-16T02:30:42.260147 #560] DEBUG -- : [aab32e3c-e7b6-4623-9336-b8aad9ddc261]   [1m[36mRestaurant Load (70.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'favicon')[0m
+I, [2021-01-16T02:30:42.497357 #560]  INFO -- : [aab32e3c-e7b6-4623-9336-b8aad9ddc261]   Rendered restaurants/category.html.erb within layouts/application (311.3ms)
+I, [2021-01-16T02:30:42.498560 #560]  INFO -- : [aab32e3c-e7b6-4623-9336-b8aad9ddc261] Completed 200 OK in 365ms (Views: 12.0ms | ActiveRecord: 305.5ms)
+I, [2021-01-16T02:34:36.871076 #1030]  INFO -- : [2cfd905d-1d60-4985-a3b4-05ef6cc77021] Started GET "/" for 127.0.0.1 at 2021-01-16 02:34:36 +0000
+I, [2021-01-16T02:34:36.872618 #1030]  INFO -- : [2cfd905d-1d60-4985-a3b4-05ef6cc77021] Processing by RestaurantsController#index as HTML
+I, [2021-01-16T02:34:36.880201 #1030]  INFO -- : [2cfd905d-1d60-4985-a3b4-05ef6cc77021]   Rendering restaurants/index.html.erb within layouts/application
+I, [2021-01-16T02:34:36.881115 #1030]  INFO -- : [2cfd905d-1d60-4985-a3b4-05ef6cc77021]   Rendered restaurants/index.html.erb within layouts/application (0.7ms)
+I, [2021-01-16T02:34:36.882495 #1030]  INFO -- : [2cfd905d-1d60-4985-a3b4-05ef6cc77021] Completed 200 OK in 10ms (Views: 3.9ms)
+I, [2021-01-16T02:34:36.957212 #1030]  INFO -- : [97edcc39-8110-4eab-b01d-c04df765e7f2] Started GET "/assets/application-d055096eb8c69fcdce63d78829826d550688f7c83c694cee65786fd1e7d41f8c.css" for 127.0.0.1 at 2021-01-16 02:34:36 +0000
+F, [2021-01-16T02:34:36.958804 #1030] FATAL -- : [97edcc39-8110-4eab-b01d-c04df765e7f2]   
+F, [2021-01-16T02:34:36.959604 #1030] FATAL -- : [97edcc39-8110-4eab-b01d-c04df765e7f2] ActionController::RoutingError (No route matches [GET] "/assets/application-d055096eb8c69fcdce63d78829826d550688f7c83c694cee65786fd1e7d41f8c.css"):
+F, [2021-01-16T02:34:36.961483 #1030] FATAL -- : [97edcc39-8110-4eab-b01d-c04df765e7f2]   
+F, [2021-01-16T02:34:36.961839 #1030] FATAL -- : [97edcc39-8110-4eab-b01d-c04df765e7f2] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[97edcc39-8110-4eab-b01d-c04df765e7f2] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[97edcc39-8110-4eab-b01d-c04df765e7f2] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:36:in `call_app'
+[97edcc39-8110-4eab-b01d-c04df765e7f2] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `block in call'
+[97edcc39-8110-4eab-b01d-c04df765e7f2] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[97edcc39-8110-4eab-b01d-c04df765e7f2] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:26:in `tagged'
+[97edcc39-8110-4eab-b01d-c04df765e7f2] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `tagged'
+[97edcc39-8110-4eab-b01d-c04df765e7f2] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `call'
+[97edcc39-8110-4eab-b01d-c04df765e7f2] vendor/bundle/ruby/2.6.0/gems/ahoy_matey-3.1.0/lib/ahoy/engine.rb:22:in `call_with_quiet_ahoy'
+[97edcc39-8110-4eab-b01d-c04df765e7f2] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[97edcc39-8110-4eab-b01d-c04df765e7f2] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[97edcc39-8110-4eab-b01d-c04df765e7f2] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+[97edcc39-8110-4eab-b01d-c04df765e7f2] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+[97edcc39-8110-4eab-b01d-c04df765e7f2] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[97edcc39-8110-4eab-b01d-c04df765e7f2] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+[97edcc39-8110-4eab-b01d-c04df765e7f2] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+[97edcc39-8110-4eab-b01d-c04df765e7f2] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/engine.rb:522:in `call'
+[97edcc39-8110-4eab-b01d-c04df765e7f2] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+[97edcc39-8110-4eab-b01d-c04df765e7f2] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+[97edcc39-8110-4eab-b01d-c04df765e7f2] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+[97edcc39-8110-4eab-b01d-c04df765e7f2] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+[97edcc39-8110-4eab-b01d-c04df765e7f2] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2021-01-16T02:34:36.961205 #1030]  INFO -- : [ee06fec4-1143-41d6-b127-a279196784ad] Started GET "/assets/application-abe2eb2d579dc747f77ef5a0c5d1983d92affc985a28949214dcc25d38078459.js" for 127.0.0.1 at 2021-01-16 02:34:36 +0000
+F, [2021-01-16T02:34:36.964266 #1030] FATAL -- : [ee06fec4-1143-41d6-b127-a279196784ad]   
+F, [2021-01-16T02:34:36.964636 #1030] FATAL -- : [ee06fec4-1143-41d6-b127-a279196784ad] ActionController::RoutingError (No route matches [GET] "/assets/application-abe2eb2d579dc747f77ef5a0c5d1983d92affc985a28949214dcc25d38078459.js"):
+F, [2021-01-16T02:34:36.964790 #1030] FATAL -- : [ee06fec4-1143-41d6-b127-a279196784ad]   
+F, [2021-01-16T02:34:36.965409 #1030] FATAL -- : [ee06fec4-1143-41d6-b127-a279196784ad] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[ee06fec4-1143-41d6-b127-a279196784ad] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[ee06fec4-1143-41d6-b127-a279196784ad] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:36:in `call_app'
+[ee06fec4-1143-41d6-b127-a279196784ad] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `block in call'
+[ee06fec4-1143-41d6-b127-a279196784ad] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[ee06fec4-1143-41d6-b127-a279196784ad] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:26:in `tagged'
+[ee06fec4-1143-41d6-b127-a279196784ad] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `tagged'
+[ee06fec4-1143-41d6-b127-a279196784ad] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `call'
+[ee06fec4-1143-41d6-b127-a279196784ad] vendor/bundle/ruby/2.6.0/gems/ahoy_matey-3.1.0/lib/ahoy/engine.rb:22:in `call_with_quiet_ahoy'
+[ee06fec4-1143-41d6-b127-a279196784ad] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[ee06fec4-1143-41d6-b127-a279196784ad] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[ee06fec4-1143-41d6-b127-a279196784ad] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+[ee06fec4-1143-41d6-b127-a279196784ad] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+[ee06fec4-1143-41d6-b127-a279196784ad] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[ee06fec4-1143-41d6-b127-a279196784ad] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+[ee06fec4-1143-41d6-b127-a279196784ad] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+[ee06fec4-1143-41d6-b127-a279196784ad] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/engine.rb:522:in `call'
+[ee06fec4-1143-41d6-b127-a279196784ad] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+[ee06fec4-1143-41d6-b127-a279196784ad] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+[ee06fec4-1143-41d6-b127-a279196784ad] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+[ee06fec4-1143-41d6-b127-a279196784ad] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+[ee06fec4-1143-41d6-b127-a279196784ad] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2021-01-16T02:34:37.049979 #1030]  INFO -- : [12c39d0c-654f-418e-9d4a-4b352d9f0b0f] Started GET "/lisbon_restaurants_logo.png" for 127.0.0.1 at 2021-01-16 02:34:37 +0000
+I, [2021-01-16T02:34:37.051371 #1030]  INFO -- : [12c39d0c-654f-418e-9d4a-4b352d9f0b0f] Processing by RestaurantsController#category as PNG
+I, [2021-01-16T02:34:37.051576 #1030]  INFO -- : [12c39d0c-654f-418e-9d4a-4b352d9f0b0f]   Parameters: {"category"=>"lisbon_restaurants_logo"}
+I, [2021-01-16T02:34:39.155391 #1030]  INFO -- : [12c39d0c-654f-418e-9d4a-4b352d9f0b0f] Completed 500 Internal Server Error in 2104ms (ActiveRecord: 496.3ms)
+F, [2021-01-16T02:34:39.156076 #1030] FATAL -- : [12c39d0c-654f-418e-9d4a-4b352d9f0b0f]   
+F, [2021-01-16T02:34:39.156142 #1030] FATAL -- : [12c39d0c-654f-418e-9d4a-4b352d9f0b0f] ActionView::MissingTemplate (Missing template restaurants/category, application/category with {:locale=>[:en], :formats=>[:png], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/duartefdias/ruby/personal-projects/lisbon-restaurants-ruby/app/views"
+  * "/home/duartefdias/ruby/personal-projects/lisbon-restaurants-ruby/vendor/bundle/ruby/2.6.0/gems/twitter-bootstrap-rails-4.0.0/app/views"
+):
+F, [2021-01-16T02:34:39.156182 #1030] FATAL -- : [12c39d0c-654f-418e-9d4a-4b352d9f0b0f]   
+F, [2021-01-16T02:34:39.156319 #1030] FATAL -- : [12c39d0c-654f-418e-9d4a-4b352d9f0b0f] app/controllers/restaurants_controller.rb:31:in `category'
+I, [2021-01-16T02:34:40.506313 #1030]  INFO -- : [ac1f936e-05d7-4656-b8bc-46aa47ea46a6] Started GET "/favicon.ico" for 127.0.0.1 at 2021-01-16 02:34:40 +0000
+I, [2021-01-16T02:34:40.507510 #1030]  INFO -- : [ac1f936e-05d7-4656-b8bc-46aa47ea46a6] Processing by RestaurantsController#category as 
+I, [2021-01-16T02:34:40.507633 #1030]  INFO -- : [ac1f936e-05d7-4656-b8bc-46aa47ea46a6]   Parameters: {"category"=>"favicon"}
+I, [2021-01-16T02:34:40.556797 #1030]  INFO -- : [ac1f936e-05d7-4656-b8bc-46aa47ea46a6]   Rendering restaurants/category.html.erb within layouts/application
+D, [2021-01-16T02:34:40.631643 #1030] DEBUG -- : [ac1f936e-05d7-4656-b8bc-46aa47ea46a6]   [1m[36mRestaurant Load (73.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'favicon')[0m
+I, [2021-01-16T02:34:40.875475 #1030]  INFO -- : [ac1f936e-05d7-4656-b8bc-46aa47ea46a6]   Rendered restaurants/category.html.erb within layouts/application (318.5ms)
+I, [2021-01-16T02:34:40.876597 #1030]  INFO -- : [ac1f936e-05d7-4656-b8bc-46aa47ea46a6] Completed 200 OK in 369ms (Views: 6.9ms | ActiveRecord: 315.4ms)
+I, [2021-01-16T02:34:41.131479 #1030]  INFO -- : [38c168f7-9e66-48f7-8183-c60c11b49b2d] Started GET "/Asian" for 127.0.0.1 at 2021-01-16 02:34:41 +0000
+I, [2021-01-16T02:34:41.133016 #1030]  INFO -- : [38c168f7-9e66-48f7-8183-c60c11b49b2d] Processing by RestaurantsController#category as HTML
+I, [2021-01-16T02:34:41.133355 #1030]  INFO -- : [38c168f7-9e66-48f7-8183-c60c11b49b2d]   Parameters: {"category"=>"Asian"}
+I, [2021-01-16T02:34:41.183561 #1030]  INFO -- : [38c168f7-9e66-48f7-8183-c60c11b49b2d]   Rendering restaurants/category.html.erb within layouts/application
+D, [2021-01-16T02:34:41.238059 #1030] DEBUG -- : [38c168f7-9e66-48f7-8183-c60c11b49b2d]   [1m[36mRestaurant Load (52.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Asian')[0m
+I, [2021-01-16T02:34:41.477875 #1030]  INFO -- : [38c168f7-9e66-48f7-8183-c60c11b49b2d]   Rendered restaurants/category.html.erb within layouts/application (294.1ms)
+I, [2021-01-16T02:34:41.479069 #1030]  INFO -- : [38c168f7-9e66-48f7-8183-c60c11b49b2d] Completed 200 OK in 346ms (Views: 12.4ms | ActiveRecord: 283.8ms)
+I, [2021-01-16T02:34:41.519189 #1030]  INFO -- : [2e72c23b-89dc-4b6a-be20-8b28add2611a] Started GET "/assets/application-d055096eb8c69fcdce63d78829826d550688f7c83c694cee65786fd1e7d41f8c.css" for 127.0.0.1 at 2021-01-16 02:34:41 +0000
+F, [2021-01-16T02:34:41.520576 #1030] FATAL -- : [2e72c23b-89dc-4b6a-be20-8b28add2611a]   
+F, [2021-01-16T02:34:41.521538 #1030] FATAL -- : [2e72c23b-89dc-4b6a-be20-8b28add2611a] ActionController::RoutingError (No route matches [GET] "/assets/application-d055096eb8c69fcdce63d78829826d550688f7c83c694cee65786fd1e7d41f8c.css"):
+F, [2021-01-16T02:34:41.521739 #1030] FATAL -- : [2e72c23b-89dc-4b6a-be20-8b28add2611a]   
+F, [2021-01-16T02:34:41.522013 #1030] FATAL -- : [2e72c23b-89dc-4b6a-be20-8b28add2611a] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[2e72c23b-89dc-4b6a-be20-8b28add2611a] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[2e72c23b-89dc-4b6a-be20-8b28add2611a] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:36:in `call_app'
+[2e72c23b-89dc-4b6a-be20-8b28add2611a] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `block in call'
+[2e72c23b-89dc-4b6a-be20-8b28add2611a] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[2e72c23b-89dc-4b6a-be20-8b28add2611a] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:26:in `tagged'
+[2e72c23b-89dc-4b6a-be20-8b28add2611a] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `tagged'
+[2e72c23b-89dc-4b6a-be20-8b28add2611a] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `call'
+[2e72c23b-89dc-4b6a-be20-8b28add2611a] vendor/bundle/ruby/2.6.0/gems/ahoy_matey-3.1.0/lib/ahoy/engine.rb:22:in `call_with_quiet_ahoy'
+[2e72c23b-89dc-4b6a-be20-8b28add2611a] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[2e72c23b-89dc-4b6a-be20-8b28add2611a] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[2e72c23b-89dc-4b6a-be20-8b28add2611a] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+[2e72c23b-89dc-4b6a-be20-8b28add2611a] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+[2e72c23b-89dc-4b6a-be20-8b28add2611a] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[2e72c23b-89dc-4b6a-be20-8b28add2611a] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+[2e72c23b-89dc-4b6a-be20-8b28add2611a] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+[2e72c23b-89dc-4b6a-be20-8b28add2611a] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/engine.rb:522:in `call'
+[2e72c23b-89dc-4b6a-be20-8b28add2611a] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+[2e72c23b-89dc-4b6a-be20-8b28add2611a] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+[2e72c23b-89dc-4b6a-be20-8b28add2611a] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+[2e72c23b-89dc-4b6a-be20-8b28add2611a] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+[2e72c23b-89dc-4b6a-be20-8b28add2611a] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2021-01-16T02:34:41.521319 #1030]  INFO -- : [16ae0a33-6d64-4399-900a-409f7287b4a9] Started GET "/assets/application-abe2eb2d579dc747f77ef5a0c5d1983d92affc985a28949214dcc25d38078459.js" for 127.0.0.1 at 2021-01-16 02:34:41 +0000
+F, [2021-01-16T02:34:41.523154 #1030] FATAL -- : [16ae0a33-6d64-4399-900a-409f7287b4a9]   
+F, [2021-01-16T02:34:41.523432 #1030] FATAL -- : [16ae0a33-6d64-4399-900a-409f7287b4a9] ActionController::RoutingError (No route matches [GET] "/assets/application-abe2eb2d579dc747f77ef5a0c5d1983d92affc985a28949214dcc25d38078459.js"):
+F, [2021-01-16T02:34:41.523736 #1030] FATAL -- : [16ae0a33-6d64-4399-900a-409f7287b4a9]   
+F, [2021-01-16T02:34:41.524120 #1030] FATAL -- : [16ae0a33-6d64-4399-900a-409f7287b4a9] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[16ae0a33-6d64-4399-900a-409f7287b4a9] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[16ae0a33-6d64-4399-900a-409f7287b4a9] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:36:in `call_app'
+[16ae0a33-6d64-4399-900a-409f7287b4a9] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `block in call'
+[16ae0a33-6d64-4399-900a-409f7287b4a9] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[16ae0a33-6d64-4399-900a-409f7287b4a9] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:26:in `tagged'
+[16ae0a33-6d64-4399-900a-409f7287b4a9] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `tagged'
+[16ae0a33-6d64-4399-900a-409f7287b4a9] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `call'
+[16ae0a33-6d64-4399-900a-409f7287b4a9] vendor/bundle/ruby/2.6.0/gems/ahoy_matey-3.1.0/lib/ahoy/engine.rb:22:in `call_with_quiet_ahoy'
+[16ae0a33-6d64-4399-900a-409f7287b4a9] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[16ae0a33-6d64-4399-900a-409f7287b4a9] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[16ae0a33-6d64-4399-900a-409f7287b4a9] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+[16ae0a33-6d64-4399-900a-409f7287b4a9] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+[16ae0a33-6d64-4399-900a-409f7287b4a9] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[16ae0a33-6d64-4399-900a-409f7287b4a9] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+[16ae0a33-6d64-4399-900a-409f7287b4a9] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+[16ae0a33-6d64-4399-900a-409f7287b4a9] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/engine.rb:522:in `call'
+[16ae0a33-6d64-4399-900a-409f7287b4a9] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+[16ae0a33-6d64-4399-900a-409f7287b4a9] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+[16ae0a33-6d64-4399-900a-409f7287b4a9] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+[16ae0a33-6d64-4399-900a-409f7287b4a9] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+[16ae0a33-6d64-4399-900a-409f7287b4a9] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2021-01-16T02:34:41.587584 #1030]  INFO -- : [eeabfbd2-8fa4-46a8-83c6-761d21cde94e] Started GET "/left-arrow-symbol-in-a-circle.png" for 127.0.0.1 at 2021-01-16 02:34:41 +0000
+I, [2021-01-16T02:34:41.589117 #1030]  INFO -- : [eeabfbd2-8fa4-46a8-83c6-761d21cde94e] Processing by RestaurantsController#category as PNG
+I, [2021-01-16T02:34:41.589350 #1030]  INFO -- : [eeabfbd2-8fa4-46a8-83c6-761d21cde94e]   Parameters: {"category"=>"left-arrow-symbol-in-a-circle"}
+I, [2021-01-16T02:34:41.638065 #1030]  INFO -- : [eeabfbd2-8fa4-46a8-83c6-761d21cde94e] Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.0ms)
+F, [2021-01-16T02:34:41.638732 #1030] FATAL -- : [eeabfbd2-8fa4-46a8-83c6-761d21cde94e]   
+F, [2021-01-16T02:34:41.638802 #1030] FATAL -- : [eeabfbd2-8fa4-46a8-83c6-761d21cde94e] ActionView::MissingTemplate (Missing template restaurants/category, application/category with {:locale=>[:en], :formats=>[:png], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/duartefdias/ruby/personal-projects/lisbon-restaurants-ruby/app/views"
+  * "/home/duartefdias/ruby/personal-projects/lisbon-restaurants-ruby/vendor/bundle/ruby/2.6.0/gems/twitter-bootstrap-rails-4.0.0/app/views"
+):
+F, [2021-01-16T02:34:41.638831 #1030] FATAL -- : [eeabfbd2-8fa4-46a8-83c6-761d21cde94e]   
+F, [2021-01-16T02:34:41.638855 #1030] FATAL -- : [eeabfbd2-8fa4-46a8-83c6-761d21cde94e] app/controllers/restaurants_controller.rb:31:in `category'
+I, [2021-01-16T02:34:46.049262 #1030]  INFO -- : [b33c7283-c4de-4cf6-8bdb-579885f27b31] Started GET "/Asian" for 127.0.0.1 at 2021-01-16 02:34:46 +0000
+I, [2021-01-16T02:34:46.050166 #1030]  INFO -- : [b33c7283-c4de-4cf6-8bdb-579885f27b31] Processing by RestaurantsController#category as HTML
+I, [2021-01-16T02:34:46.050250 #1030]  INFO -- : [b33c7283-c4de-4cf6-8bdb-579885f27b31]   Parameters: {"category"=>"Asian"}
+I, [2021-01-16T02:34:46.136237 #1030]  INFO -- : [b33c7283-c4de-4cf6-8bdb-579885f27b31]   Rendering restaurants/category.html.erb within layouts/application
+D, [2021-01-16T02:34:46.222550 #1030] DEBUG -- : [b33c7283-c4de-4cf6-8bdb-579885f27b31]   [1m[36mRestaurant Load (85.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Asian')[0m
+I, [2021-01-16T02:34:46.223708 #1030]  INFO -- : [b33c7283-c4de-4cf6-8bdb-579885f27b31]   Rendered restaurants/category.html.erb within layouts/application (87.2ms)
+I, [2021-01-16T02:34:46.224987 #1030]  INFO -- : [b33c7283-c4de-4cf6-8bdb-579885f27b31] Completed 200 OK in 175ms (Views: 3.4ms | ActiveRecord: 85.6ms)
+I, [2021-01-16T02:34:46.271411 #1030]  INFO -- : [7824f470-a523-4719-b75b-ace2f7a53626] Started GET "/assets/application-d055096eb8c69fcdce63d78829826d550688f7c83c694cee65786fd1e7d41f8c.css" for 127.0.0.1 at 2021-01-16 02:34:46 +0000
+F, [2021-01-16T02:34:46.272576 #1030] FATAL -- : [7824f470-a523-4719-b75b-ace2f7a53626]   
+F, [2021-01-16T02:34:46.272712 #1030] FATAL -- : [7824f470-a523-4719-b75b-ace2f7a53626] ActionController::RoutingError (No route matches [GET] "/assets/application-d055096eb8c69fcdce63d78829826d550688f7c83c694cee65786fd1e7d41f8c.css"):
+F, [2021-01-16T02:34:46.272768 #1030] FATAL -- : [7824f470-a523-4719-b75b-ace2f7a53626]   
+F, [2021-01-16T02:34:46.272832 #1030] FATAL -- : [7824f470-a523-4719-b75b-ace2f7a53626] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[7824f470-a523-4719-b75b-ace2f7a53626] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[7824f470-a523-4719-b75b-ace2f7a53626] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:36:in `call_app'
+[7824f470-a523-4719-b75b-ace2f7a53626] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `block in call'
+[7824f470-a523-4719-b75b-ace2f7a53626] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[7824f470-a523-4719-b75b-ace2f7a53626] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:26:in `tagged'
+[7824f470-a523-4719-b75b-ace2f7a53626] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `tagged'
+[7824f470-a523-4719-b75b-ace2f7a53626] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `call'
+[7824f470-a523-4719-b75b-ace2f7a53626] vendor/bundle/ruby/2.6.0/gems/ahoy_matey-3.1.0/lib/ahoy/engine.rb:22:in `call_with_quiet_ahoy'
+[7824f470-a523-4719-b75b-ace2f7a53626] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[7824f470-a523-4719-b75b-ace2f7a53626] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[7824f470-a523-4719-b75b-ace2f7a53626] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+[7824f470-a523-4719-b75b-ace2f7a53626] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+[7824f470-a523-4719-b75b-ace2f7a53626] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[7824f470-a523-4719-b75b-ace2f7a53626] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+[7824f470-a523-4719-b75b-ace2f7a53626] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+[7824f470-a523-4719-b75b-ace2f7a53626] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/engine.rb:522:in `call'
+[7824f470-a523-4719-b75b-ace2f7a53626] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+[7824f470-a523-4719-b75b-ace2f7a53626] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+[7824f470-a523-4719-b75b-ace2f7a53626] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+[7824f470-a523-4719-b75b-ace2f7a53626] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+[7824f470-a523-4719-b75b-ace2f7a53626] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2021-01-16T02:34:46.274533 #1030]  INFO -- : [15c68745-4f6f-49f0-af11-16fc962723b1] Started GET "/assets/application-abe2eb2d579dc747f77ef5a0c5d1983d92affc985a28949214dcc25d38078459.js" for 127.0.0.1 at 2021-01-16 02:34:46 +0000
+F, [2021-01-16T02:34:46.276134 #1030] FATAL -- : [15c68745-4f6f-49f0-af11-16fc962723b1]   
+F, [2021-01-16T02:34:46.276651 #1030] FATAL -- : [15c68745-4f6f-49f0-af11-16fc962723b1] ActionController::RoutingError (No route matches [GET] "/assets/application-abe2eb2d579dc747f77ef5a0c5d1983d92affc985a28949214dcc25d38078459.js"):
+F, [2021-01-16T02:34:46.276900 #1030] FATAL -- : [15c68745-4f6f-49f0-af11-16fc962723b1]   
+F, [2021-01-16T02:34:46.277011 #1030] FATAL -- : [15c68745-4f6f-49f0-af11-16fc962723b1] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[15c68745-4f6f-49f0-af11-16fc962723b1] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[15c68745-4f6f-49f0-af11-16fc962723b1] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:36:in `call_app'
+[15c68745-4f6f-49f0-af11-16fc962723b1] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `block in call'
+[15c68745-4f6f-49f0-af11-16fc962723b1] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[15c68745-4f6f-49f0-af11-16fc962723b1] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:26:in `tagged'
+[15c68745-4f6f-49f0-af11-16fc962723b1] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `tagged'
+[15c68745-4f6f-49f0-af11-16fc962723b1] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `call'
+[15c68745-4f6f-49f0-af11-16fc962723b1] vendor/bundle/ruby/2.6.0/gems/ahoy_matey-3.1.0/lib/ahoy/engine.rb:22:in `call_with_quiet_ahoy'
+[15c68745-4f6f-49f0-af11-16fc962723b1] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[15c68745-4f6f-49f0-af11-16fc962723b1] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[15c68745-4f6f-49f0-af11-16fc962723b1] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+[15c68745-4f6f-49f0-af11-16fc962723b1] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+[15c68745-4f6f-49f0-af11-16fc962723b1] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[15c68745-4f6f-49f0-af11-16fc962723b1] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+[15c68745-4f6f-49f0-af11-16fc962723b1] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+[15c68745-4f6f-49f0-af11-16fc962723b1] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/engine.rb:522:in `call'
+[15c68745-4f6f-49f0-af11-16fc962723b1] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+[15c68745-4f6f-49f0-af11-16fc962723b1] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+[15c68745-4f6f-49f0-af11-16fc962723b1] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+[15c68745-4f6f-49f0-af11-16fc962723b1] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+[15c68745-4f6f-49f0-af11-16fc962723b1] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2021-01-16T02:34:46.349780 #1030]  INFO -- : [2ab62df4-30ec-4158-b448-98a6bccf66ff] Started GET "/left-arrow-symbol-in-a-circle.png" for 127.0.0.1 at 2021-01-16 02:34:46 +0000
+I, [2021-01-16T02:34:46.351040 #1030]  INFO -- : [2ab62df4-30ec-4158-b448-98a6bccf66ff] Processing by RestaurantsController#category as PNG
+I, [2021-01-16T02:34:46.351325 #1030]  INFO -- : [2ab62df4-30ec-4158-b448-98a6bccf66ff]   Parameters: {"category"=>"left-arrow-symbol-in-a-circle"}
+I, [2021-01-16T02:34:46.433944 #1030]  INFO -- : [2ab62df4-30ec-4158-b448-98a6bccf66ff] Completed 500 Internal Server Error in 82ms (ActiveRecord: 0.0ms)
+F, [2021-01-16T02:34:46.434810 #1030] FATAL -- : [2ab62df4-30ec-4158-b448-98a6bccf66ff]   
+F, [2021-01-16T02:34:46.434975 #1030] FATAL -- : [2ab62df4-30ec-4158-b448-98a6bccf66ff] ActionView::MissingTemplate (Missing template restaurants/category, application/category with {:locale=>[:en], :formats=>[:png], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/duartefdias/ruby/personal-projects/lisbon-restaurants-ruby/app/views"
+  * "/home/duartefdias/ruby/personal-projects/lisbon-restaurants-ruby/vendor/bundle/ruby/2.6.0/gems/twitter-bootstrap-rails-4.0.0/app/views"
+):
+F, [2021-01-16T02:34:46.435055 #1030] FATAL -- : [2ab62df4-30ec-4158-b448-98a6bccf66ff]   
+F, [2021-01-16T02:34:46.435103 #1030] FATAL -- : [2ab62df4-30ec-4158-b448-98a6bccf66ff] app/controllers/restaurants_controller.rb:31:in `category'
+I, [2021-01-16T02:34:49.592392 #1030]  INFO -- : [1fd1cd9f-8bca-47da-a32a-e76768de3a57] Started GET "/Asian" for 127.0.0.1 at 2021-01-16 02:34:49 +0000
+I, [2021-01-16T02:34:49.593730 #1030]  INFO -- : [1fd1cd9f-8bca-47da-a32a-e76768de3a57] Processing by RestaurantsController#category as HTML
+I, [2021-01-16T02:34:49.593938 #1030]  INFO -- : [1fd1cd9f-8bca-47da-a32a-e76768de3a57]   Parameters: {"category"=>"Asian"}
+I, [2021-01-16T02:34:49.714461 #1030]  INFO -- : [1fd1cd9f-8bca-47da-a32a-e76768de3a57]   Rendering restaurants/category.html.erb within layouts/application
+D, [2021-01-16T02:34:49.816001 #1030] DEBUG -- : [1fd1cd9f-8bca-47da-a32a-e76768de3a57]   [1m[36mRestaurant Load (100.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Asian')[0m
+I, [2021-01-16T02:34:49.817663 #1030]  INFO -- : [1fd1cd9f-8bca-47da-a32a-e76768de3a57]   Rendered restaurants/category.html.erb within layouts/application (103.0ms)
+I, [2021-01-16T02:34:49.818614 #1030]  INFO -- : [1fd1cd9f-8bca-47da-a32a-e76768de3a57] Completed 200 OK in 225ms (Views: 3.6ms | ActiveRecord: 100.8ms)
+I, [2021-01-16T02:34:49.869141 #1030]  INFO -- : [079a7bd7-43b2-4525-adb9-a1118edec774] Started GET "/assets/application-d055096eb8c69fcdce63d78829826d550688f7c83c694cee65786fd1e7d41f8c.css" for 127.0.0.1 at 2021-01-16 02:34:49 +0000
+F, [2021-01-16T02:34:49.895627 #1030] FATAL -- : [079a7bd7-43b2-4525-adb9-a1118edec774]   
+F, [2021-01-16T02:34:49.898725 #1030] FATAL -- : [079a7bd7-43b2-4525-adb9-a1118edec774] ActionController::RoutingError (No route matches [GET] "/assets/application-d055096eb8c69fcdce63d78829826d550688f7c83c694cee65786fd1e7d41f8c.css"):
+F, [2021-01-16T02:34:49.899041 #1030] FATAL -- : [079a7bd7-43b2-4525-adb9-a1118edec774]   
+F, [2021-01-16T02:34:49.899634 #1030] FATAL -- : [079a7bd7-43b2-4525-adb9-a1118edec774] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[079a7bd7-43b2-4525-adb9-a1118edec774] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[079a7bd7-43b2-4525-adb9-a1118edec774] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:36:in `call_app'
+[079a7bd7-43b2-4525-adb9-a1118edec774] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `block in call'
+[079a7bd7-43b2-4525-adb9-a1118edec774] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[079a7bd7-43b2-4525-adb9-a1118edec774] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:26:in `tagged'
+[079a7bd7-43b2-4525-adb9-a1118edec774] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `tagged'
+[079a7bd7-43b2-4525-adb9-a1118edec774] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `call'
+[079a7bd7-43b2-4525-adb9-a1118edec774] vendor/bundle/ruby/2.6.0/gems/ahoy_matey-3.1.0/lib/ahoy/engine.rb:22:in `call_with_quiet_ahoy'
+[079a7bd7-43b2-4525-adb9-a1118edec774] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[079a7bd7-43b2-4525-adb9-a1118edec774] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[079a7bd7-43b2-4525-adb9-a1118edec774] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+[079a7bd7-43b2-4525-adb9-a1118edec774] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+[079a7bd7-43b2-4525-adb9-a1118edec774] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[079a7bd7-43b2-4525-adb9-a1118edec774] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+[079a7bd7-43b2-4525-adb9-a1118edec774] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+[079a7bd7-43b2-4525-adb9-a1118edec774] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/engine.rb:522:in `call'
+[079a7bd7-43b2-4525-adb9-a1118edec774] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+[079a7bd7-43b2-4525-adb9-a1118edec774] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+[079a7bd7-43b2-4525-adb9-a1118edec774] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+[079a7bd7-43b2-4525-adb9-a1118edec774] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+[079a7bd7-43b2-4525-adb9-a1118edec774] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2021-01-16T02:34:49.898366 #1030]  INFO -- : [b616d06c-f848-48d9-9486-5485b6d0ca20] Started GET "/assets/application-abe2eb2d579dc747f77ef5a0c5d1983d92affc985a28949214dcc25d38078459.js" for 127.0.0.1 at 2021-01-16 02:34:49 +0000
+F, [2021-01-16T02:34:49.902053 #1030] FATAL -- : [b616d06c-f848-48d9-9486-5485b6d0ca20]   
+F, [2021-01-16T02:34:49.902806 #1030] FATAL -- : [b616d06c-f848-48d9-9486-5485b6d0ca20] ActionController::RoutingError (No route matches [GET] "/assets/application-abe2eb2d579dc747f77ef5a0c5d1983d92affc985a28949214dcc25d38078459.js"):
+F, [2021-01-16T02:34:49.903920 #1030] FATAL -- : [b616d06c-f848-48d9-9486-5485b6d0ca20]   
+F, [2021-01-16T02:34:49.904248 #1030] FATAL -- : [b616d06c-f848-48d9-9486-5485b6d0ca20] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[b616d06c-f848-48d9-9486-5485b6d0ca20] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[b616d06c-f848-48d9-9486-5485b6d0ca20] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:36:in `call_app'
+[b616d06c-f848-48d9-9486-5485b6d0ca20] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `block in call'
+[b616d06c-f848-48d9-9486-5485b6d0ca20] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[b616d06c-f848-48d9-9486-5485b6d0ca20] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:26:in `tagged'
+[b616d06c-f848-48d9-9486-5485b6d0ca20] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `tagged'
+[b616d06c-f848-48d9-9486-5485b6d0ca20] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `call'
+[b616d06c-f848-48d9-9486-5485b6d0ca20] vendor/bundle/ruby/2.6.0/gems/ahoy_matey-3.1.0/lib/ahoy/engine.rb:22:in `call_with_quiet_ahoy'
+[b616d06c-f848-48d9-9486-5485b6d0ca20] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[b616d06c-f848-48d9-9486-5485b6d0ca20] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[b616d06c-f848-48d9-9486-5485b6d0ca20] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+[b616d06c-f848-48d9-9486-5485b6d0ca20] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+[b616d06c-f848-48d9-9486-5485b6d0ca20] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[b616d06c-f848-48d9-9486-5485b6d0ca20] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+[b616d06c-f848-48d9-9486-5485b6d0ca20] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+[b616d06c-f848-48d9-9486-5485b6d0ca20] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/engine.rb:522:in `call'
+[b616d06c-f848-48d9-9486-5485b6d0ca20] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+[b616d06c-f848-48d9-9486-5485b6d0ca20] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+[b616d06c-f848-48d9-9486-5485b6d0ca20] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+[b616d06c-f848-48d9-9486-5485b6d0ca20] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+[b616d06c-f848-48d9-9486-5485b6d0ca20] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2021-01-16T02:34:49.951117 #1030]  INFO -- : [7e02b3f8-65d7-47cb-b6d3-68e2bfd67f41] Started GET "/left-arrow-symbol-in-a-circle.png" for 127.0.0.1 at 2021-01-16 02:34:49 +0000
+I, [2021-01-16T02:34:49.953583 #1030]  INFO -- : [7e02b3f8-65d7-47cb-b6d3-68e2bfd67f41] Processing by RestaurantsController#category as PNG
+I, [2021-01-16T02:34:49.953806 #1030]  INFO -- : [7e02b3f8-65d7-47cb-b6d3-68e2bfd67f41]   Parameters: {"category"=>"left-arrow-symbol-in-a-circle"}
+I, [2021-01-16T02:34:50.039208 #1030]  INFO -- : [7e02b3f8-65d7-47cb-b6d3-68e2bfd67f41] Completed 500 Internal Server Error in 85ms (ActiveRecord: 0.0ms)
+F, [2021-01-16T02:34:50.040214 #1030] FATAL -- : [7e02b3f8-65d7-47cb-b6d3-68e2bfd67f41]   
+F, [2021-01-16T02:34:50.040386 #1030] FATAL -- : [7e02b3f8-65d7-47cb-b6d3-68e2bfd67f41] ActionView::MissingTemplate (Missing template restaurants/category, application/category with {:locale=>[:en], :formats=>[:png], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/duartefdias/ruby/personal-projects/lisbon-restaurants-ruby/app/views"
+  * "/home/duartefdias/ruby/personal-projects/lisbon-restaurants-ruby/vendor/bundle/ruby/2.6.0/gems/twitter-bootstrap-rails-4.0.0/app/views"
+):
+F, [2021-01-16T02:34:50.040668 #1030] FATAL -- : [7e02b3f8-65d7-47cb-b6d3-68e2bfd67f41]   
+F, [2021-01-16T02:34:50.040817 #1030] FATAL -- : [7e02b3f8-65d7-47cb-b6d3-68e2bfd67f41] app/controllers/restaurants_controller.rb:31:in `category'
+I, [2021-01-16T02:34:57.758624 #1030]  INFO -- : [d2ddf51d-b463-41bc-8c96-e82f34d62a18] Started GET "/" for 127.0.0.1 at 2021-01-16 02:34:57 +0000
+I, [2021-01-16T02:34:57.759847 #1030]  INFO -- : [d2ddf51d-b463-41bc-8c96-e82f34d62a18] Processing by RestaurantsController#index as HTML
+I, [2021-01-16T02:34:57.762025 #1030]  INFO -- : [d2ddf51d-b463-41bc-8c96-e82f34d62a18]   Rendering restaurants/index.html.erb within layouts/application
+I, [2021-01-16T02:34:57.762450 #1030]  INFO -- : [d2ddf51d-b463-41bc-8c96-e82f34d62a18]   Rendered restaurants/index.html.erb within layouts/application (0.2ms)
+I, [2021-01-16T02:34:57.763845 #1030]  INFO -- : [d2ddf51d-b463-41bc-8c96-e82f34d62a18] Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+I, [2021-01-16T02:34:57.792673 #1030]  INFO -- : [4ac24ba2-e45b-4783-b732-58c0e41e9ea5] Started GET "/assets/application-d055096eb8c69fcdce63d78829826d550688f7c83c694cee65786fd1e7d41f8c.css" for 127.0.0.1 at 2021-01-16 02:34:57 +0000
+F, [2021-01-16T02:34:57.794993 #1030] FATAL -- : [4ac24ba2-e45b-4783-b732-58c0e41e9ea5]   
+F, [2021-01-16T02:34:57.797899 #1030] FATAL -- : [4ac24ba2-e45b-4783-b732-58c0e41e9ea5] ActionController::RoutingError (No route matches [GET] "/assets/application-d055096eb8c69fcdce63d78829826d550688f7c83c694cee65786fd1e7d41f8c.css"):
+F, [2021-01-16T02:34:57.799323 #1030] FATAL -- : [4ac24ba2-e45b-4783-b732-58c0e41e9ea5]   
+F, [2021-01-16T02:34:57.799557 #1030] FATAL -- : [4ac24ba2-e45b-4783-b732-58c0e41e9ea5] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[4ac24ba2-e45b-4783-b732-58c0e41e9ea5] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[4ac24ba2-e45b-4783-b732-58c0e41e9ea5] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:36:in `call_app'
+[4ac24ba2-e45b-4783-b732-58c0e41e9ea5] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `block in call'
+[4ac24ba2-e45b-4783-b732-58c0e41e9ea5] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[4ac24ba2-e45b-4783-b732-58c0e41e9ea5] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:26:in `tagged'
+[4ac24ba2-e45b-4783-b732-58c0e41e9ea5] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `tagged'
+[4ac24ba2-e45b-4783-b732-58c0e41e9ea5] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `call'
+[4ac24ba2-e45b-4783-b732-58c0e41e9ea5] vendor/bundle/ruby/2.6.0/gems/ahoy_matey-3.1.0/lib/ahoy/engine.rb:22:in `call_with_quiet_ahoy'
+[4ac24ba2-e45b-4783-b732-58c0e41e9ea5] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[4ac24ba2-e45b-4783-b732-58c0e41e9ea5] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[4ac24ba2-e45b-4783-b732-58c0e41e9ea5] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+[4ac24ba2-e45b-4783-b732-58c0e41e9ea5] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+[4ac24ba2-e45b-4783-b732-58c0e41e9ea5] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[4ac24ba2-e45b-4783-b732-58c0e41e9ea5] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+[4ac24ba2-e45b-4783-b732-58c0e41e9ea5] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+[4ac24ba2-e45b-4783-b732-58c0e41e9ea5] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/engine.rb:522:in `call'
+[4ac24ba2-e45b-4783-b732-58c0e41e9ea5] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+[4ac24ba2-e45b-4783-b732-58c0e41e9ea5] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+[4ac24ba2-e45b-4783-b732-58c0e41e9ea5] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+[4ac24ba2-e45b-4783-b732-58c0e41e9ea5] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+[4ac24ba2-e45b-4783-b732-58c0e41e9ea5] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2021-01-16T02:34:57.799032 #1030]  INFO -- : [28a8bdb0-e60c-4e04-8fa3-45834b5c03e1] Started GET "/lisbon_restaurants_logo.png" for 127.0.0.1 at 2021-01-16 02:34:57 +0000
+I, [2021-01-16T02:34:57.802548 #1030]  INFO -- : [28a8bdb0-e60c-4e04-8fa3-45834b5c03e1] Processing by RestaurantsController#category as PNG
+I, [2021-01-16T02:34:57.803183 #1030]  INFO -- : [28a8bdb0-e60c-4e04-8fa3-45834b5c03e1]   Parameters: {"category"=>"lisbon_restaurants_logo"}
+I, [2021-01-16T02:34:57.796806 #1030]  INFO -- : [a4856a59-a2d0-4e1a-8e0b-9d474a7058ea] Started GET "/assets/application-abe2eb2d579dc747f77ef5a0c5d1983d92affc985a28949214dcc25d38078459.js" for 127.0.0.1 at 2021-01-16 02:34:57 +0000
+F, [2021-01-16T02:34:57.808188 #1030] FATAL -- : [a4856a59-a2d0-4e1a-8e0b-9d474a7058ea]   
+F, [2021-01-16T02:34:57.808447 #1030] FATAL -- : [a4856a59-a2d0-4e1a-8e0b-9d474a7058ea] ActionController::RoutingError (No route matches [GET] "/assets/application-abe2eb2d579dc747f77ef5a0c5d1983d92affc985a28949214dcc25d38078459.js"):
+F, [2021-01-16T02:34:57.808515 #1030] FATAL -- : [a4856a59-a2d0-4e1a-8e0b-9d474a7058ea]   
+F, [2021-01-16T02:34:57.808577 #1030] FATAL -- : [a4856a59-a2d0-4e1a-8e0b-9d474a7058ea] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[a4856a59-a2d0-4e1a-8e0b-9d474a7058ea] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[a4856a59-a2d0-4e1a-8e0b-9d474a7058ea] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:36:in `call_app'
+[a4856a59-a2d0-4e1a-8e0b-9d474a7058ea] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `block in call'
+[a4856a59-a2d0-4e1a-8e0b-9d474a7058ea] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[a4856a59-a2d0-4e1a-8e0b-9d474a7058ea] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:26:in `tagged'
+[a4856a59-a2d0-4e1a-8e0b-9d474a7058ea] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `tagged'
+[a4856a59-a2d0-4e1a-8e0b-9d474a7058ea] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `call'
+[a4856a59-a2d0-4e1a-8e0b-9d474a7058ea] vendor/bundle/ruby/2.6.0/gems/ahoy_matey-3.1.0/lib/ahoy/engine.rb:22:in `call_with_quiet_ahoy'
+[a4856a59-a2d0-4e1a-8e0b-9d474a7058ea] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[a4856a59-a2d0-4e1a-8e0b-9d474a7058ea] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[a4856a59-a2d0-4e1a-8e0b-9d474a7058ea] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+[a4856a59-a2d0-4e1a-8e0b-9d474a7058ea] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+[a4856a59-a2d0-4e1a-8e0b-9d474a7058ea] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[a4856a59-a2d0-4e1a-8e0b-9d474a7058ea] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+[a4856a59-a2d0-4e1a-8e0b-9d474a7058ea] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+[a4856a59-a2d0-4e1a-8e0b-9d474a7058ea] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/engine.rb:522:in `call'
+[a4856a59-a2d0-4e1a-8e0b-9d474a7058ea] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+[a4856a59-a2d0-4e1a-8e0b-9d474a7058ea] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+[a4856a59-a2d0-4e1a-8e0b-9d474a7058ea] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+[a4856a59-a2d0-4e1a-8e0b-9d474a7058ea] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+[a4856a59-a2d0-4e1a-8e0b-9d474a7058ea] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2021-01-16T02:34:57.856962 #1030]  INFO -- : [28a8bdb0-e60c-4e04-8fa3-45834b5c03e1] Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.0ms)
+F, [2021-01-16T02:34:57.858138 #1030] FATAL -- : [28a8bdb0-e60c-4e04-8fa3-45834b5c03e1]   
+F, [2021-01-16T02:34:57.858355 #1030] FATAL -- : [28a8bdb0-e60c-4e04-8fa3-45834b5c03e1] ActionView::MissingTemplate (Missing template restaurants/category, application/category with {:locale=>[:en], :formats=>[:png], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/duartefdias/ruby/personal-projects/lisbon-restaurants-ruby/app/views"
+  * "/home/duartefdias/ruby/personal-projects/lisbon-restaurants-ruby/vendor/bundle/ruby/2.6.0/gems/twitter-bootstrap-rails-4.0.0/app/views"
+):
+F, [2021-01-16T02:34:57.858540 #1030] FATAL -- : [28a8bdb0-e60c-4e04-8fa3-45834b5c03e1]   
+F, [2021-01-16T02:34:57.858653 #1030] FATAL -- : [28a8bdb0-e60c-4e04-8fa3-45834b5c03e1] app/controllers/restaurants_controller.rb:31:in `category'
+I, [2021-01-16T02:34:58.431583 #1030]  INFO -- : [77f2702c-d4d0-4a22-958b-455da0dd7399] Started GET "/favicon.ico" for 127.0.0.1 at 2021-01-16 02:34:58 +0000
+I, [2021-01-16T02:34:58.432411 #1030]  INFO -- : [77f2702c-d4d0-4a22-958b-455da0dd7399] Processing by RestaurantsController#category as 
+I, [2021-01-16T02:34:58.432484 #1030]  INFO -- : [77f2702c-d4d0-4a22-958b-455da0dd7399]   Parameters: {"category"=>"favicon"}
+I, [2021-01-16T02:34:58.480134 #1030]  INFO -- : [77f2702c-d4d0-4a22-958b-455da0dd7399]   Rendering restaurants/category.html.erb within layouts/application
+D, [2021-01-16T02:34:58.531720 #1030] DEBUG -- : [77f2702c-d4d0-4a22-958b-455da0dd7399]   [1m[36mRestaurant Load (50.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'favicon')[0m
+I, [2021-01-16T02:34:58.532146 #1030]  INFO -- : [77f2702c-d4d0-4a22-958b-455da0dd7399]   Rendered restaurants/category.html.erb within layouts/application (51.8ms)
+I, [2021-01-16T02:34:58.533204 #1030]  INFO -- : [77f2702c-d4d0-4a22-958b-455da0dd7399] Completed 200 OK in 101ms (Views: 2.5ms | ActiveRecord: 50.9ms)
+I, [2021-01-16T02:35:30.051649 #1176]  INFO -- : [91739c64-b08e-4cb0-92ea-98d98a29ed2e] Started GET "/" for 127.0.0.1 at 2021-01-16 02:35:30 +0000
+I, [2021-01-16T02:35:30.057060 #1176]  INFO -- : [91739c64-b08e-4cb0-92ea-98d98a29ed2e] Processing by RestaurantsController#index as HTML
+I, [2021-01-16T02:35:30.067665 #1176]  INFO -- : [91739c64-b08e-4cb0-92ea-98d98a29ed2e]   Rendering restaurants/index.html.erb within layouts/application
+I, [2021-01-16T02:35:30.068806 #1176]  INFO -- : [91739c64-b08e-4cb0-92ea-98d98a29ed2e]   Rendered restaurants/index.html.erb within layouts/application (0.9ms)
+I, [2021-01-16T02:35:30.071692 #1176]  INFO -- : [91739c64-b08e-4cb0-92ea-98d98a29ed2e] Completed 200 OK in 14ms (Views: 6.6ms)
+I, [2021-01-16T02:35:30.163698 #1176]  INFO -- : [6281cae4-4901-42a2-82ef-769b127e2e1c] Started GET "/assets/application-d055096eb8c69fcdce63d78829826d550688f7c83c694cee65786fd1e7d41f8c.css" for 127.0.0.1 at 2021-01-16 02:35:30 +0000
+I, [2021-01-16T02:35:30.468947 #1176]  INFO -- : [084490ad-4bde-4190-9258-cfeaf76ebaa5] Started GET "/assets/application-abe2eb2d579dc747f77ef5a0c5d1983d92affc985a28949214dcc25d38078459.js" for 127.0.0.1 at 2021-01-16 02:35:30 +0000
+F, [2021-01-16T02:35:30.892037 #1176] FATAL -- : [6281cae4-4901-42a2-82ef-769b127e2e1c]   
+F, [2021-01-16T02:35:30.892334 #1176] FATAL -- : [6281cae4-4901-42a2-82ef-769b127e2e1c] ActionController::RoutingError (No route matches [GET] "/assets/application-d055096eb8c69fcdce63d78829826d550688f7c83c694cee65786fd1e7d41f8c.css"):
+F, [2021-01-16T02:35:30.892457 #1176] FATAL -- : [6281cae4-4901-42a2-82ef-769b127e2e1c]   
+F, [2021-01-16T02:35:30.892849 #1176] FATAL -- : [6281cae4-4901-42a2-82ef-769b127e2e1c] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[6281cae4-4901-42a2-82ef-769b127e2e1c] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[6281cae4-4901-42a2-82ef-769b127e2e1c] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:36:in `call_app'
+[6281cae4-4901-42a2-82ef-769b127e2e1c] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `block in call'
+[6281cae4-4901-42a2-82ef-769b127e2e1c] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[6281cae4-4901-42a2-82ef-769b127e2e1c] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:26:in `tagged'
+[6281cae4-4901-42a2-82ef-769b127e2e1c] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `tagged'
+[6281cae4-4901-42a2-82ef-769b127e2e1c] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `call'
+[6281cae4-4901-42a2-82ef-769b127e2e1c] vendor/bundle/ruby/2.6.0/gems/ahoy_matey-3.1.0/lib/ahoy/engine.rb:22:in `call_with_quiet_ahoy'
+[6281cae4-4901-42a2-82ef-769b127e2e1c] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[6281cae4-4901-42a2-82ef-769b127e2e1c] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[6281cae4-4901-42a2-82ef-769b127e2e1c] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+[6281cae4-4901-42a2-82ef-769b127e2e1c] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+[6281cae4-4901-42a2-82ef-769b127e2e1c] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[6281cae4-4901-42a2-82ef-769b127e2e1c] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+[6281cae4-4901-42a2-82ef-769b127e2e1c] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+[6281cae4-4901-42a2-82ef-769b127e2e1c] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/engine.rb:522:in `call'
+[6281cae4-4901-42a2-82ef-769b127e2e1c] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+[6281cae4-4901-42a2-82ef-769b127e2e1c] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+[6281cae4-4901-42a2-82ef-769b127e2e1c] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+[6281cae4-4901-42a2-82ef-769b127e2e1c] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+[6281cae4-4901-42a2-82ef-769b127e2e1c] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2021-01-16T02:35:30.900815 #1176]  INFO -- : [e970c692-40fc-4a46-a9e4-61da032c27d6] Started GET "/lisbon_restaurants_logo.png" for 127.0.0.1 at 2021-01-16 02:35:30 +0000
+I, [2021-01-16T02:35:30.902103 #1176]  INFO -- : [e970c692-40fc-4a46-a9e4-61da032c27d6] Processing by RestaurantsController#category as PNG
+I, [2021-01-16T02:35:30.902338 #1176]  INFO -- : [e970c692-40fc-4a46-a9e4-61da032c27d6]   Parameters: {"category"=>"lisbon_restaurants_logo"}
+F, [2021-01-16T02:35:31.002186 #1176] FATAL -- : [084490ad-4bde-4190-9258-cfeaf76ebaa5]   
+F, [2021-01-16T02:35:31.002274 #1176] FATAL -- : [084490ad-4bde-4190-9258-cfeaf76ebaa5] ActionController::RoutingError (No route matches [GET] "/assets/application-abe2eb2d579dc747f77ef5a0c5d1983d92affc985a28949214dcc25d38078459.js"):
+F, [2021-01-16T02:35:31.002308 #1176] FATAL -- : [084490ad-4bde-4190-9258-cfeaf76ebaa5]   
+F, [2021-01-16T02:35:31.002338 #1176] FATAL -- : [084490ad-4bde-4190-9258-cfeaf76ebaa5] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[084490ad-4bde-4190-9258-cfeaf76ebaa5] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[084490ad-4bde-4190-9258-cfeaf76ebaa5] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:36:in `call_app'
+[084490ad-4bde-4190-9258-cfeaf76ebaa5] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `block in call'
+[084490ad-4bde-4190-9258-cfeaf76ebaa5] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[084490ad-4bde-4190-9258-cfeaf76ebaa5] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:26:in `tagged'
+[084490ad-4bde-4190-9258-cfeaf76ebaa5] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `tagged'
+[084490ad-4bde-4190-9258-cfeaf76ebaa5] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `call'
+[084490ad-4bde-4190-9258-cfeaf76ebaa5] vendor/bundle/ruby/2.6.0/gems/ahoy_matey-3.1.0/lib/ahoy/engine.rb:22:in `call_with_quiet_ahoy'
+[084490ad-4bde-4190-9258-cfeaf76ebaa5] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[084490ad-4bde-4190-9258-cfeaf76ebaa5] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[084490ad-4bde-4190-9258-cfeaf76ebaa5] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+[084490ad-4bde-4190-9258-cfeaf76ebaa5] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+[084490ad-4bde-4190-9258-cfeaf76ebaa5] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[084490ad-4bde-4190-9258-cfeaf76ebaa5] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+[084490ad-4bde-4190-9258-cfeaf76ebaa5] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+[084490ad-4bde-4190-9258-cfeaf76ebaa5] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/engine.rb:522:in `call'
+[084490ad-4bde-4190-9258-cfeaf76ebaa5] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+[084490ad-4bde-4190-9258-cfeaf76ebaa5] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+[084490ad-4bde-4190-9258-cfeaf76ebaa5] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+[084490ad-4bde-4190-9258-cfeaf76ebaa5] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+[084490ad-4bde-4190-9258-cfeaf76ebaa5] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2021-01-16T02:35:32.042195 #1176]  INFO -- : [e970c692-40fc-4a46-a9e4-61da032c27d6] Completed 500 Internal Server Error in 1140ms (ActiveRecord: 306.2ms)
+F, [2021-01-16T02:35:32.042972 #1176] FATAL -- : [e970c692-40fc-4a46-a9e4-61da032c27d6]   
+F, [2021-01-16T02:35:32.043086 #1176] FATAL -- : [e970c692-40fc-4a46-a9e4-61da032c27d6] ActionView::MissingTemplate (Missing template restaurants/category, application/category with {:locale=>[:en], :formats=>[:png], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/duartefdias/ruby/personal-projects/lisbon-restaurants-ruby/app/views"
+  * "/home/duartefdias/ruby/personal-projects/lisbon-restaurants-ruby/vendor/bundle/ruby/2.6.0/gems/twitter-bootstrap-rails-4.0.0/app/views"
+):
+F, [2021-01-16T02:35:32.043153 #1176] FATAL -- : [e970c692-40fc-4a46-a9e4-61da032c27d6]   
+F, [2021-01-16T02:35:32.043236 #1176] FATAL -- : [e970c692-40fc-4a46-a9e4-61da032c27d6] app/controllers/restaurants_controller.rb:31:in `category'
+I, [2021-01-16T02:35:32.056876 #1176]  INFO -- : [90f2a2a8-8e2f-4bb9-973d-f5f0225c3dde] Started GET "/favicon.ico" for 127.0.0.1 at 2021-01-16 02:35:32 +0000
+I, [2021-01-16T02:35:32.059175 #1176]  INFO -- : [90f2a2a8-8e2f-4bb9-973d-f5f0225c3dde] Processing by RestaurantsController#category as 
+I, [2021-01-16T02:35:32.059455 #1176]  INFO -- : [90f2a2a8-8e2f-4bb9-973d-f5f0225c3dde]   Parameters: {"category"=>"favicon"}
+I, [2021-01-16T02:35:32.113224 #1176]  INFO -- : [90f2a2a8-8e2f-4bb9-973d-f5f0225c3dde]   Rendering restaurants/category.html.erb within layouts/application
+D, [2021-01-16T02:35:32.171128 #1176] DEBUG -- : [90f2a2a8-8e2f-4bb9-973d-f5f0225c3dde]   [1m[36mRestaurant Load (56.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'favicon')[0m
+I, [2021-01-16T02:35:32.327451 #1176]  INFO -- : [90f2a2a8-8e2f-4bb9-973d-f5f0225c3dde]   Rendered restaurants/category.html.erb within layouts/application (214.0ms)
+I, [2021-01-16T02:35:32.329567 #1176]  INFO -- : [90f2a2a8-8e2f-4bb9-973d-f5f0225c3dde] Completed 200 OK in 270ms (Views: 9.5ms | ActiveRecord: 209.4ms)
+I, [2021-01-16T02:35:34.464333 #1176]  INFO -- : [7decbb01-4ede-4623-90f6-cd5f0e2f1dc0] Started GET "/" for 127.0.0.1 at 2021-01-16 02:35:34 +0000
+I, [2021-01-16T02:35:34.465211 #1176]  INFO -- : [7decbb01-4ede-4623-90f6-cd5f0e2f1dc0] Processing by RestaurantsController#index as HTML
+I, [2021-01-16T02:35:34.466313 #1176]  INFO -- : [7decbb01-4ede-4623-90f6-cd5f0e2f1dc0]   Rendering restaurants/index.html.erb within layouts/application
+I, [2021-01-16T02:35:34.466710 #1176]  INFO -- : [7decbb01-4ede-4623-90f6-cd5f0e2f1dc0]   Rendered restaurants/index.html.erb within layouts/application (0.2ms)
+I, [2021-01-16T02:35:34.468040 #1176]  INFO -- : [7decbb01-4ede-4623-90f6-cd5f0e2f1dc0] Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+I, [2021-01-16T02:35:34.508256 #1176]  INFO -- : [bb77b078-61a4-4161-8f4c-08671a8418ce] Started GET "/assets/application-d055096eb8c69fcdce63d78829826d550688f7c83c694cee65786fd1e7d41f8c.css" for 127.0.0.1 at 2021-01-16 02:35:34 +0000
+F, [2021-01-16T02:35:34.511278 #1176] FATAL -- : [bb77b078-61a4-4161-8f4c-08671a8418ce]   
+F, [2021-01-16T02:35:34.512537 #1176] FATAL -- : [bb77b078-61a4-4161-8f4c-08671a8418ce] ActionController::RoutingError (No route matches [GET] "/assets/application-d055096eb8c69fcdce63d78829826d550688f7c83c694cee65786fd1e7d41f8c.css"):
+F, [2021-01-16T02:35:34.512777 #1176] FATAL -- : [bb77b078-61a4-4161-8f4c-08671a8418ce]   
+I, [2021-01-16T02:35:34.512356 #1176]  INFO -- : [0c7f96b9-c2d2-40be-a1da-f318ac7916f6] Started GET "/assets/application-abe2eb2d579dc747f77ef5a0c5d1983d92affc985a28949214dcc25d38078459.js" for 127.0.0.1 at 2021-01-16 02:35:34 +0000
+F, [2021-01-16T02:35:34.514537 #1176] FATAL -- : [0c7f96b9-c2d2-40be-a1da-f318ac7916f6]   
+F, [2021-01-16T02:35:34.514773 #1176] FATAL -- : [0c7f96b9-c2d2-40be-a1da-f318ac7916f6] ActionController::RoutingError (No route matches [GET] "/assets/application-abe2eb2d579dc747f77ef5a0c5d1983d92affc985a28949214dcc25d38078459.js"):
+F, [2021-01-16T02:35:34.514976 #1176] FATAL -- : [0c7f96b9-c2d2-40be-a1da-f318ac7916f6]   
+F, [2021-01-16T02:35:34.513011 #1176] FATAL -- : [bb77b078-61a4-4161-8f4c-08671a8418ce] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[bb77b078-61a4-4161-8f4c-08671a8418ce] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[bb77b078-61a4-4161-8f4c-08671a8418ce] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:36:in `call_app'
+[bb77b078-61a4-4161-8f4c-08671a8418ce] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `block in call'
+[bb77b078-61a4-4161-8f4c-08671a8418ce] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[bb77b078-61a4-4161-8f4c-08671a8418ce] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:26:in `tagged'
+[bb77b078-61a4-4161-8f4c-08671a8418ce] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `tagged'
+[bb77b078-61a4-4161-8f4c-08671a8418ce] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `call'
+[bb77b078-61a4-4161-8f4c-08671a8418ce] vendor/bundle/ruby/2.6.0/gems/ahoy_matey-3.1.0/lib/ahoy/engine.rb:22:in `call_with_quiet_ahoy'
+[bb77b078-61a4-4161-8f4c-08671a8418ce] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[bb77b078-61a4-4161-8f4c-08671a8418ce] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[bb77b078-61a4-4161-8f4c-08671a8418ce] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+[bb77b078-61a4-4161-8f4c-08671a8418ce] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+[bb77b078-61a4-4161-8f4c-08671a8418ce] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[bb77b078-61a4-4161-8f4c-08671a8418ce] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+[bb77b078-61a4-4161-8f4c-08671a8418ce] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+[bb77b078-61a4-4161-8f4c-08671a8418ce] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/engine.rb:522:in `call'
+[bb77b078-61a4-4161-8f4c-08671a8418ce] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+[bb77b078-61a4-4161-8f4c-08671a8418ce] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+[bb77b078-61a4-4161-8f4c-08671a8418ce] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+[bb77b078-61a4-4161-8f4c-08671a8418ce] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+[bb77b078-61a4-4161-8f4c-08671a8418ce] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+F, [2021-01-16T02:35:34.515110 #1176] FATAL -- : [0c7f96b9-c2d2-40be-a1da-f318ac7916f6] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[0c7f96b9-c2d2-40be-a1da-f318ac7916f6] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[0c7f96b9-c2d2-40be-a1da-f318ac7916f6] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:36:in `call_app'
+[0c7f96b9-c2d2-40be-a1da-f318ac7916f6] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `block in call'
+[0c7f96b9-c2d2-40be-a1da-f318ac7916f6] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[0c7f96b9-c2d2-40be-a1da-f318ac7916f6] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:26:in `tagged'
+[0c7f96b9-c2d2-40be-a1da-f318ac7916f6] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `tagged'
+[0c7f96b9-c2d2-40be-a1da-f318ac7916f6] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `call'
+[0c7f96b9-c2d2-40be-a1da-f318ac7916f6] vendor/bundle/ruby/2.6.0/gems/ahoy_matey-3.1.0/lib/ahoy/engine.rb:22:in `call_with_quiet_ahoy'
+[0c7f96b9-c2d2-40be-a1da-f318ac7916f6] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[0c7f96b9-c2d2-40be-a1da-f318ac7916f6] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[0c7f96b9-c2d2-40be-a1da-f318ac7916f6] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+[0c7f96b9-c2d2-40be-a1da-f318ac7916f6] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+[0c7f96b9-c2d2-40be-a1da-f318ac7916f6] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[0c7f96b9-c2d2-40be-a1da-f318ac7916f6] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+[0c7f96b9-c2d2-40be-a1da-f318ac7916f6] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+[0c7f96b9-c2d2-40be-a1da-f318ac7916f6] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/engine.rb:522:in `call'
+[0c7f96b9-c2d2-40be-a1da-f318ac7916f6] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+[0c7f96b9-c2d2-40be-a1da-f318ac7916f6] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+[0c7f96b9-c2d2-40be-a1da-f318ac7916f6] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+[0c7f96b9-c2d2-40be-a1da-f318ac7916f6] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+[0c7f96b9-c2d2-40be-a1da-f318ac7916f6] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2021-01-16T02:35:34.539777 #1176]  INFO -- : [63024bd0-cd75-4392-adaf-f2a2bb3f62c3] Started GET "/lisbon_restaurants_logo.png" for 127.0.0.1 at 2021-01-16 02:35:34 +0000
+I, [2021-01-16T02:35:34.541171 #1176]  INFO -- : [63024bd0-cd75-4392-adaf-f2a2bb3f62c3] Processing by RestaurantsController#category as PNG
+I, [2021-01-16T02:35:34.541299 #1176]  INFO -- : [63024bd0-cd75-4392-adaf-f2a2bb3f62c3]   Parameters: {"category"=>"lisbon_restaurants_logo"}
+I, [2021-01-16T02:35:34.596596 #1176]  INFO -- : [63024bd0-cd75-4392-adaf-f2a2bb3f62c3] Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.0ms)
+F, [2021-01-16T02:35:34.598118 #1176] FATAL -- : [63024bd0-cd75-4392-adaf-f2a2bb3f62c3]   
+F, [2021-01-16T02:35:34.598287 #1176] FATAL -- : [63024bd0-cd75-4392-adaf-f2a2bb3f62c3] ActionView::MissingTemplate (Missing template restaurants/category, application/category with {:locale=>[:en], :formats=>[:png], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/duartefdias/ruby/personal-projects/lisbon-restaurants-ruby/app/views"
+  * "/home/duartefdias/ruby/personal-projects/lisbon-restaurants-ruby/vendor/bundle/ruby/2.6.0/gems/twitter-bootstrap-rails-4.0.0/app/views"
+):
+F, [2021-01-16T02:35:34.598361 #1176] FATAL -- : [63024bd0-cd75-4392-adaf-f2a2bb3f62c3]   
+F, [2021-01-16T02:35:34.598429 #1176] FATAL -- : [63024bd0-cd75-4392-adaf-f2a2bb3f62c3] app/controllers/restaurants_controller.rb:31:in `category'
+I, [2021-01-16T02:35:37.096182 #1176]  INFO -- : [cdfc9a31-932c-4e80-9b0c-ebead1f05e39] Started GET "/favicon.ico" for 127.0.0.1 at 2021-01-16 02:35:37 +0000
+I, [2021-01-16T02:35:37.097635 #1176]  INFO -- : [cdfc9a31-932c-4e80-9b0c-ebead1f05e39] Processing by RestaurantsController#category as 
+I, [2021-01-16T02:35:37.097772 #1176]  INFO -- : [cdfc9a31-932c-4e80-9b0c-ebead1f05e39]   Parameters: {"category"=>"favicon"}
+I, [2021-01-16T02:35:37.152743 #1176]  INFO -- : [cdfc9a31-932c-4e80-9b0c-ebead1f05e39]   Rendering restaurants/category.html.erb within layouts/application
+I, [2021-01-16T02:35:37.194345 #1176]  INFO -- : [eda0cc0a-1b2d-4600-bbea-8917d2516b16] Started GET "/assets/application-d055096eb8c69fcdce63d78829826d550688f7c83c694cee65786fd1e7d41f8c.css" for 127.0.0.1 at 2021-01-16 02:35:37 +0000
+F, [2021-01-16T02:35:37.196247 #1176] FATAL -- : [eda0cc0a-1b2d-4600-bbea-8917d2516b16]   
+F, [2021-01-16T02:35:37.196582 #1176] FATAL -- : [eda0cc0a-1b2d-4600-bbea-8917d2516b16] ActionController::RoutingError (No route matches [GET] "/assets/application-d055096eb8c69fcdce63d78829826d550688f7c83c694cee65786fd1e7d41f8c.css"):
+F, [2021-01-16T02:35:37.196708 #1176] FATAL -- : [eda0cc0a-1b2d-4600-bbea-8917d2516b16]   
+F, [2021-01-16T02:35:37.196813 #1176] FATAL -- : [eda0cc0a-1b2d-4600-bbea-8917d2516b16] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[eda0cc0a-1b2d-4600-bbea-8917d2516b16] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[eda0cc0a-1b2d-4600-bbea-8917d2516b16] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:36:in `call_app'
+[eda0cc0a-1b2d-4600-bbea-8917d2516b16] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `block in call'
+[eda0cc0a-1b2d-4600-bbea-8917d2516b16] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[eda0cc0a-1b2d-4600-bbea-8917d2516b16] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:26:in `tagged'
+[eda0cc0a-1b2d-4600-bbea-8917d2516b16] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `tagged'
+[eda0cc0a-1b2d-4600-bbea-8917d2516b16] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `call'
+[eda0cc0a-1b2d-4600-bbea-8917d2516b16] vendor/bundle/ruby/2.6.0/gems/ahoy_matey-3.1.0/lib/ahoy/engine.rb:22:in `call_with_quiet_ahoy'
+[eda0cc0a-1b2d-4600-bbea-8917d2516b16] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[eda0cc0a-1b2d-4600-bbea-8917d2516b16] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[eda0cc0a-1b2d-4600-bbea-8917d2516b16] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+[eda0cc0a-1b2d-4600-bbea-8917d2516b16] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+[eda0cc0a-1b2d-4600-bbea-8917d2516b16] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[eda0cc0a-1b2d-4600-bbea-8917d2516b16] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+[eda0cc0a-1b2d-4600-bbea-8917d2516b16] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+[eda0cc0a-1b2d-4600-bbea-8917d2516b16] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/engine.rb:522:in `call'
+[eda0cc0a-1b2d-4600-bbea-8917d2516b16] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+[eda0cc0a-1b2d-4600-bbea-8917d2516b16] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+[eda0cc0a-1b2d-4600-bbea-8917d2516b16] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+[eda0cc0a-1b2d-4600-bbea-8917d2516b16] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+[eda0cc0a-1b2d-4600-bbea-8917d2516b16] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+D, [2021-01-16T02:35:37.205631 #1176] DEBUG -- : [cdfc9a31-932c-4e80-9b0c-ebead1f05e39]   [1m[36mRestaurant Load (52.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'favicon')[0m
+I, [2021-01-16T02:35:37.206221 #1176]  INFO -- : [cdfc9a31-932c-4e80-9b0c-ebead1f05e39]   Rendered restaurants/category.html.erb within layouts/application (53.2ms)
+I, [2021-01-16T02:35:37.207734 #1176]  INFO -- : [cdfc9a31-932c-4e80-9b0c-ebead1f05e39] Completed 200 OK in 110ms (Views: 3.0ms | ActiveRecord: 52.1ms)
+I, [2021-01-16T02:35:49.624619 #1176]  INFO -- : [db9e9706-8abc-4c3f-bd18-f72e4f6f8e16] Started GET "/" for 127.0.0.1 at 2021-01-16 02:35:49 +0000
+I, [2021-01-16T02:35:49.625536 #1176]  INFO -- : [db9e9706-8abc-4c3f-bd18-f72e4f6f8e16] Processing by RestaurantsController#index as HTML
+I, [2021-01-16T02:35:49.626944 #1176]  INFO -- : [db9e9706-8abc-4c3f-bd18-f72e4f6f8e16]   Rendering restaurants/index.html.erb within layouts/application
+I, [2021-01-16T02:35:49.627431 #1176]  INFO -- : [db9e9706-8abc-4c3f-bd18-f72e4f6f8e16]   Rendered restaurants/index.html.erb within layouts/application (0.2ms)
+I, [2021-01-16T02:35:49.629377 #1176]  INFO -- : [db9e9706-8abc-4c3f-bd18-f72e4f6f8e16] Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+I, [2021-01-16T02:35:49.685909 #1176]  INFO -- : [61d2e867-7d52-43f8-bfcc-2fc2cef9d0f5] Started GET "/assets/application-d055096eb8c69fcdce63d78829826d550688f7c83c694cee65786fd1e7d41f8c.css" for 127.0.0.1 at 2021-01-16 02:35:49 +0000
+F, [2021-01-16T02:35:49.689417 #1176] FATAL -- : [61d2e867-7d52-43f8-bfcc-2fc2cef9d0f5]   
+F, [2021-01-16T02:35:49.690463 #1176] FATAL -- : [61d2e867-7d52-43f8-bfcc-2fc2cef9d0f5] ActionController::RoutingError (No route matches [GET] "/assets/application-d055096eb8c69fcdce63d78829826d550688f7c83c694cee65786fd1e7d41f8c.css"):
+F, [2021-01-16T02:35:49.690673 #1176] FATAL -- : [61d2e867-7d52-43f8-bfcc-2fc2cef9d0f5]   
+F, [2021-01-16T02:35:49.691024 #1176] FATAL -- : [61d2e867-7d52-43f8-bfcc-2fc2cef9d0f5] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[61d2e867-7d52-43f8-bfcc-2fc2cef9d0f5] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[61d2e867-7d52-43f8-bfcc-2fc2cef9d0f5] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:36:in `call_app'
+[61d2e867-7d52-43f8-bfcc-2fc2cef9d0f5] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `block in call'
+[61d2e867-7d52-43f8-bfcc-2fc2cef9d0f5] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[61d2e867-7d52-43f8-bfcc-2fc2cef9d0f5] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:26:in `tagged'
+[61d2e867-7d52-43f8-bfcc-2fc2cef9d0f5] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `tagged'
+[61d2e867-7d52-43f8-bfcc-2fc2cef9d0f5] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `call'
+[61d2e867-7d52-43f8-bfcc-2fc2cef9d0f5] vendor/bundle/ruby/2.6.0/gems/ahoy_matey-3.1.0/lib/ahoy/engine.rb:22:in `call_with_quiet_ahoy'
+[61d2e867-7d52-43f8-bfcc-2fc2cef9d0f5] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[61d2e867-7d52-43f8-bfcc-2fc2cef9d0f5] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[61d2e867-7d52-43f8-bfcc-2fc2cef9d0f5] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+[61d2e867-7d52-43f8-bfcc-2fc2cef9d0f5] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+[61d2e867-7d52-43f8-bfcc-2fc2cef9d0f5] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[61d2e867-7d52-43f8-bfcc-2fc2cef9d0f5] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+[61d2e867-7d52-43f8-bfcc-2fc2cef9d0f5] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+[61d2e867-7d52-43f8-bfcc-2fc2cef9d0f5] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/engine.rb:522:in `call'
+[61d2e867-7d52-43f8-bfcc-2fc2cef9d0f5] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+[61d2e867-7d52-43f8-bfcc-2fc2cef9d0f5] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+[61d2e867-7d52-43f8-bfcc-2fc2cef9d0f5] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+[61d2e867-7d52-43f8-bfcc-2fc2cef9d0f5] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+[61d2e867-7d52-43f8-bfcc-2fc2cef9d0f5] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2021-01-16T02:35:49.690242 #1176]  INFO -- : [ef5b4cdd-3feb-43ef-96b7-716f0633c813] Started GET "/assets/application-abe2eb2d579dc747f77ef5a0c5d1983d92affc985a28949214dcc25d38078459.js" for 127.0.0.1 at 2021-01-16 02:35:49 +0000
+F, [2021-01-16T02:35:49.693443 #1176] FATAL -- : [ef5b4cdd-3feb-43ef-96b7-716f0633c813]   
+F, [2021-01-16T02:35:49.693977 #1176] FATAL -- : [ef5b4cdd-3feb-43ef-96b7-716f0633c813] ActionController::RoutingError (No route matches [GET] "/assets/application-abe2eb2d579dc747f77ef5a0c5d1983d92affc985a28949214dcc25d38078459.js"):
+F, [2021-01-16T02:35:49.694527 #1176] FATAL -- : [ef5b4cdd-3feb-43ef-96b7-716f0633c813]   
+F, [2021-01-16T02:35:49.695697 #1176] FATAL -- : [ef5b4cdd-3feb-43ef-96b7-716f0633c813] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[ef5b4cdd-3feb-43ef-96b7-716f0633c813] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[ef5b4cdd-3feb-43ef-96b7-716f0633c813] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:36:in `call_app'
+[ef5b4cdd-3feb-43ef-96b7-716f0633c813] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `block in call'
+[ef5b4cdd-3feb-43ef-96b7-716f0633c813] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[ef5b4cdd-3feb-43ef-96b7-716f0633c813] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:26:in `tagged'
+[ef5b4cdd-3feb-43ef-96b7-716f0633c813] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/tagged_logging.rb:69:in `tagged'
+[ef5b4cdd-3feb-43ef-96b7-716f0633c813] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/rack/logger.rb:24:in `call'
+[ef5b4cdd-3feb-43ef-96b7-716f0633c813] vendor/bundle/ruby/2.6.0/gems/ahoy_matey-3.1.0/lib/ahoy/engine.rb:22:in `call_with_quiet_ahoy'
+[ef5b4cdd-3feb-43ef-96b7-716f0633c813] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[ef5b4cdd-3feb-43ef-96b7-716f0633c813] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[ef5b4cdd-3feb-43ef-96b7-716f0633c813] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+[ef5b4cdd-3feb-43ef-96b7-716f0633c813] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+[ef5b4cdd-3feb-43ef-96b7-716f0633c813] vendor/bundle/ruby/2.6.0/gems/activesupport-5.1.7/lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[ef5b4cdd-3feb-43ef-96b7-716f0633c813] vendor/bundle/ruby/2.6.0/gems/actionpack-5.1.7/lib/action_dispatch/middleware/executor.rb:12:in `call'
+[ef5b4cdd-3feb-43ef-96b7-716f0633c813] vendor/bundle/ruby/2.6.0/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+[ef5b4cdd-3feb-43ef-96b7-716f0633c813] vendor/bundle/ruby/2.6.0/gems/railties-5.1.7/lib/rails/engine.rb:522:in `call'
+[ef5b4cdd-3feb-43ef-96b7-716f0633c813] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+[ef5b4cdd-3feb-43ef-96b7-716f0633c813] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+[ef5b4cdd-3feb-43ef-96b7-716f0633c813] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+[ef5b4cdd-3feb-43ef-96b7-716f0633c813] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+[ef5b4cdd-3feb-43ef-96b7-716f0633c813] vendor/bundle/ruby/2.6.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2021-01-16T02:35:49.765713 #1176]  INFO -- : [103a63ed-c01d-4a34-b4fe-71eb7df876d6] Started GET "/lisbon_restaurants_logo.png" for 127.0.0.1 at 2021-01-16 02:35:49 +0000
+I, [2021-01-16T02:35:49.767953 #1176]  INFO -- : [103a63ed-c01d-4a34-b4fe-71eb7df876d6] Processing by RestaurantsController#category as PNG
+I, [2021-01-16T02:35:49.768370 #1176]  INFO -- : [103a63ed-c01d-4a34-b4fe-71eb7df876d6]   Parameters: {"category"=>"lisbon_restaurants_logo"}
+I, [2021-01-16T02:35:49.825336 #1176]  INFO -- : [103a63ed-c01d-4a34-b4fe-71eb7df876d6] Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.0ms)
+F, [2021-01-16T02:35:49.826384 #1176] FATAL -- : [103a63ed-c01d-4a34-b4fe-71eb7df876d6]   
+F, [2021-01-16T02:35:49.826638 #1176] FATAL -- : [103a63ed-c01d-4a34-b4fe-71eb7df876d6] ActionView::MissingTemplate (Missing template restaurants/category, application/category with {:locale=>[:en], :formats=>[:png], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/duartefdias/ruby/personal-projects/lisbon-restaurants-ruby/app/views"
+  * "/home/duartefdias/ruby/personal-projects/lisbon-restaurants-ruby/vendor/bundle/ruby/2.6.0/gems/twitter-bootstrap-rails-4.0.0/app/views"
+):
+F, [2021-01-16T02:35:49.826725 #1176] FATAL -- : [103a63ed-c01d-4a34-b4fe-71eb7df876d6]   
+F, [2021-01-16T02:35:49.826771 #1176] FATAL -- : [103a63ed-c01d-4a34-b4fe-71eb7df876d6] app/controllers/restaurants_controller.rb:31:in `category'
+I, [2021-01-16T02:35:52.134185 #1176]  INFO -- : [b3375469-ab17-4960-9226-29045b1b834a] Started GET "/favicon.ico" for 127.0.0.1 at 2021-01-16 02:35:52 +0000
+I, [2021-01-16T02:35:52.137224 #1176]  INFO -- : [b3375469-ab17-4960-9226-29045b1b834a] Processing by RestaurantsController#category as 
+I, [2021-01-16T02:35:52.137569 #1176]  INFO -- : [b3375469-ab17-4960-9226-29045b1b834a]   Parameters: {"category"=>"favicon"}
+I, [2021-01-16T02:35:52.193777 #1176]  INFO -- : [b3375469-ab17-4960-9226-29045b1b834a]   Rendering restaurants/category.html.erb within layouts/application
+D, [2021-01-16T02:35:52.246432 #1176] DEBUG -- : [b3375469-ab17-4960-9226-29045b1b834a]   [1m[36mRestaurant Load (51.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'favicon')[0m
+I, [2021-01-16T02:35:52.246889 #1176]  INFO -- : [b3375469-ab17-4960-9226-29045b1b834a]   Rendered restaurants/category.html.erb within layouts/application (52.7ms)
+I, [2021-01-16T02:35:52.248019 #1176]  INFO -- : [b3375469-ab17-4960-9226-29045b1b834a] Completed 200 OK in 110ms (Views: 3.9ms | ActiveRecord: 51.0ms)
+I, [2021-01-16T02:37:27.222679 #1452]  INFO -- : [bb990ca7-54f5-4a95-b175-04fc088f9ead] Started GET "/" for 127.0.0.1 at 2021-01-16 02:37:27 +0000
+I, [2021-01-16T02:37:27.225270 #1452]  INFO -- : [bb990ca7-54f5-4a95-b175-04fc088f9ead] Processing by RestaurantsController#index as HTML
+I, [2021-01-16T02:37:27.234337 #1452]  INFO -- : [bb990ca7-54f5-4a95-b175-04fc088f9ead]   Rendering restaurants/index.html.erb within layouts/application
+I, [2021-01-16T02:37:27.235260 #1452]  INFO -- : [bb990ca7-54f5-4a95-b175-04fc088f9ead]   Rendered restaurants/index.html.erb within layouts/application (0.7ms)
+I, [2021-01-16T02:37:27.236631 #1452]  INFO -- : [bb990ca7-54f5-4a95-b175-04fc088f9ead] Completed 200 OK in 11ms (Views: 3.9ms)
+I, [2021-01-16T02:37:33.924166 #1452]  INFO -- : [90c04c23-faf5-4b2b-b258-cf756325f732] Started GET "/Hamburgers" for 127.0.0.1 at 2021-01-16 02:37:33 +0000
+I, [2021-01-16T02:37:33.925367 #1452]  INFO -- : [90c04c23-faf5-4b2b-b258-cf756325f732] Processing by RestaurantsController#category as HTML
+I, [2021-01-16T02:37:33.925515 #1452]  INFO -- : [90c04c23-faf5-4b2b-b258-cf756325f732]   Parameters: {"category"=>"Hamburgers"}
+I, [2021-01-16T02:37:35.056920 #1452]  INFO -- : [90c04c23-faf5-4b2b-b258-cf756325f732]   Rendering restaurants/category.html.erb within layouts/application
+D, [2021-01-16T02:37:35.118531 #1452] DEBUG -- : [90c04c23-faf5-4b2b-b258-cf756325f732]   [1m[36mRestaurant Load (60.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE (category = 'Hamburgers')[0m
+I, [2021-01-16T02:37:35.428582 #1452]  INFO -- : [90c04c23-faf5-4b2b-b258-cf756325f732]   Rendered restaurants/category.html.erb within layouts/application (371.4ms)
+I, [2021-01-16T02:37:35.430069 #1452]  INFO -- : [90c04c23-faf5-4b2b-b258-cf756325f732] Completed 200 OK in 1504ms (Views: 20.4ms | ActiveRecord: 644.5ms)
+I, [2021-01-16T02:37:36.399918 #1452]  INFO -- : [c0b93292-6aaa-4fff-ad45-0a35371c7705] Started GET "/" for 127.0.0.1 at 2021-01-16 02:37:36 +0000
+I, [2021-01-16T02:37:36.401744 #1452]  INFO -- : [c0b93292-6aaa-4fff-ad45-0a35371c7705] Processing by RestaurantsController#index as HTML
+I, [2021-01-16T02:37:36.405646 #1452]  INFO -- : [c0b93292-6aaa-4fff-ad45-0a35371c7705]   Rendering restaurants/index.html.erb within layouts/application
+I, [2021-01-16T02:37:36.406110 #1452]  INFO -- : [c0b93292-6aaa-4fff-ad45-0a35371c7705]   Rendered restaurants/index.html.erb within layouts/application (0.2ms)
+I, [2021-01-16T02:37:36.407509 #1452]  INFO -- : [c0b93292-6aaa-4fff-ad45-0a35371c7705] Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+I, [2021-01-16T02:38:57.348349 #1855]  INFO -- : [6b85b662-5563-41c0-9bd4-9a370f869309] Started GET "/" for 127.0.0.1 at 2021-01-16 02:38:57 +0000
+I, [2021-01-16T02:38:57.349802 #1855]  INFO -- : [6b85b662-5563-41c0-9bd4-9a370f869309] Processing by RestaurantsController#index as HTML
+I, [2021-01-16T02:38:57.358025 #1855]  INFO -- : [6b85b662-5563-41c0-9bd4-9a370f869309]   Rendering restaurants/index.html.erb within layouts/application
+I, [2021-01-16T02:38:57.359628 #1855]  INFO -- : [6b85b662-5563-41c0-9bd4-9a370f869309]   Rendered restaurants/index.html.erb within layouts/application (1.2ms)
+I, [2021-01-16T02:38:57.361047 #1855]  INFO -- : [6b85b662-5563-41c0-9bd4-9a370f869309] Completed 200 OK in 11ms (Views: 5.4ms)
