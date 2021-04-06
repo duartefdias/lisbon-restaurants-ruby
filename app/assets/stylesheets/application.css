@@ -53,7 +53,7 @@
   
   .hero-section{
     align-items: flex-start;
-    background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%);
+    background-image: #1e5a6e;
     display: flex;
     min-height: 100%;
     justify-content: center;
@@ -69,10 +69,23 @@
     width: 100%;
   }
 
+  .card-row{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: var(--spacing-l);
+    grid-row-gap: var(--spacing-l);
+    max-width: var(--width-container);
+    width: 100%;
+  }
+
   /* Phone screens */
   @media(max-width: 990px){
     .card-grid{
       grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .card-row{
+      grid-template-columns: repeat(1, 1fr); 
     }
 
     .lisbon-restaurants-logo img {
@@ -86,6 +99,10 @@
       grid-template-columns: repeat(4, 1fr); 
     }
 
+    .card-row{
+      grid-template-columns: repeat(3, 1fr); 
+    }
+
     .lisbon-restaurants-logo img {
         width: 50%;
     }
@@ -95,6 +112,19 @@
     list-style: none;
     position: relative;
     cursor: pointer;
+  }
+
+  .single-card{
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .single-card-wrapper{
+    display: grid;
+    max-width: var(--width-container);
+    width: 30%;
+    margin: 0;
   }
   
   .card:before{
@@ -217,4 +247,40 @@
 
   .card:hover .card__content img{
     visibility: visible;
+  }
+
+  .two-columns-wrapper{
+    align-items: flex-start;
+    background-image: #1e5a6e;
+    display: flex;
+    flex-direction: row;
+    min-height: 100%;
+    justify-content: space-around;
+    margin-top: 70px;
+  }
+
+  .randomizer-form{
+    width: 250px;
+  }
+
+  .randomizer-form > ul > li{
+    color: white;
+    padding: 5px;
+    margin: 10px 0 10px 0;
+    font-size: large;
+    list-style: none;
+    border-radius: 5px;
+  }
+  .randomizer-form > ul > li > input{
+    transform: scale(1.5);
+    margin-right: 5px;
+  }
+
+  .randomizer-form > button{
+    background-color: #f5bb40;;
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 21px;
+    margin-top: 20px;
+    cursor: pointer;
   }
