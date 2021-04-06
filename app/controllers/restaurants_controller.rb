@@ -33,4 +33,11 @@ class RestaurantsController < ApplicationController
             current_category: params[:category]
         }
     end
+
+    def random
+        random_restaurants = Restaurant.order("RANDOM()").limit(1)
+        render locals: {
+            random_restaurants: random_restaurants
+        }
+    end
 end
