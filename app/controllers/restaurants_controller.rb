@@ -35,7 +35,13 @@ class RestaurantsController < ApplicationController
     end
 
     def random
-        random_restaurants = Restaurant.order("RANDOM()").limit(1)
+        if params[:foodPreferences]
+            preferencesArray = params[:foodPreferences].split(",")
+            randomElement = preferencesArray.sample
+            random_restaurants = Restaurant.where(category: randomElement).order("RANDOM()").limit(1)
+        else
+            random_restaurants = Restaurant.order("RANDOM()").limit(1)
+        end
         render locals: {
             random_restaurants: random_restaurants
         }

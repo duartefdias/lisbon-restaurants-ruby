@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   # Give random restaurant
   get '/random', to: 'restaurants#random'
+  get '/random/:foodPreferences', to: 'restaurants#random'
 
   # Display list of restaurants based on :category
   get '/:category', to: 'restaurants#category'
