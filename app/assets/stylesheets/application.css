@@ -301,15 +301,26 @@
       align-items: center;
     }
 
-    .random-button {
+    .single-card-wrapper .random-button {
       padding: 20px;
-      font-size: 25px;
+      font-size: 35px;
+      transform: translateX(50%);
+    }
+
+    .randomizer-form > .random-button {
+      margin: 25px auto 50px auto;
+      padding: 20px;
+      font-size: 35px;
     }
 
     .single-card-wrapper{
       width: 55%;
       max-width: 900px;
-      margin-bottom: 90px;;
+      margin-bottom: 90px;
+    }
+
+    .single-card-wrapper h3 {
+      font-size: 60px;
     }
 
     .randomizer-form > ul > li > input{
@@ -320,5 +331,13 @@
 
     .randomizer-form > ul > li {
       font-size: 25px;
+    }
+
+    .randomizer-form {
+      width: 80%;
+    }
+
+    .randominzer-form-header{
+      font-size: 35px;
     }
   }
