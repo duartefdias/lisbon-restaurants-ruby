@@ -10,6 +10,7 @@
 <div class="two-columns-wrapper">
 
     <div class="randomizer-form">
+        <span class="randominzer-form-header">Pick the categories you want:</span>
         <ul id="foodPreferences">
             <li><input type="checkbox" checked value="Italian"> Italian</li>
             <li><input type="checkbox" checked value="Hamburgers"> Hamburgers</li>
@@ -27,7 +28,7 @@
             <li><input type="checkbox" checked value="Healthy"> Healthy</li>
             <li><input type="checkbox" checked value="Other"> Other</li>
         </ul>
-    <button onClick="getRandomRestaurant()">
+    <button class="random-button" onClick="getRandomRestaurant()">
         Find random restaurant!
     </button>
     </div>
@@ -46,6 +47,8 @@
                 </div>
             </a>
         <% end %>
+
+        <button class="random-button" style="width: 50%;">More info</button>
     </div>
 
 </div>

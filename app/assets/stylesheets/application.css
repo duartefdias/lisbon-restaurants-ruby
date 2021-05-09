@@ -124,6 +124,8 @@
     display: grid;
     max-width: var(--width-container);
     width: 30%;
+    max-width: 400px;
+    min-width: 350px;
     margin: 0;
   }
   
@@ -257,10 +259,16 @@
     min-height: 100%;
     justify-content: space-around;
     margin-top: 70px;
+    flex-wrap: wrap;
   }
 
   .randomizer-form{
-    width: 250px;
+    width: 390px;
+  }
+
+  .randominzer-form-header {
+    font-size: x-large;
+    color: #f5bb40;
   }
 
   .randomizer-form > ul > li{
@@ -276,11 +284,41 @@
     margin-right: 5px;
   }
 
-  .randomizer-form > button{
+  .random-button {
     background-color: #f5bb40;;
-    padding: 7px;
+    padding: 10px;
     border-radius: 5px;
     font-size: 21px;
     margin-top: 20px;
     cursor: pointer;
+    margin: 25px auto 0 auto;
+  }
+
+  @media(max-device-width: 640px){
+    .two-columns-wrapper {
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .random-button {
+      padding: 20px;
+      font-size: 25px;
+    }
+
+    .single-card-wrapper{
+      width: 55%;
+      max-width: 900px;
+      margin-bottom: 90px;;
+    }
+
+    .randomizer-form > ul > li > input{
+      transform: scale(3);
+      margin-right: 25px;
+      margin-bottom: 15px;
+    }
+
+    .randomizer-form > ul > li {
+      font-size: 25px;
+    }
   }
