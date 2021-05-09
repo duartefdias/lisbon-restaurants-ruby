@@ -4,48 +4,88 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
 <div class="lisbon-restaurants-logo">
-  <img src="/lisbon_restaurants_logo.png"/>
+  <a href="/"><img src="/lisbon_restaurants_logo.png"/></a>
 </div>
 
-    <div class="two-columns-wrapper">
+<div class="two-columns-wrapper">
 
-        <div class="randomizer-form">
-            <ul>
-                <li><input type="checkbox" checked> Italian</li>
-                <li><input type="checkbox" checked> Hamburgers</li>
-                <li><input type="checkbox" checked> Sushi</li>
-                <li><input type="checkbox" checked> Asian</li>
-                <li><input type="checkbox" checked> Indian</li>
-                <li><input type="checkbox" checked> Seafood</li>
-                <li><input type="checkbox" checked> Hotdogs</li>
-                <li><input type="checkbox" checked> Tapas and Snacks</li>
-                <li><input type="checkbox" checked> Steak</li>
-                <li><input type="checkbox" checked> Mexican</li>
-                <li><input type="checkbox" checked> Peruvian or Nepalese</li>
-                <li><input type="checkbox" checked> Brunch</li>
-                <li><input type="checkbox" checked> Icecream and sweets</li>
-                <li><input type="checkbox" checked> Healthy</li>
-                <li><input type="checkbox" checked> Other</li>
-            </ul>
-        <button>
-            Find random restaurant!
-        </button>
-        </div>
+    <div class="randomizer-form">
+        <ul id="foodPreferences">
+            <li><input type="checkbox" checked value="Italian"> Italian</li>
+            <li><input type="checkbox" checked value="Hamburgers"> Hamburgers</li>
+            <li><input type="checkbox" checked value="Sushi"> Sushi</li>
+            <li><input type="checkbox" checked value="Asian"> Asian</li>
+            <li><input type="checkbox" checked value="Indian"> Indian</li>
+            <li><input type="checkbox" checked value="Seafood"> Seafood</li>
+            <li><input type="checkbox" checked value="Hotdogs"> Hotdogs</li>
+            <li><input type="checkbox" checked value="Tapas and Snacks"> Tapas and Snacks</li>
+            <li><input type="checkbox" checked value="Steak"> Steak</li>
+            <li><input type="checkbox" checked value="Mexican"> Mexican</li>
+            <li><input type="checkbox" checked value="Peruvian or Nepalese"> Peruvian or Nepalese</li>
+            <li><input type="checkbox" checked value="Brunch"> Brunch</li>
+            <li><input type="checkbox" checked value="Icecream and sweets"> Icecream and sweets</li>
+            <li><input type="checkbox" checked value="Healthy"> Healthy</li>
+            <li><input type="checkbox" checked value="Other"> Other</li>
+        </ul>
+    <button onClick="getRandomRestaurant()">
+        Find random restaurant!
+    </button>
+    </div>
 
-        <div class="single-card-wrapper">
-            <% random_restaurants.each do |restaurant| %>
-                <a class="card" href="<%= restaurant.zomato_url %>">
-                    <div class="card__background" style="background-image: url('https://image.freepik.com/free-photo/grunge-concrete-wall-dark-grey-color-texture-vintage-background_1484-2052.jpg')"></div>
-                    <div class="card__background" style="background-image: url('https://lisbonrestaurantsmedia.blob.core.windows.net/restaurants/<%= restaurant.azure_id %>.webp')"></div>
-                    <div class="card__background" style="background-image: url('https://lisbonrestaurantsmedia.blob.core.windows.net/restaurants/<%= restaurant.azure_id %>.jpeg')"></div>
-                    <div class="card__background" style="background-image: url('https://lisbonrestaurantsmedia.blob.core.windows.net/restaurants/<%= restaurant.azure_id %>.png')"></div>
-                    <div class="card__background" style="background-image: url('https://lisbonrestaurantsmedia.blob.core.windows.net/restaurants/<%= restaurant.azure_id %>.jpg')"></div>
-                    <div class="card__content">
-                        <!-- <p class="card__category">Sub-heading</p> -->
-                        <h3 class="card__heading"><%= restaurant.name %></h3>
-                    </div>
-                </a>
-            <% end %>
-        </div>
+    <div class="single-card-wrapper">
+        <% random_restaurants.each do |restaurant| %>
+            <a class="card" href="<%= restaurant.zomato_url %>" >
+                <div class="card__background" style="background-image: url('https://image.freepik.com/free-photo/grunge-concrete-wall-dark-grey-color-texture-vintage-background_1484-2052.jpg')"></div>
+                <div class="card__background" style="background-image: url('https://lisbonrestaurantsmedia.blob.core.windows.net/restaurants/<%= restaurant.azure_id %>.webp')"></div>
+                <div class="card__background" style="background-image: url('https://lisbonrestaurantsmedia.blob.core.windows.net/restaurants/<%= restaurant.azure_id %>.jpeg')"></div>
+                <div class="card__background" style="background-image: url('https://lisbonrestaurantsmedia.blob.core.windows.net/restaurants/<%= restaurant.azure_id %>.png')"></div>
+                <div class="card__background" style="background-image: url('https://lisbonrestaurantsmedia.blob.core.windows.net/restaurants/<%= restaurant.azure_id %>.jpg')"></div>
+                <div class="card__content">
+                    <!-- <p class="card__category">Sub-heading</p> -->
+                    <h3 class="card__heading"><%= restaurant.name %></h3>
+                </div>
+            </a>
+        <% end %>
+    </div>
+
+</div>
+
+
+<script>
+    async function getRandomRestaurant() {
+        var items = ul.querySelectorAll('input[type="checkbox"]:checked');
+        var urlParams = "/random/?foodPreferences="
+
+        items.forEach(element => {
+            urlParams += element.value + ","
+        });
+
+        window.location.href = urlParams
+    }
+
+    //
+    // Main code execution
+    //
+    var foodPreferences = []
+    const params = window.location.search;
     
-</section>
+    // Get params from url
+    if (params.length > 0) {
+        foodPreferences = params.split("=")[1]
+        foodPreferences = foodPreferences.split(",")
+        console.log("Food preferences: " + foodPreferences)
+    }
+
+    // Update ul checkboxes with values in params
+    const ul = document.getElementById("foodPreferences")
+    ul.querySelectorAll('input[type="checkbox"]').forEach(element => {
+        if (foodPreferences.includes(element.value) ) {
+            element.checked = true
+        }
+        else {
+            element.checked = false
+        }
+    });
+
+</script>
+
