@@ -28,9 +28,9 @@
             <li><input type="checkbox" checked value="Healthy"> Healthy</li>
             <li><input type="checkbox" checked value="Other"> Other</li>
         </ul>
-    <button class="random-button" onClick="getRandomRestaurant()">
-        Find random restaurant!
-    </button>
+        <button class="random-button" onClick="getRandomRestaurant()">
+            Find random restaurant!
+        </button>
     </div>
 
     <div class="single-card-wrapper">
@@ -46,9 +46,11 @@
                     <h3 class="card__heading"><%= restaurant.name %></h3>
                 </div>
             </a>
-        <% end %>
 
-        <button class="random-button" style="width: 50%;">More info</button>
+            <a href="<%= restaurant.zomato_url %>">
+                <button class="random-button" style="width: 50%;">More info</button>
+            </a>
+        <% end %>
     </div>
 
 </div>
